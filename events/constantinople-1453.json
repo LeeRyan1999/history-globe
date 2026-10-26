@@ -1,0 +1,151 @@
+{
+ "id": "constantinople-1453",
+ "year": 1453,
+ "date": "29 May 1453",
+ "place": "Constantinople (Istanbul)",
+ "lat": 41.02,
+ "lng": 28.93,
+ "title": "Fall of Constantinople",
+ "title_zh": "君士坦丁堡陷落",
+ "perspective_role": "You are a young Genoese volunteer on the Theodosian Walls.",
+ "perspective_role_zh": "你是守在狄奧多西城牆上的年輕熱那亞志願兵。",
+ "summary": "After a 53-day siege, Ottoman Sultan Mehmed II captured Constantinople, ending the Byzantine Empire. Massive bronze cannons battered the ancient land walls; Emperor Constantine XI died in the final assault.",
+ "summary_zh": "經過 53 天圍城，鄂圖曼蘇丹穆罕默德二世攻下君士坦丁堡，拜占庭帝國滅亡。巨型火砲轟擊古老城牆，末代皇帝君士坦丁十一世戰死。",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "bg": "img/constantinople-1453.jpg",
+   "caption": "29 May 1453 · Constantinople",
+   "ambience": "wind",
+   "duration": 15,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "bg": "img/constantinople-1453.jpg",
+   "ambience": "wind",
+   "lines": [
+    {
+     "speaker": "Byzantine soldier",
+     "en": "You made it up the wall. Good.",
+     "zh": "你爬上城牆了，很好。"
+    },
+    {
+     "speaker": "Byzantine soldier",
+     "en": "Fifty-three days they have besieged us.",
+     "zh": "他們已經圍城五十三天了。"
+    },
+    {
+     "speaker": "Byzantine soldier",
+     "en": "Look out there. See the great cannon?",
+     "zh": "看外面，看到那門巨砲了嗎？"
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "the Ottoman cannon",
+    "target_zh": "鄂圖曼巨砲",
+    "x": 72,
+    "y": 45
+   }
+  },
+  {
+   "phase": "guide",
+   "bg": "img/constantinople-1453.jpg",
+   "lines": [
+    {
+     "speaker": "Byzantine soldier",
+     "en": "A Hungarian named Orban built it.",
+     "zh": "一個叫烏爾班的匈牙利人造的。"
+    },
+    {
+     "speaker": "Byzantine soldier",
+     "en": "Its stones break walls a thousand years old.",
+     "zh": "它的石彈能打碎千年城牆。"
+    },
+    {
+     "speaker": "Byzantine soldier",
+     "en": "Last night we prayed in Hagia Sophia.",
+     "zh": "昨晚我們在聖索菲亞大教堂祈禱。"
+    }
+   ],
+   "interaction": {
+    "type": "tap",
+    "target": "Hagia Sophia",
+    "target_zh": "聖索菲亞大教堂",
+    "x": 30,
+    "y": 20
+   }
+  },
+  {
+   "phase": "climax",
+   "bg": "img/constantinople-1453.jpg",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "Byzantine soldier",
+     "en": "Listen! The drums. They are coming!",
+     "zh": "聽！戰鼓聲，他們來了！"
+    },
+    {
+     "speaker": "Byzantine soldier",
+     "en": "Giustiniani is wounded... the line breaks!",
+     "zh": "朱斯蒂尼亞尼受傷了……防線崩了！"
+    },
+    {
+     "speaker": "Byzantine soldier",
+     "en": "The Emperor rides into the fight. Follow me!",
+     "zh": "皇帝親自衝進戰場。跟我來！"
+    }
+   ],
+   "interaction": {
+    "type": "follow",
+    "target": "the soldier",
+    "target_zh": "士兵",
+    "x": 45,
+    "y": 60
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "The siege lasted from 6 April to 29 May 1453.",
+  "Constantine XI Palaiologos, the last Byzantine emperor, died defending the city.",
+  "Mehmed II made the city his capital; Hagia Sophia became a mosque."
+ ],
+ "facts_zh": [
+  "圍城從 1453 年 4 月 6 日持續到 5 月 29 日。",
+  "末代皇帝君士坦丁十一世在守城時戰死。",
+  "穆罕默德二世遷都於此，聖索菲亞改為清真寺。"
+ ],
+ "next": "Constantinople became Istanbul, capital of the Ottoman Empire for nearly 470 years. Greek scholars fleeing west helped fuel the Italian Renaissance, and blocked land trade routes pushed Europeans to seek sea routes to Asia.",
+ "next_zh": "君士坦丁堡成為鄂圖曼帝國首都近 470 年。西逃的希臘學者助長了義大利文藝復興，陸路貿易受阻也促使歐洲人尋找通往亞洲的海路。",
+ "then_now": {
+  "then": "Constantinople, Byzantine capital",
+  "now": "Istanbul, Türkiye"
+ },
+ "quiz": {
+  "q": "Who captured Constantinople in 1453?",
+  "options": [
+   "Mehmed II",
+   "Suleiman the Magnificent",
+   "Timur"
+  ],
+  "answer": 0
+ },
+ "sources": [
+  {
+   "title": "Britannica: Fall of Constantinople",
+   "url": "https://www.britannica.com/event/Fall-of-Constantinople-1453"
+  },
+  {
+   "title": "Steven Runciman, The Fall of Constantinople 1453 (1965)",
+   "url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}

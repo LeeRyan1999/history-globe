@@ -1,0 +1,152 @@
+{
+ "id": "zheng-he-1405",
+ "year": 1405,
+ "year_end": 1433,
+ "date": "1405–1433",
+ "place": "Ming fleet, South China Sea",
+ "lat": 12.0,
+ "lng": 112.0,
+ "title": "Zheng He's treasure voyages",
+ "title_zh": "鄭和下西洋",
+ "perspective_role": "You are a young navigator's apprentice on a Ming treasure ship.",
+ "perspective_role_zh": "你是明朝寶船上的年輕領航學徒。",
+ "summary": "Between 1405 and 1433, Admiral Zheng He led seven great Ming voyages across the Indian Ocean, reaching Southeast Asia, India, Arabia and East Africa, with fleets of over 200 ships and about 27,000 men.",
+ "summary_zh": "1405 至 1433 年間，鄭和率領明朝船隊七次遠航印度洋，到達東南亞、印度、阿拉伯與東非，船隊超過 200 艘、約兩萬七千人。",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "bg": "img/zhenghe-1405.jpg",
+   "caption": "1405 · South China Sea",
+   "ambience": "waves",
+   "duration": 15,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "bg": "img/zhenghe-1405.jpg",
+   "ambience": "waves",
+   "lines": [
+    {
+     "speaker": "Ming officer",
+     "en": "Welcome aboard, apprentice.",
+     "zh": "歡迎上船，學徒。"
+    },
+    {
+     "speaker": "Ming officer",
+     "en": "The Yongle Emperor sent us west.",
+     "zh": "永樂皇帝派我們出使西洋。"
+    },
+    {
+     "speaker": "Ming officer",
+     "en": "Look at the fleet behind me.",
+     "zh": "看看我身後的船隊。"
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "the fleet",
+    "target_zh": "船隊",
+    "x": 70,
+    "y": 45
+   }
+  },
+  {
+   "phase": "guide",
+   "bg": "img/zhenghe-1405.jpg",
+   "lines": [
+    {
+     "speaker": "Ming officer",
+     "en": "Over two hundred ships sail with us.",
+     "zh": "有兩百多艘船與我們同行。"
+    },
+    {
+     "speaker": "Ming officer",
+     "en": "We steer by compass and by stars.",
+     "zh": "我們靠羅盤和星辰導航。"
+    },
+    {
+     "speaker": "Ming officer",
+     "en": "Hold the compass. Keep us true.",
+     "zh": "拿好羅盤，別偏了航線。"
+    }
+   ],
+   "interaction": {
+    "type": "tap",
+    "target": "the compass lantern",
+    "target_zh": "羅盤燈",
+    "x": 4,
+    "y": 40
+   }
+  },
+  {
+   "phase": "climax",
+   "bg": "img/zhenghe-1405.jpg",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "Ming officer",
+     "en": "Admiral Zheng He commands us all.",
+     "zh": "鄭和大人統領全軍。"
+    },
+    {
+     "speaker": "Ming officer",
+     "en": "We bring silk and porcelain as gifts.",
+     "zh": "我們帶著絲綢和瓷器作為禮物。"
+    },
+    {
+     "speaker": "Ming officer",
+     "en": "One day we will reach Africa.",
+     "zh": "總有一天我們會到達非洲。"
+    }
+   ],
+   "interaction": {
+    "type": "follow",
+    "target": "the officer",
+    "target_zh": "軍官",
+    "x": 20,
+    "y": 55
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "Zheng He was a Muslim eunuch from Yunnan in the Yongle Emperor's service.",
+  "The fleets reached Malindi on the coast of modern Kenya; a giraffe was brought back to Beijing in 1414.",
+  "The voyages served diplomacy and tribute, not conquest."
+ ],
+ "facts_zh": [
+  "鄭和是出身雲南的回族宦官，為永樂皇帝效力。",
+  "船隊到達今肯亞的馬林迪，1414 年還有長頸鹿被送到北京。",
+  "遠航目的在外交與朝貢，而非征服。"
+ ],
+ "next": "After the seventh voyage (1431–33) the Ming court halted the expeditions and later restricted sea trade. China turned inward just as Portuguese ships began exploring the African coast — one of history's great 'what ifs'.",
+ "next_zh": "第七次遠航（1431–33）之後，明廷停止遠航並限制海上貿易。中國轉向內斂，同時葡萄牙船隻正開始探索非洲海岸，成為歷史上著名的「如果」。",
+ "then_now": {
+  "then": "Ming 'Western Ocean' voyages",
+  "now": "Routes across modern Vietnam, Indonesia, Sri Lanka, India, Oman, Kenya"
+ },
+ "quiz": {
+  "q": "Which emperor launched Zheng He's voyages?",
+  "options": [
+   "Hongwu",
+   "Yongle",
+   "Kangxi"
+  ],
+  "answer": 1
+ },
+ "sources": [
+  {
+   "title": "Britannica: Zheng He",
+   "url": "https://www.britannica.com/biography/Zheng-He"
+  },
+  {
+   "title": "Edward L. Dreyer, Zheng He: China and the Oceans in the Early Ming (2007)",
+   "url": "https://en.wikipedia.org/wiki/Zheng_He"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}

@@ -1,0 +1,151 @@
+{
+ "id": "columbus-1492",
+ "year": 1492,
+ "date": "12 October 1492",
+ "place": "Guanahani, Bahamas",
+ "lat": 24.05,
+ "lng": -74.53,
+ "title": "Columbus reaches the Americas",
+ "title_zh": "哥倫布抵達美洲",
+ "perspective_role": "You are a young sailor aboard the Santa María.",
+ "perspective_role_zh": "你是聖瑪利亞號上的年輕水手。",
+ "summary": "Sailing for the Spanish Crown, Christopher Columbus crossed the Atlantic with three ships. On 12 October 1492 they landed on an island the Lucayan (Taíno) people called Guanahani. Columbus believed he had reached Asia.",
+ "summary_zh": "哥倫布受西班牙王室資助，率三艘船橫越大西洋，1492 年 10 月 12 日登上當地盧卡亞（泰諾）人稱為瓜納哈尼的島嶼。他以為自己到了亞洲。",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "bg": "img/columbus-1492.jpg",
+   "caption": "12 October 1492 · Bahamas",
+   "ambience": "waves",
+   "duration": 15,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "bg": "img/columbus-1492.jpg",
+   "ambience": "waves",
+   "lines": [
+    {
+     "speaker": "Spanish sailor",
+     "en": "Wake up, boy! Rodrigo saw land!",
+     "zh": "醒醒，小子！羅德里戈看到陸地了！"
+    },
+    {
+     "speaker": "Spanish sailor",
+     "en": "From the Pinta, at two in the morning.",
+     "zh": "就在凌晨兩點，從平塔號上看到的。"
+    },
+    {
+     "speaker": "Spanish sailor",
+     "en": "Look! Trees, a white beach!",
+     "zh": "看！有樹，還有白色沙灘！"
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "the island",
+    "target_zh": "島嶼",
+    "x": 82,
+    "y": 40
+   }
+  },
+  {
+   "phase": "guide",
+   "bg": "img/columbus-1492.jpg",
+   "lines": [
+    {
+     "speaker": "Spanish sailor",
+     "en": "Over a month with no land in sight.",
+     "zh": "一個多月都看不到陸地。"
+    },
+    {
+     "speaker": "Spanish sailor",
+     "en": "The men nearly turned back.",
+     "zh": "大家差點就要掉頭回去。"
+    },
+    {
+     "speaker": "Spanish sailor",
+     "en": "The Admiral says this is the Indies.",
+     "zh": "司令說這裡就是印度群島。"
+    }
+   ],
+   "interaction": {
+    "type": "tap",
+    "target": "the Pinta's sail",
+    "target_zh": "平塔號的船帆",
+    "x": 56,
+    "y": 48
+   }
+  },
+  {
+   "phase": "climax",
+   "bg": "img/columbus-1492.jpg",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "Spanish sailor",
+     "en": "People on the shore! They are watching us.",
+     "zh": "岸上有人！他們在看著我們。"
+    },
+    {
+     "speaker": "Spanish sailor",
+     "en": "The Admiral names it San Salvador.",
+     "zh": "司令把它命名為聖薩爾瓦多。"
+    },
+    {
+     "speaker": "Spanish sailor",
+     "en": "But they already have a name for it.",
+     "zh": "可是他們早就為它取了名字。"
+    }
+   ],
+   "interaction": {
+    "type": "follow",
+    "target": "the sailor to the boat",
+    "target_zh": "跟著水手上小船",
+    "x": 30,
+    "y": 55
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "The fleet was the Niña, the Pinta and the Santa María, leaving Palos on 3 August 1492.",
+  "Lookout Rodrigo de Triana on the Pinta first sighted land.",
+  "The islanders were Lucayan Taíno, who had lived there for centuries."
+ ],
+ "facts_zh": [
+  "船隊有尼尼亞號、平塔號和聖瑪利亞號，1492 年 8 月 3 日從帕洛斯出發。",
+  "平塔號瞭望員羅德里戈・德特里亞納最先看見陸地。",
+  "島民是盧卡亞泰諾人，已在此居住數百年。"
+ ],
+ "next": "The voyage began lasting contact between Europe and the Americas: the Columbian Exchange of crops, animals and ideas, but also conquest, enslavement and epidemics that devastated Indigenous peoples. Within decades the Taíno population had collapsed.",
+ "next_zh": "這趟航行開啟了歐洲與美洲的長期接觸：作物、動物與思想的「哥倫布大交換」，也帶來征服、奴役和疫病，原住民大量死亡，泰諾人口在數十年內崩潰。",
+ "then_now": {
+  "then": "Guanahani (Lucayan Taíno)",
+  "now": "San Salvador Island, The Bahamas (probable)"
+ },
+ "quiz": {
+  "q": "Where did Columbus believe he had arrived?",
+  "options": [
+   "Africa",
+   "Asia (the Indies)",
+   "A new continent"
+  ],
+  "answer": 1
+ },
+ "sources": [
+  {
+   "title": "Britannica: Christopher Columbus",
+   "url": "https://www.britannica.com/biography/Christopher-Columbus"
+  },
+  {
+   "title": "Library of Congress: 1492 – An Ongoing Voyage",
+   "url": "https://www.loc.gov/exhibits/1492/"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}

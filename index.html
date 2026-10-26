@@ -1,0 +1,26 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="theme-color" content="#05070d">
+<title>History Globe · 歷史地球</title><link rel="stylesheet" href="style.css"></head><body>
+<div id="globe"></div>
+<header id="top">
+ <div class="brand">History Globe <span>歷史地球</span></div>
+ <div class="yearrow"><button id="yminus" aria-label="earlier">‹</button><div id="yearLabel">1450</div><button id="yplus" aria-label="later">›</button></div>
+ <input id="year" type="range" min="-3000" max="2010" step="1" value="1450">
+ <div id="eras"></div>
+ <div id="snap"></div>
+</header>
+<div id="tip" hidden></div>
+<aside id="panel" hidden></aside>
+<div id="loading">Loading borders…</div>
+<section id="pov" hidden>
+ <div id="bg"></div><div id="vignette"></div>
+ <div id="hot" hidden><span></span></div>
+ <div id="caption"></div>
+ <div id="role"></div>
+ <div id="sub"><div id="speaker"></div><div id="en"></div><div id="zh"></div></div>
+ <div id="ctrl"><button id="exit">✕</button><button id="replay">↻ Replay</button><button id="next">Continue ▸</button></div>
+ <div id="reflect" hidden></div>
+</section>
+<script src="https://unpkg.com/globe.gl@2.34.4/dist/globe.gl.min.js"></script>
+<script src="app.js"></script></body></html>
