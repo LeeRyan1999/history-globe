@@ -12,7 +12,7 @@ const G=Globe()($('globe'))
  .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-dark.jpg')
  .bumpImageUrl('https://unpkg.com/three-globe/example/img/earth-topology.png')
  .backgroundImageUrl('https://unpkg.com/three-globe/example/img/night-sky.png')
- .atmosphereColor('#c9a96e').atmosphereAltitude(.18)
+ .polygonsTransitionDuration(0).atmosphereColor('#c9a96e').atmosphereAltitude(.18)
  .polygonAltitude(d=>d===hover?.02:.006)
  .polygonCapColor(d=>{const n=d.properties.NAME;if(!n)return'rgba(0,0,0,0)';const h=color(n);return d===hover?`hsla(${h},70%,60%,.75)`:`hsla(${h},45%,45%,.45)`})
  .polygonSideColor(()=>'rgba(201,169,110,.15)').polygonStrokeColor(()=>'#e9d7a8')
@@ -54,7 +54,7 @@ if('speechSynthesis'in window){pickVoice();speechSynthesis.onvoiceschanged=pickV
 function say(t){if(!('speechSynthesis'in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang='en-GB';if(voice)u.voice=voice;u.rate=.92;u.pitch=.9;speechSynthesis.speak(u)}
 // ---- POV: arrival → guide → climax → reflection ----
 let E,si,li,waiting;
-function startPOV(e){E=e;si=0;li=-1;$('pov').hidden=false;$('reflect').hidden=true;$('role').textContent=`${e.perspective_role} · ${e.perspective_role_zh}`;scene()}
+function startPOV(e){E=e;si=0;li=-1;$('pov').hidden=false;G.pauseAnimation();$('reflect').hidden=true;$('role').textContent=`${e.perspective_role} · ${e.perspective_role_zh}`;scene()}
 function scene(){const s=E.scenes[si];if(!s||s.phase==='reflection')return reflect();
  const bg=$('bg');if(s.bg)bg.style.backgroundImage=`url(${s.bg})`;bg.classList.toggle('zoom',!!s.zoom);ambience(s.ambience||null);li=-1;waiting=false;$('hot').hidden=true;
  if(s.phase==='arrival'){bg.style.opacity=0;$('sub').classList.add('off');$('caption').textContent=s.caption||E.date;$('caption').style.opacity=1;
@@ -72,7 +72,7 @@ function hotspot(it){const h=$('hot');h.hidden=false;h.style.left=it.x+'%';h.sty
 $('next').onclick=()=>{if(!$('hot').hidden)return;const s=E.scenes[si];if(s&&s.phase==='arrival'){si++;return scene()}line()};
 $('replay').onclick=()=>{const l=E.scenes[si]?.lines[li];if(l)say(l.en)};
 $('exit').onclick=closePOV;
-function closePOV(){speechSynthesis?.cancel();stopAmb();$('pov').hidden=true;$('bg').classList.remove('zoom');$('bg').style.transformOrigin='center';G.controls().autoRotate=true}
+function closePOV(){speechSynthesis?.cancel();stopAmb();$('pov').hidden=true;G.resumeAnimation();$('bg').classList.remove('zoom');$('bg').style.transformOrigin='center';G.controls().autoRotate=true}
 function reflect(){speechSynthesis?.cancel();stopAmb();const r=$('reflect');r.hidden=false;const q=E.quiz;
  r.innerHTML=`<div class="card"><h2>${E.title} · ${E.title_zh}</h2><p><i>${E.date} — ${E.place}</i></p>
  <h3>Then & Now · 當時與今天</h3><div class="tn"><div><b>Then</b><br>${E.then_now.then}</div><div><b>Now</b><br>${E.then_now.now}</div></div>
