@@ -10,9 +10,11 @@ Live: https://leeryan1999.github.io/history-globe/ · Repo: https://github.com/L
 - 2026-10-27 (run 5) — Standalone three.js Big Ben demo: demo/bigben.html (procedural Elizabeth Tower, rise 2.4s + dust/glow, OrbitControls, replay, DPR≤1.5, render-on-demand). Preview GIF: demo/bigben-3d.gif. Not wired into globe yet. Live: …/demo/bigben.html.
 - 2026-10-27 (run 6) — Refined demo/bigben.html: tiered shaft + buttresses, detailed clock faces (Roman numerals/tracery), belfry arches, Ayrton lantern, ornate iron spire, canvas stone texture, hemisphere lighting; geometries merged by material. Updated demo/bigben-3d.gif + close-up preview.
 
+- 2026-10-27 (run 7) — Integrate year-gated procedural 3D landmarks into the globe (not just demo). 23 landmarks with built/destroyed years; low-poly shared-material models (Big Ben clocktower reused from demo palette); LOD: emoji pins far away, 3D rises only when zoomed near (alt≤1.05, ≤5 closest, prune when away). DPR caps unchanged. No grayscale / no magic circle. Screenshot: screenshots/landmarks.png.
+
 ## Next (one small step per day)
 1. Year jump to event: tapping an event in a list sets the year and flies to it (event list drawer).
-2. Add 1–2 landmarks per day (e.g. Chichen Itza, Petra, Alhambra, Kremlin).
+2. Add 1–2 more landmarks per day (e.g. Chichen Itza, Petra, Alhambra, Kremlin) + refine meshes.
 3. Add event: Black Death 1347, Magna Carta 1215, Moon landing 1969 (one per run).
 4. Simple JSON schema validation script for contributed events (tools/validate.js).
 5. Offline/PWA manifest + icon (dark Nordic minimalist style).

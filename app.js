@@ -85,16 +85,104 @@ G.renderer().setPixelRatio(Math.min(devicePixelRatio||1,MOB?1.5:2));
 document.addEventListener('visibilitychange',()=>{if(document.hidden)G.pauseAnimation();else if($('pov').hidden)G.resumeAnimation()});
 addEventListener('resize',()=>G.width(innerWidth).height(innerHeight));
 
+/* ---- 3D landmarks (LOD): year-gated, lazy, shared mats ---- */
+function resolveTHREE(){
+  if(window.THREE&&window.THREE.Mesh)return window.THREE;
+  // fallback: steal constructor namespace from an existing scene object if present
+  try{
+    const sc=G.scene();
+    if(sc&&sc.constructor&&sc.constructor.Mesh)return sc.constructor; // unlikely
+  }catch(e){}
+  return null;
+}
+function ensure3D(){
+  if(!window.HG3D)return false;
+  if(HG3D._ready)return true;
+  const T=resolveTHREE();
+  if(!T)return false;
+  HG3D.init(T);HG3D._ready=true;return true;
+}
+ensure3D();
+const LM_NEAR_ALT=1.05, LM_NEAR_DEG2=64; /* ~8° */
+let last3dKey='';
+function aliveLM(l){return l.built<=year&&(l.destroyed==null||l.destroyed>=year)}
+function nearby3d(pov){
+  const cur=G.pointOfView();
+  const alt=pov&&pov.altitude!=null?+pov.altitude:+cur.altitude;
+  const lat=pov&&pov.lat!=null?+pov.lat:+cur.lat;
+  const lng=pov&&pov.lng!=null?+pov.lng:+cur.lng;
+  if(!(alt<=LM_NEAR_ALT))return[];
+  const out=[];
+  for(const l of landmarks){
+    if(!aliveLM(l))continue;
+    const dlat=l.lat-lat,dlng=((l.lng-lng+540)%360)-180;
+    if(dlat*dlat+dlng*dlng>LM_NEAR_DEG2)continue;
+    out.push(l);
+  }
+  // Cap for iPad: at most 5 closest
+  if(out.length>5){
+    out.sort((a,b)=>{
+      const da=(a.lat-lat)**2+((((a.lng-lng+540)%360)-180)**2);
+      const db=(b.lat-lat)**2+((((b.lng-lng+540)%360)-180)**2);
+      return da-db;
+    });
+    return out.slice(0,5);
+  }
+  return out;
+}
+function refresh3D(pov){
+  if(!ensure3D())return;
+  const near=nearby3d(pov);
+  const key=year+'|'+near.map(l=>l.id).sort().join(',');
+  if(key===last3dKey)return;
+  last3dKey=key;
+  const data=near.map(l=>({id:l.id,lat:l.lat,lng:l.lng,alt:0.0015,landmark:l,name:(ZH()?l.zh:l.name)}));
+  try{
+    G.objectsData(data);
+    HG3D.prune(near.map(l=>l.id));
+  }catch(e){console.warn('3d',e)}
+}
+G.objectsData([])
+ .objectLat('lat').objectLng('lng').objectAltitude(d=>d.alt||0.0015)
+ .objectFacesSurface(true)
+ .objectThreeObject(d=>HG3D.getObject(d.landmark||d))
+ .objectLabel(d=>d.name||'')
+ .onObjectClick(obj=>{
+   const l=obj&&(obj.landmark||obj);
+   if(!l)return;
+   tip(`${l.icon||''} ${ZH()?l.zh:l.name} (${t('built')} ${fmt(l.built)}${l.destroyed!=null?', '+t('destroyed')+' '+fmt(l.destroyed):''})`);
+ });
+let viewT=null;
+function onViewChange(){
+  clearTimeout(viewT);
+  viewT=setTimeout(()=>refresh3D(),100);
+}
+G.controls().addEventListener('change',()=>{
+  const p=G.pointOfView();
+  if(!onViewChange._p||Math.abs(p.altitude-onViewChange._p.altitude)>0.06||Math.abs(p.lat-onViewChange._p.lat)>0.35||Math.abs(p.lng-onViewChange._p.lng)>0.35){
+    onViewChange._p={lat:p.lat,lng:p.lng,altitude:p.altitude};onViewChange();
+  }
+});
+
 async function loadBorders(){const s=nearest(year);if(s===curSnap)return;curSnap=s;$('snap').textContent=`${t('snap')}: ${fmt(s)} (historical-basemaps)`;$('loading').hidden=false;
  try{if(!cache[s])cache[s]=(await (await fetch(BASE+snapFile(s))).json()).features;if(curSnap===s){clearGlow();G.polygonsData(cache[s])}}catch(e){tip(t('fail'))}$('loading').hidden=true}
 function active(e){const end=e.year_end||e.year;return year>=e.year-50&&year<=end+50}
 function mk(cls,html,fn){const el=document.createElement('div');el.className=cls;el.innerHTML=html;el.addEventListener('click',ev=>{ev.stopPropagation();fn()});el.addEventListener('touchend',ev=>{ev.preventDefault();ev.stopPropagation();fn()});return el}
+function flyToLM(l){
+ tip(`${l.icon||''} ${ZH()?l.zh:l.name} (${t('built')} ${fmt(l.built)}${l.destroyed!=null?', '+t('destroyed')+' '+fmt(l.destroyed):''})`);
+ G.controls().autoRotate=false;
+ G.pointOfView({lat:l.lat,lng:l.lng,altitude:0.55},900);
+ setTimeout(()=>{last3dKey='';refresh3D({lat:l.lat,lng:l.lng,altitude:0.55})},960);
+}
 function render(){ $('yearLabel').textContent=fmt(year);$('year').value=year;
  document.querySelectorAll('#eras button').forEach(b=>b.classList.toggle('on',+b.dataset.y===year));
- const lms=landmarks.filter(l=>l.built<=year&&(l.destroyed==null||l.destroyed>=year)).map(l=>({lat:l.lat,lng:l.lng,el:mk('lm',l.icon,()=>tip(`${l.icon} ${ZH()?l.zh:l.name} (${t('built')} ${fmt(l.built)}${l.destroyed?', '+t('destroyed')+' '+fmt(l.destroyed):''})`))}));
+ const pov=G.pointOfView();
+ const zoomed=pov.altitude<=LM_NEAR_ALT;
+ const nearIds=zoomed?new Set(nearby3d(pov).map(l=>l.id)):null;
+ const lms=landmarks.filter(aliveLM).filter(l=>!(nearIds&&nearIds.has(l.id))).map(l=>({lat:l.lat,lng:l.lng,el:mk('lm',l.icon,()=>flyToLM(l))}));
  const evs=events.filter(active);
  G.htmlElementsData([...lms,...evs.map(e=>({lat:e.lat,lng:e.lng,el:mk('ev',`<b>${ZH()?e.title_zh:e.title}</b>`,()=>openPanel(e))}))]);
- G.ringsData(evs);clearTimeout(render.t);render.t=setTimeout(loadBorders,250)}
+ G.ringsData(evs);last3dKey='';refresh3D(pov);clearTimeout(render.t);render.t=setTimeout(loadBorders,250)}
 function setYear(y){year=Math.max(-3000,Math.min(2010,Math.round(y)));render()}
 $('year').oninput=e=>setYear(+e.target.value);
 $('yminus').onclick=()=>setYear(year-10);$('yplus').onclick=()=>setYear(year+10);
@@ -151,4 +239,4 @@ function reflect(){speechSynthesis?.cancel();stopAmb();const r=$('reflect');r.hi
 // ---- boot ----
 (async()=>{landmarks=await (await fetch('landmarks.json')).json();const idx=await (await fetch('events/index.json')).json();
  events=await Promise.all(idx.map(f=>fetch('events/'+f).then(r=>r.json())));applyLang()})();
-window.__HG={setYear,startPOV:id=>startPOV(events.find(e=>e.id===id)),openPanel:id=>openPanel(events.find(e=>e.id===id)),glow:n=>{const f=(cache[curSnap]||[]).find(x=>x.properties&&x.properties.NAME===n);if(f){setGlow(f);tip(n)}},clear:clearGlow,pov:(o,ms)=>G.pointOfView(o,ms)};
+window.__HG={setYear,startPOV:id=>startPOV(events.find(e=>e.id===id)),openPanel:id=>openPanel(events.find(e=>e.id===id)),glow:n=>{const f=(cache[curSnap]||[]).find(x=>x.properties&&x.properties.NAME===n);if(f){setGlow(f);tip(n)}},clear:clearGlow,pov:(o,ms)=>G.pointOfView(o,ms),refresh3D,landmarks:()=>landmarks,year:()=>year,flyToLM:id=>{const l=landmarks.find(x=>x.id===id);if(l)flyToLM(l)}};
