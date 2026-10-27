@@ -43,3 +43,9 @@
 .tr{position:fixed;top:calc(10px + env(safe-area-inset-top));right:12px;display:flex;gap:8px;align-items:center;z-index:20}
 #lang{background:rgba(10,14,24,.75);color:#e9d7a8;border:1px solid rgba(201,169,110,.5);border-radius:8px;padding:5px 6px;font-size:13px}
 #kofi{display:block;line-height:0;border-radius:50%;filter:drop-shadow(0 1px 3px rgba(0,0,0,.6));transition:transform .2s}#kofi:hover{transform:rotate(-12deg) scale(1.08)}
+
+#evbtn{background:rgba(10,14,24,.75);border:1px solid rgba(201,169,110,.5);border-radius:8px;font-size:16px;padding:3px 7px;line-height:1.3}
+#evlist{position:fixed;top:calc(52px + env(safe-area-inset-top));right:12px;width:min(300px,calc(100% - 24px));max-height:60vh;overflow:auto;background:#0b0f1aee;border:1px solid #c9a96e55;border-radius:12px;padding:10px;z-index:21}
+#evlist h3{margin:2px 4px 8px;font:600 14px Georgia,serif;color:#c9a96e;letter-spacing:.08em}
+#evlist button{display:block;width:100%;text-align:left;background:#ffffff08;border:1px solid #c9a96e22;color:#e9e3d3;border-radius:8px;padding:9px 10px;margin:5px 0;font-size:14px}
+#evlist button span{display:block;font-size:11px;color:#c9a96e}
