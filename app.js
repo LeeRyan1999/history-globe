@@ -13,22 +13,72 @@ const nearest=y=>SNAPS.reduce((a,b)=>Math.abs(b-y)<Math.abs(a-y)?b:a);
 const fmt=y=>LANG==='zh'?(y<0?`西元前${-y}年`:`西元${y}年`):LANG==='ja'?(y<0?`紀元前${-y}年`:`西暦${y}年`):y<0?`${-y} ${t('bc')}`:(t('ad')?`${LANG==='de'?y+' '+t('ad'):t('ad')+' '+y}`:''+y);
 const $=id=>document.getElementById(id);
 const ERAS=[-2500,-300,500,1000,1250,1450,1600,1800,1914,2000];
-let year=1450,landmarks=[],events=[],cache={},curSnap=null,hover=null;
+let year=1450,landmarks=[],events=[],cache={},curSnap=null;
 const tip=(t)=>{const e=$('tip');e.textContent=t;e.hidden=!t;clearTimeout(tip.t);if(t)tip.t=setTimeout(()=>e.hidden=true,3500)};
 const color=s=>{let h=0;for(const c of s||'')h=(h*31+c.charCodeAt(0))%360;return h};
+/* Gold border glow: one country's outline as paths (no polygon re-tessellation). */
+let glowFeat=null;
+function simplifyRing(ring,maxPts=320){
+  if(!ring||ring.length<=maxPts)return ring||[];
+  const step=Math.ceil(ring.length/maxPts),out=[];
+  for(let i=0;i<ring.length;i+=step)out.push(ring[i]);
+  const a=ring[0],b=out[out.length-1];
+  if(!b||a[0]!==b[0]||a[1]!==b[1])out.push(a);
+  return out;
+}
+function featToPaths(feat){
+  if(!feat||!feat.geometry)return[];
+  const g=feat.geometry;
+  const polys=g.type==='Polygon'?[g.coordinates]:g.type==='MultiPolygon'?g.coordinates:[];
+  const paths=[];
+  for(const poly of polys){
+    const ring=simplifyRing(poly&&poly[0]);
+    if(!ring||ring.length<4)continue;
+    // GeoJSON [lng,lat] → path [lat,lng]
+    paths.push({coords:ring.map(([lng,lat])=>[lat,lng])});
+  }
+  return paths;
+}
+function setGlow(feat){
+  glowFeat=feat||null;
+  const base=featToPaths(glowFeat);
+  // soft outer glow + bright dashed pulse (still one country only)
+  const paths=[];
+  for(const p of base){
+    paths.push({coords:p.coords,glow:1});
+    paths.push({coords:p.coords,glow:0});
+  }
+  G.pathsData(paths);
+}
+function clearGlow(){glowFeat=null;G.pathsData([])}
+
 const G=Globe()($('globe'))
  .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-dark.jpg')
  .bumpImageUrl('https://unpkg.com/three-globe/example/img/earth-topology.png')
  .backgroundImageUrl('https://unpkg.com/three-globe/example/img/night-sky.png')
  .polygonsTransitionDuration(0).atmosphereColor('#c9a96e').atmosphereAltitude(.18)
- .polygonAltitude(d=>d===hover?.02:.006)
- .polygonCapColor(d=>{const n=d.properties.NAME;if(!n)return'rgba(0,0,0,0)';const h=color(n);return d===hover?`hsla(${h},70%,60%,.75)`:`hsla(${h},45%,45%,.45)`})
+ .polygonAltitude(.006)
+ .polygonCapColor(d=>{const n=d.properties&&d.properties.NAME;if(!n)return'rgba(0,0,0,0)';const h=color(n);return`hsla(${h},45%,45%,.45)`})
  .polygonSideColor(()=>'rgba(201,169,110,.15)').polygonStrokeColor(()=>'#e9d7a8')
- .polygonLabel(d=>d.properties.NAME?`<b>${d.properties.NAME}</b>${d.properties.SUBJECTO&&d.properties.SUBJECTO!==d.properties.NAME?'<br><small>'+d.properties.SUBJECTO+'</small>':''}`:'')
- .onPolygonHover(d=>{hover=d;G.polygonAltitude(G.polygonAltitude())})
- .onPolygonClick(d=>{hover=d;G.polygonAltitude(G.polygonAltitude());tip(d.properties.NAME||'(unmapped)')})
+ .polygonLabel(d=>d.properties&&d.properties.NAME?`<b>${d.properties.NAME}</b>${d.properties.SUBJECTO&&d.properties.SUBJECTO!==d.properties.NAME?'<br><small>'+d.properties.SUBJECTO+'</small>':''}`:'')
+ .onPolygonHover(()=>{}) /* hover no longer rebuilds meshes */
+ .onPolygonClick(d=>{
+   if(!d||!d.properties||!d.properties.NAME){clearGlow();return}
+   setGlow(d);tip(d.properties.NAME);
+ })
+ .onGlobeClick(()=>clearGlow())
+ .pathsData([])
+ .pathPoints('coords')
+ .pathPointLat(p=>p[0]).pathPointLng(p=>p[1])
+ .pathPointAlt(.01)
+ .pathColor(d=>d.glow?'rgba(255,196,60,.35)':'rgba(255,220,100,.95)')
+ .pathStroke(d=>d.glow?4.5:2.0)
+ .pathDashLength(d=>d.glow?1:0.55)
+ .pathDashGap(d=>d.glow?0:0.2)
+ .pathDashAnimateTime(d=>d.glow?0:2200)
+ .pathResolution(2)
  .htmlElementsData([]).htmlElement(d=>d.el)
- .ringsData([]).ringColor(()=>t=>`rgba(255,179,71,${1-t})`).ringMaxRadius(4).ringPropagationSpeed(2).ringRepeatPeriod(1200);
+ .ringsData([]).ringColor(()=>u=>`rgba(255,179,71,${1-u})`).ringMaxRadius(4).ringPropagationSpeed(2).ringRepeatPeriod(1200);
 G.controls().autoRotate=true;G.controls().autoRotateSpeed=.25;G.pointOfView({lat:30,lng:40,altitude:2.3});
 const MOB=/iPad|iPhone|iPod/.test(navigator.userAgent)||(navigator.maxTouchPoints>1&&/Mac/.test(navigator.userAgent));
 G.renderer().setPixelRatio(Math.min(devicePixelRatio||1,MOB?1.5:2));
@@ -36,7 +86,7 @@ document.addEventListener('visibilitychange',()=>{if(document.hidden)G.pauseAnim
 addEventListener('resize',()=>G.width(innerWidth).height(innerHeight));
 
 async function loadBorders(){const s=nearest(year);if(s===curSnap)return;curSnap=s;$('snap').textContent=`${t('snap')}: ${fmt(s)} (historical-basemaps)`;$('loading').hidden=false;
- try{if(!cache[s])cache[s]=(await (await fetch(BASE+snapFile(s))).json()).features;if(curSnap===s)G.polygonsData(cache[s])}catch(e){tip(t('fail'))}$('loading').hidden=true}
+ try{if(!cache[s])cache[s]=(await (await fetch(BASE+snapFile(s))).json()).features;if(curSnap===s){clearGlow();G.polygonsData(cache[s])}}catch(e){tip(t('fail'))}$('loading').hidden=true}
 function active(e){const end=e.year_end||e.year;return year>=e.year-50&&year<=end+50}
 function mk(cls,html,fn){const el=document.createElement('div');el.className=cls;el.innerHTML=html;el.addEventListener('click',ev=>{ev.stopPropagation();fn()});el.addEventListener('touchend',ev=>{ev.preventDefault();ev.stopPropagation();fn()});return el}
 function render(){ $('yearLabel').textContent=fmt(year);$('year').value=year;
@@ -101,4 +151,4 @@ function reflect(){speechSynthesis?.cancel();stopAmb();const r=$('reflect');r.hi
 // ---- boot ----
 (async()=>{landmarks=await (await fetch('landmarks.json')).json();const idx=await (await fetch('events/index.json')).json();
  events=await Promise.all(idx.map(f=>fetch('events/'+f).then(r=>r.json())));applyLang()})();
-window.__HG={setYear,startPOV:id=>startPOV(events.find(e=>e.id===id)),openPanel:id=>openPanel(events.find(e=>e.id===id))};
+window.__HG={setYear,startPOV:id=>startPOV(events.find(e=>e.id===id)),openPanel:id=>openPanel(events.find(e=>e.id===id)),glow:n=>{const f=(cache[curSnap]||[]).find(x=>x.properties&&x.properties.NAME===n);if(f){setGlow(f);tip(n)}},clear:clearGlow,pov:(o,ms)=>G.pointOfView(o,ms)};
