@@ -1,25 +1,27 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
+<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="theme-color" content="#05070d">
 <title>History Globe · 歷史地球</title><link rel="stylesheet" href="style.css"></head><body>
 <div id="globe"></div>
 <header id="top">
+ <div class="tr"><select id="lang" aria-label="Language"><option value="en">English</option><option value="ja">日本語</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="zh">中文</option></select>
+ <a id="kofi" href="https://ko-fi.com/leestuido" target="_blank" rel="noopener" aria-label="Support on Ko-fi" title="Support on Ko-fi"><svg viewBox="0 0 40 40" width="32" height="32"><defs><radialGradient id="au" cx="35%" cy="30%"><stop offset="0" stop-color="#fff1b0"/><stop offset=".55" stop-color="#e2b33c"/><stop offset="1" stop-color="#9a6b12"/></radialGradient></defs><circle cx="20" cy="20" r="19" fill="url(#au)" stroke="#7a520c"/><circle cx="20" cy="20" r="15.5" fill="none" stroke="#8a5e10" stroke-width="1.6" stroke-dasharray=".1 2.6" stroke-linecap="round"/><path d="M15 31c.5-3 1-4 .4-5.5-1.2-.6-2.4-1.1-2.2-2.2l1-1.4-.9-1.2 1.1-.7c-.3-2.6.3-5.7 3.3-7.2 3-1.4 6.8-.6 8 2.4 1 2.5.4 5.6-1 7.8-.6 1.1-.6 3.5.8 5.9z" fill="#a87414"/><path d="M17.5 12.6c2-1.4 5.5-1.6 7.8.3" fill="none" stroke="#5d9a3a" stroke-width="1.4" stroke-dasharray="1.6 .8"/></svg></a></div>
  <div class="brand">History Globe <span>歷史地球</span></div>
- <div class="yearrow"><button id="yminus" aria-label="earlier">‹</button><div id="yearLabel">1450</div><button id="yplus" aria-label="later">›</button></div>
+ <div class="yearrow"><button id="yminus" data-i18n-aria="earlier" aria-label="earlier">‹</button><div id="yearLabel">1450</div><button id="yplus" data-i18n-aria="later" aria-label="later">›</button></div>
  <input id="year" type="range" min="-3000" max="2010" step="1" value="1450">
  <div id="eras"></div>
  <div id="snap"></div>
 </header>
 <div id="tip" hidden></div>
 <aside id="panel" hidden></aside>
-<div id="loading">Loading borders…</div>
+<div id="loading" data-i18n="loading">Loading borders…</div>
 <section id="pov" hidden>
  <div id="bg"></div><div id="vignette"></div>
  <div id="hot" hidden><span></span></div>
  <div id="caption"></div>
  <div id="role"></div>
  <div id="sub"><div id="speaker"></div><div id="en"></div><div id="zh"></div></div>
- <div id="ctrl"><button id="exit">✕</button><button id="replay">↻ Replay</button><button id="next">Continue ▸</button></div>
+ <div id="ctrl"><button id="exit">✕</button><button id="replay" data-i18n="replay">↻ Replay</button><button id="next">Continue ▸</button></div>
  <div id="reflect" hidden></div>
 </section>
 <script src="https://unpkg.com/globe.gl@2.34.4/dist/globe.gl.min.js"></script>

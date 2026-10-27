@@ -39,3 +39,7 @@
 #reflect h2{margin-top:0}#reflect li{margin:6px 0}.tn{display:grid;grid-template-columns:1fr 1fr;gap:10px}.tn div{background:#0000000d;padding:10px;border-radius:4px}
 .q button{display:block;width:100%;margin:6px 0;text-align:left;background:#fff8;border:1px solid #8a6a3a;border-radius:6px;padding:9px;font:15px Georgia,serif}
 .q .right{background:#9fd49f}.q .wrong{background:#e8a0a0}#reflect a{color:#6b3f10}
+
+.tr{position:fixed;top:calc(10px + env(safe-area-inset-top));right:12px;display:flex;gap:8px;align-items:center;z-index:20}
+#lang{background:rgba(10,14,24,.75);color:#e9d7a8;border:1px solid rgba(201,169,110,.5);border-radius:8px;padding:5px 6px;font-size:13px}
+#kofi{display:block;line-height:0;border-radius:50%;filter:drop-shadow(0 1px 3px rgba(0,0,0,.6));transition:transform .2s}#kofi:hover{transform:rotate(-12deg) scale(1.08)}
