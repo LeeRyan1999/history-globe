@@ -1,0 +1,147 @@
+{
+ "id": "snefru-bent-pyramid-2600bc",
+ "year": -2600,
+ "date": "c. 2600 BCE",
+ "place": "Dahshur, Egypt",
+ "lat": 29.7903,
+ "lng": 31.2092,
+ "title": "Snefru’s Bent Pyramid",
+ "title_zh": "斯尼夫魯彎曲金字塔",
+ "title_ja": "スネフェルの屈折ピラミッド",
+ "title_fr": "Pyramide rhomboïdale de Snéfrou",
+ "title_de": "Knickpyramide des Snofru",
+ "perspective_role": "You are a surveyor’s assistant watching the angle of the pyramid change mid-build.",
+ "perspective_role_zh": "你是測量助手，看著金字塔半途改變傾角。",
+ "perspective_role_ja": "ピラミッドの傾斜が途中で変わるのを見る測量助手だ。",
+ "perspective_role_fr": "Tu es assistant géomètre ; tu vois l’angle de la pyramide changer en cours de chantier.",
+ "perspective_role_de": "Du bist Vermessungsgehilfe und siehst, wie sich der Pyramidenwinkel mitten im Bau ändert.",
+ "summary": "Pharaoh Snefru’s Bent Pyramid at Dahshur shifts angle mid-construction — a dramatic experiment on the road to true smooth-sided pyramids.",
+ "summary_zh": "法老斯尼夫魯在達舒爾的彎曲金字塔中途改角——通往真正平滑錐體金字塔的戲劇性實驗。",
+ "summary_ja": "スネフェル王のダハシュール屈折ピラミッドは建設途中で角度を変える——真正ピラミッドへの劇的な実験。",
+ "summary_fr": "La pyramide rhomboïdale de Snéfrou à Dahchour change d’angle en cours de construction — expérience dramatique vers les vraies pyramides lisses.",
+ "summary_de": "Snofrus Knickpyramide in Dahschur ändert mitten im Bau den Winkel — dramatisches Experiment auf dem Weg zur echten Glattpyramide.",
+ "anim": "desert",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "anim": "desert",
+   "caption": "c. 2600 BCE · Dahshur",
+   "ambience": "desert",
+   "duration": 12,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "anim": "desert",
+   "ambience": "desert",
+   "lines": [
+    {
+     "speaker": "Surveyor",
+     "en": "Fifty-four degrees was too steep — the casing slipped in our nightmares and in daylight.",
+     "zh": "五十四度太陡——外層在惡夢裡滑，白天也滑。",
+     "ja": "五十四度は急すぎた——外装が悪夢でも昼でも滑る。",
+     "fr": "Cinquante-quatre degrés : trop raide — le revêtement glissait dans nos cauchemars et au jour.",
+     "de": "Vierundfünfzig Grad war zu steil — die Verkleidung rutschte in Albträumen und bei Tag."
+    },
+    {
+     "speaker": "Surveyor",
+     "en": "Now we bend to forty-three. Feel the new course under your palm — cooler, surer.",
+     "zh": "現在收到四十三度。用手掌感受新一層——更涼、更穩。",
+     "ja": "今は四十三度へ折る。手のひらで新しい層を——より冷たく、確かな。",
+     "fr": "Maintenant on plie à quarante-trois. Sens le nouveau rang sous ta paume — plus froid, plus sûr.",
+     "de": "Jetzt knicken wir auf dreiundvierzig. Spür die neue Lage unter der Handfläche — kühler, sicherer."
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "the kink in the silhouette",
+    "target_zh": "輪廓上的折角",
+    "target_ja": "輪郭の屈折",
+    "target_fr": "le coude de la silhouette",
+    "target_de": "den Knick der Silhouette",
+    "x": 50,
+    "y": 35
+   }
+  },
+  {
+   "phase": "climax",
+   "anim": "desert",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "Master mason",
+     "en": "Snefru will have his smooth pyramid yet — this bend is the lesson written in stone.",
+     "zh": "斯尼夫魯終會擁有平滑金字塔——這道彎是寫在石頭上的教訓。",
+     "ja": "スネフェルはいずれ滑らかなピラミッドを持つ——この屈折は石に書かれた教訓だ。",
+     "fr": "Snéfrou aura sa pyramide lisse — ce pli est la leçon écrite dans la pierre.",
+     "de": "Snofru bekommt noch seine glatte Pyramide — dieser Knick ist die Lektion in Stein."
+    }
+   ],
+   "interaction": {
+    "type": "follow",
+    "target": "the master mason",
+    "target_zh": "首席石匠",
+    "target_ja": "親方石工",
+    "target_fr": "le maître maçon",
+    "target_de": "den Meistersteinmetz",
+    "x": 48,
+    "y": 55
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "Built for Snefru (4th Dynasty) at Dahshur.",
+  "Angle changes from ~54° to ~43° mid-height.",
+  "Predecessor experiments before the Red Pyramid and Giza."
+ ],
+ "facts_zh": [
+  "第四王朝斯尼夫魯建於達舒爾。",
+  "傾角約在半高由 54° 改為 43°。",
+  "紅金字塔與吉薩之前的實驗。"
+ ],
+ "facts_ja": [
+  "第4王朝スネフェル、ダハシュール。",
+  "高さ途中で約54°から43°へ。",
+  "赤ピラミッドやギザの前の実験。"
+ ],
+ "facts_fr": [
+  "Pour Snéfrou (IVe dynastie) à Dahchour.",
+  "Angle ~54° puis ~43° à mi-hauteur.",
+  "Expériences avant la pyramide rouge et Gizeh."
+ ],
+ "facts_de": [
+  "Für Snofru (4. Dynastie) in Dahschur.",
+  "Winkel ~54° dann ~43° auf halber Höhe.",
+  "Experimente vor der Roten Pyramide und Gizeh."
+ ],
+ "next": "The Red Pyramid nearby achieves the first true smooth-sided form; Giza follows under Khufu.",
+ "next_zh": "附近的紅金字塔達成第一座真正平滑錐體；吉薩在胡夫治下接續。",
+ "next_ja": "近くの赤ピラミッドが初の真正平滑形を達成し、ギザはクフへと続く。",
+ "next_fr": "La pyramide rouge voisine réussit la première forme lisse ; Gizeh suit sous Khéops.",
+ "next_de": "Die nahe Rote Pyramide schafft die erste echte Glattform; Gizeh folgt unter Cheops.",
+ "then_now": {
+  "then": "Dahshur royal necropolis",
+  "now": "Dahshur, Egypt"
+ },
+ "quiz": {
+  "q": "Which pharaoh built the Bent Pyramid?",
+  "options": [
+   "Snefru",
+   "Khufu",
+   "Djoser"
+  ],
+  "answer": 0
+ },
+ "sources": [
+  {
+   "title": "Britannica: Pyramid",
+   "url": "https://www.britannica.com/technology/pyramid-architecture"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}

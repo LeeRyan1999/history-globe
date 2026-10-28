@@ -1,0 +1,147 @@
+{
+ "id": "russian-rev-1917",
+ "year": 1917,
+ "date": "7 November 1917 (NS)",
+ "place": "Petrograd",
+ "lat": 59.94,
+ "lng": 30.31,
+ "title": "October Revolution",
+ "title_zh": "十月革命",
+ "title_ja": "十月革命",
+ "title_fr": "Révolution d’Octobre",
+ "title_de": "Oktoberrevolution",
+ "perspective_role": "You are a factory worker in Petrograd crossing a bridge toward the Winter Palace.",
+ "perspective_role_zh": "你是彼得格勒的工廠工人，過橋走向冬宮。",
+ "perspective_role_ja": "ペトログラードの工場労働者で、冬宮へ橋を渡る。",
+ "perspective_role_fr": "Tu es ouvrier d’usine à Petrograd, traversant un pont vers le Palais d’Hiver.",
+ "perspective_role_de": "Du bist Fabrikarbeiter in Petrograd und überquerst eine Brücke zum Winterpalast.",
+ "summary": "Bolsheviks seize power in Petrograd in November 1917 (October OS), launching Soviet rule and a civil war that remakes Eurasia.",
+ "summary_zh": "1917 年 11 月（舊曆十月）布爾什維克在彼得格勒奪權，開啟蘇維埃統治與重塑歐亞的內戰。",
+ "summary_ja": "1917年11月（旧暦10月）、ボリシェヴィキがペトログラードで権力を奪い、ソビエト支配とユーラシアを作り直す内戦が始まる。",
+ "summary_fr": "Les bolcheviks prennent le pouvoir à Petrograd en novembre 1917 (octobre JS), lançant le pouvoir soviétique et une guerre civile qui refait l’Eurasie.",
+ "summary_de": "Bolschewiki übernehmen Nov. 1917 (Okt. a. St.) in Petrograd die Macht — Sowjetherrschaft und ein Bürgerkrieg, der Eurasien neu formt.",
+ "anim": "crowd",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "anim": "crowd",
+   "caption": "1917 · Petrograd",
+   "ambience": "crowd",
+   "duration": 12,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "anim": "crowd",
+   "ambience": "crowd",
+   "lines": [
+    {
+     "speaker": "Organizer",
+     "en": "Red banners slap the Neva wind. Keep your feet — ice under the slogans.",
+     "zh": "紅旗拍打涅瓦河風。站穩——口號底下是冰。",
+     "ja": "赤旗がネヴァの風を打つ。足元に気をつけろ——スローガンの下は氷だ。",
+     "fr": "Drapeaux rouges claquent dans le vent de la Néva. Attention aux pieds — de la glace sous les slogans.",
+     "de": "Rote Banner knallen im Newa-Wind. Acht auf die Füße — Eis unter den Parolen."
+    },
+    {
+     "speaker": "Organizer",
+     "en": "Aurora’s blank shot is rumor until you hear it. Then the palace feels suddenly thin.",
+     "zh": "「阿芙樂爾」的空砲在成真前只是謠言。然後冬宮突然變薄。",
+     "ja": "アヴローラの空砲は聞くまで噂だ。それから宮殿が急に薄く感じる。",
+     "fr": "Le coup à blanc de l’Aurore est rumeur jusqu’à ce que tu l’entendes. Puis le palais paraît mince.",
+     "de": "Auroras Platzschuss ist Gerücht, bis du ihn hörst. Dann fühlt sich der Palast dünn an."
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "the Winter Palace facade",
+    "target_zh": "冬宮立面",
+    "target_ja": "冬宮のファサード",
+    "target_fr": "la façade du Palais d’Hiver",
+    "target_de": "die Fassade des Winterpalasts",
+    "x": 52,
+    "y": 35
+   }
+  },
+  {
+   "phase": "climax",
+   "anim": "crowd",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "Worker",
+     "en": "Inside, clocks still tick for a world that just ended. Your hands smell of machine oil and snow.",
+     "zh": "裡面，時鐘仍為剛結束的世界走動。手上有機油與雪的味道。",
+     "ja": "中では時計が終わった世界のためにまだ時を刻む。手は機械油と雪の匂いだ。",
+     "fr": "À l’intérieur, les horloges battent encore pour un monde qui vient de finir. Tes mains sentent l’huile et la neige.",
+     "de": "Drinnen ticken Uhren noch für eine Welt, die gerade endete. Deine Hände riechen nach Öl und Schnee."
+    }
+   ],
+   "interaction": {
+    "type": "follow",
+    "target": "the guide",
+    "target_zh": "嚮導",
+    "target_ja": "案内人",
+    "target_fr": "le guide",
+    "target_de": "den Führer",
+    "x": 48,
+    "y": 55
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "7 Nov 1917 NS (25 Oct OS): Bolshevik seizure in Petrograd.",
+  "Led by Lenin; soviets claim authority.",
+  "Civil war follows; USSR formed 1922."
+ ],
+ "facts_zh": [
+  "1917 年 11 月 7 日（新曆）：布爾什維克在彼得格勒奪權。",
+  "列寧領導；蘇維埃宣稱權威。",
+  "內戰隨後；1922 年成立蘇聯。"
+ ],
+ "facts_ja": [
+  "1917年11月7日（新暦）：ボリシェヴィキがペトログラードで権力掌握。",
+  "レーニン指導。ソビエトが権威を主張。",
+  "内戦の後、1922年ソ連成立。"
+ ],
+ "facts_fr": [
+  "7 nov. 1917 NS : prise du pouvoir bolchevique.",
+  "Lénine ; les soviets revendiquent l’autorité.",
+  "Guerre civile ; URSS en 1922."
+ ],
+ "facts_de": [
+  "7. Nov. 1917 n. St.: bolschewistische Machtübernahme.",
+  "Lenin; Sowjets beanspruchen Autorität.",
+  "Bürgerkrieg; UdSSR 1922."
+ ],
+ "next": "Communist states and the Cold War shadow the twentieth century; 1991 dissolves the USSR.",
+ "next_zh": "共產主義國家與冷戰籠罩二十世紀；1991 年蘇聯解體。",
+ "next_ja": "共産主義国家と冷戦が20世紀を覆い、1991年にソ連が解体する。",
+ "next_fr": "États communistes et guerre froide marquent le XXe siècle ; l’URSS se dissout en 1991.",
+ "next_de": "Kommunistische Staaten und Kalter Krieg überschatten das 20. Jahrhundert; 1991 löst sich die UdSSR auf.",
+ "then_now": {
+  "then": "Petrograd",
+  "now": "St. Petersburg, Russia"
+ },
+ "quiz": {
+  "q": "Which party seized power in the October Revolution?",
+  "options": [
+   "Bolsheviks",
+   "Mensheviks",
+   "Cadets"
+  ],
+  "answer": 0
+ },
+ "sources": [
+  {
+   "title": "Britannica: Russian Revolution of 1917",
+   "url": "https://www.britannica.com/event/Russian-Revolution"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}

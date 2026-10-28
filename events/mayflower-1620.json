@@ -1,0 +1,147 @@
+{
+ "id": "mayflower-1620",
+ "year": 1620,
+ "date": "11 November 1620 (OS)",
+ "place": "Cape Cod / Plymouth",
+ "lat": 41.96,
+ "lng": -70.66,
+ "title": "Mayflower Compact",
+ "title_zh": "五月花號公約",
+ "title_ja": "メイフラワー誓約",
+ "title_fr": "Mayflower Compact",
+ "title_de": "Mayflower-Vertrag",
+ "perspective_role": "You are a passenger smelling pine and cold salt as the shallop finds shore.",
+ "perspective_role_zh": "小艇靠岸時，你是聞到松樹與冷鹽味的乘客。",
+ "perspective_role_ja": "シャロップが岸に着くとき、松と冷たい塩の匂いがする乗客だ。",
+ "perspective_role_fr": "Tu es passager ; tu sens le pin et le sel froid quand le canot touche terre.",
+ "perspective_role_de": "Du bist Passagier; du riechst Kiefer und kaltes Salz, als das Boot Land findet.",
+ "summary": "Pilgrims aboard the Mayflower agree to the Compact (1620) before settling — an early experiment in self-government in English North America.",
+ "summary_zh": "1620 年五月花號上的清教徒在定居前訂立公約——英屬北美早期自治實驗。",
+ "summary_ja": "1620年、メイフラワー号のピルグリムが定住前に誓約——英領北米の初期自治の試み。",
+ "summary_fr": "Les pèlerins du Mayflower adoptent le Compact (1620) avant de s’établir — expérience précoce d’autonomie en Amérique du Nord anglaise.",
+ "summary_de": "Mayflower-Pilger beschließen 1620 den Compact vor der Ansiedlung — frühes Selbstregierungsexperiment im englischen Nordamerika.",
+ "anim": "sea",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "anim": "sea",
+   "caption": "1620 · Cape Cod",
+   "ambience": "sea",
+   "duration": 12,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "anim": "sea",
+   "ambience": "sea",
+   "lines": [
+    {
+     "speaker": "Elder",
+     "en": "Ink freezes if you wait. Sign while the cabin lamp still holds.",
+     "zh": "再等墨就凍了。趁艙燈還亮著簽。",
+     "ja": "待てばインクが凍る。船室の灯が持つうちに署名しろ。",
+     "fr": "L’encre gèle si tu attends. Signe tant que la lampe de cabine tient.",
+     "de": "Tinte gefriert, wenn du wartest. Unterschreib, solange die Kabinenlampe hält."
+    },
+    {
+     "speaker": "Elder",
+     "en": "We bind ourselves into a civil body politic — words heavier than the ship’s biscuits.",
+     "zh": "我們結成公民政治體——這些字比船上的硬餅還重。",
+     "ja": "市民的政治体に自らを縛る——船のビスケットより重い言葉だ。",
+     "fr": "Nous nous formons en corps politique civil — mots plus lourds que les biscuits du bord.",
+     "de": "Wir binden uns zu einem bürgerlichen Staatskörper — Worte schwerer als Schiffszwieback."
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "the shoreline pines",
+    "target_zh": "岸邊松林",
+    "target_ja": "岸の松",
+    "target_fr": "les pins du rivage",
+    "target_de": "die Kiefern am Ufer",
+    "x": 48,
+    "y": 40
+   }
+  },
+  {
+   "phase": "climax",
+   "anim": "sea",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "Settler",
+     "en": "Shore gravel under boots. Winter is already in the wind. Hold the compact like a second coat.",
+     "zh": "靴底是岸礫。風裡已有冬天。把公約當第二件外套握住。",
+     "ja": "靴の下は岸の砂利。風にもう冬がある。誓約を二枚目の外套のように握れ。",
+     "fr": "Gravier sous les bottes. L’hiver est déjà dans le vent. Tiens le compact comme un second manteau.",
+     "de": "Kies unter den Stiefeln. Winter steckt schon im Wind. Halt den Compact wie einen zweiten Mantel."
+    }
+   ],
+   "interaction": {
+    "type": "follow",
+    "target": "the guide",
+    "target_zh": "嚮導",
+    "target_ja": "案内人",
+    "target_fr": "le guide",
+    "target_de": "den Führer",
+    "x": 48,
+    "y": 55
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "Compact signed Nov 1620 (OS) aboard Mayflower.",
+  "Colony founded at Plymouth.",
+  "Indigenous Wampanoag relations are central to survival — and later conflict."
+ ],
+ "facts_zh": [
+  "1620 年 11 月（舊曆）於五月花號上簽署。",
+  "殖民地建於普利茅斯。",
+  "與萬帕諾格原住民的關係關乎存續——也關乎後來衝突。"
+ ],
+ "facts_ja": [
+  "1620年11月（旧暦）、メイフラワー号上で署名。",
+  "プリマスに植民地。",
+  "ワンパノアグとの関係が生存の鍵——のちの対立も。"
+ ],
+ "facts_fr": [
+  "Compact signé nov. 1620 (vieux style) à bord.",
+  "Colonie à Plymouth.",
+  "Relations avec les Wampanoag centrales à la survie — et aux conflits ultérieurs."
+ ],
+ "facts_de": [
+  "Compact Nov. 1620 (a. St.) an Bord unterzeichnet.",
+  "Kolonie in Plymouth.",
+  "Beziehungen zu den Wampanoag zentral für Überleben — und spätere Konflikte."
+ ],
+ "next": "The Compact enters American civic myth; the human cost of colonization remains inseparable from the story.",
+ "next_zh": "公約進入美國公民神話；殖民的人道代價與故事密不可分。",
+ "next_ja": "誓約は米国の市民神話に入り、植民地化の人的代償は物語と切り離せない。",
+ "next_fr": "Le Compact entre dans le mythe civique américain ; le coût humain de la colonisation reste inseparable.",
+ "next_de": "Der Compact geht in den US-Staatsmythos ein; die menschliche Kosten der Kolonisation bleiben untrennbar.",
+ "then_now": {
+  "then": "Cape Cod / Plymouth Harbor",
+  "now": "Massachusetts, USA"
+ },
+ "quiz": {
+  "q": "What document did Mayflower passengers sign in 1620?",
+  "options": [
+   "Mayflower Compact",
+   "Declaration of Independence",
+   "Magna Carta"
+  ],
+  "answer": 0
+ },
+ "sources": [
+  {
+   "title": "Britannica: Mayflower Compact",
+   "url": "https://www.britannica.com/topic/Mayflower-Compact"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}

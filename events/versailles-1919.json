@@ -1,0 +1,147 @@
+{
+ "id": "versailles-1919",
+ "year": 1919,
+ "date": "28 June 1919",
+ "place": "Versailles, France",
+ "lat": 48.8,
+ "lng": 2.12,
+ "title": "Treaty of Versailles",
+ "title_zh": "凡爾賽條約",
+ "title_ja": "ヴェルサイユ条約",
+ "title_fr": "Traité de Versailles",
+ "title_de": "Versailler Vertrag",
+ "perspective_role": "You are a junior diplomat in the Hall of Mirrors as the German delegation signs.",
+ "perspective_role_zh": "德國代表團簽字時，你是鏡廳裡的年輕外交官。",
+ "perspective_role_ja": "ドイツ代表団が署名する鏡の間の若手外交官だ。",
+ "perspective_role_fr": "Tu es jeune diplomate dans la Galerie des Glaces quand la délégation allemande signe.",
+ "perspective_role_de": "Du bist Jungdiplomat im Spiegelsaal, als die deutsche Delegation unterschreibt.",
+ "summary": "The 1919 Treaty of Versailles formally ends war with Germany, imposing territorial losses, disarmament, and reparations — seeds of resentment and a fragile peace.",
+ "summary_zh": "1919 年凡爾賽條約正式結束對德戰爭，施加領土喪失、裁軍與賠款——怨恨與脆弱和平的種子。",
+ "summary_ja": "1919年ヴェルサイユ条約が対独戦争を正式終結。領土喪失・軍縮・賠償——怨恨と脆い平和の種。",
+ "summary_fr": "Le traité de Versailles (1919) finit formellement la guerre avec l’Allemagne : pertes territoriales, désarmement, réparations — graines de ressentiment et paix fragile.",
+ "summary_de": "Der Versailler Vertrag 1919 beendet formal den Krieg mit Deutschland: Gebietsverluste, Abrüstung, Reparationen — Saat von Ressentiment und fragilem Frieden.",
+ "anim": "city",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "anim": "city",
+   "caption": "1919 · Versailles",
+   "ambience": "city",
+   "duration": 12,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "anim": "city",
+   "ambience": "city",
+   "lines": [
+    {
+     "speaker": "Aide",
+     "en": "Mirrors multiply the winners’ faces. The losers’ pens scratch like winter branches.",
+     "zh": "鏡子複製勝者的臉。敗者的筆像冬枝刮擦。",
+     "ja": "鏡が勝者の顔を増やす。敗者のペンは冬の枝のように擦る。",
+     "fr": "Les miroirs multiplient les visages des vainqueurs. Les plumes des vaincus grincent comme des branches d’hiver.",
+     "de": "Spiegel multiplizieren Siegergesichter. Verliererfedern kratzen wie Winterzweige."
+    },
+    {
+     "speaker": "Aide",
+     "en": "Article 231 tastes of ink and future arguments. File your copy carefully.",
+     "zh": "第 231 條有墨水與未來爭論的味道。把副本仔細歸檔。",
+     "ja": "第231条はインクと将来の論争の味だ。写しを慎重にファイルしろ。",
+     "fr": "L’article 231 goûte l’encre et les disputes à venir. Classe ta copie avec soin.",
+     "de": "Artikel 231 schmeckt nach Tinte und künftigen Streits. Leg deine Kopie sorgfältig ab."
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "the Hall of Mirrors",
+    "target_zh": "鏡廳",
+    "target_ja": "鏡の間",
+    "target_fr": "la Galerie des Glaces",
+    "target_de": "den Spiegelsaal",
+    "x": 50,
+    "y": 40
+   }
+  },
+  {
+   "phase": "climax",
+   "anim": "city",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "Clerk",
+     "en": "Outside, gravel crunches under boots that still remember trenches. Peace is a document and a dare.",
+     "zh": "外面，靴底碾過礫石，靴仍記得壕溝。和平是文件也是挑戰。",
+     "ja": "外では溝を覚えたブーツが砂利を軋ませる。平和は文書であり挑戦だ。",
+     "fr": "Dehors, le gravier crisse sous des bottes qui se souviennent des tranchées. La paix est un document et un défi.",
+     "de": "Draußen knirscht Kies unter Stiefeln, die Gräben erinnern. Frieden ist Dokument und Wette."
+    }
+   ],
+   "interaction": {
+    "type": "follow",
+    "target": "the guide",
+    "target_zh": "嚮導",
+    "target_ja": "案内人",
+    "target_fr": "le guide",
+    "target_de": "den Führer",
+    "x": 48,
+    "y": 55
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "Signed 28 June 1919 — five years after Sarajevo.",
+  "Germany accepts war guilt clause (Art. 231).",
+  "League of Nations created; US Senate rejects the treaty."
+ ],
+ "facts_zh": [
+  "1919 年 6 月 28 日簽署——薩拉熱窩事件五年後。",
+  "德國接受戰爭罪責條款（第 231 條）。",
+  "國際聯盟成立；美國參議院拒絕批准。"
+ ],
+ "facts_ja": [
+  "1919年6月28日署名——サラエボから五年。",
+  "ドイツが戦争責任条項（231条）を受諾。",
+  "国際連盟創設。米上院は批准拒否。"
+ ],
+ "facts_fr": [
+  "Signé le 28 juin 1919 — cinq ans après Sarajevo.",
+  "L’Allemagne accepte la clause de responsabilité (art. 231).",
+  "Société des Nations ; le Sénat US rejette le traité."
+ ],
+ "facts_de": [
+  "Unterzeichnet 28. Juni 1919 — fünf Jahre nach Sarajevo.",
+  "Deutschland akzeptiert Kriegsschuldklausel (Art. 231).",
+  "Völkerbund; US-Senat lehnt ab."
+ ],
+ "next": "Interwar instability and the Great Depression help set the stage for World War II.",
+ "next_zh": "戰間期動盪與大蕭條助長第二次世界大戰的舞台。",
+ "next_ja": "戦間期の不安定と大恐慌が第二次世界大戦の舞台を整える。",
+ "next_fr": "L’instabilité de l’entre-deux-guerres et la Grande Dépression préparent la Seconde Guerre mondiale.",
+ "next_de": "Zwischenkriegsinstabilität und Weltwirtschaftskrise bereiten den Zweiten Weltkrieg vor.",
+ "then_now": {
+  "then": "Palace of Versailles",
+  "now": "Versailles, France"
+ },
+ "quiz": {
+  "q": "In which palace was the 1919 treaty with Germany signed?",
+  "options": [
+   "Versailles",
+   "Buckingham",
+   "Schönbrunn"
+  ],
+  "answer": 0
+ },
+ "sources": [
+  {
+   "title": "Britannica: Treaty of Versailles",
+   "url": "https://www.britannica.com/event/Treaty-of-Versailles-1919"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}

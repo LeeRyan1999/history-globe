@@ -3,6 +3,13 @@
 Live: https://leeryan1999.github.io/history-globe/ · Repo: https://github.com/LeeRyan1999/history-globe
 
 ## Done
+20261028f Era-aware events + vivid 5-lang POV + animated canvas scenes
+- Events change with timeline: nearest-era + window filter; list sorted by |year|; nearest highlighted
+- Expanded to 32 dated events (≥3 per era button); lazy JSON files, no new heavy image assets
+- 親身體驗: vivid second-person narratives in en/zh(TW)/ja/fr/de; lightweight `pov-anim.js` canvas (smoke/waves/ships/crowds/lighting; prefers-reduced-motion)
+- Demo: `demo/pov-animated.gif`, `demo/events-era-a.png` (Ancient Egypt), `demo/events-era-b.png` (15th c.)
+- Asset cache `?v=20261028f`
+
 - 2026-10-28 (run 5) — Fix narrative 親身體驗 black screen. Root cause: global function `scene()` (POV scene runner) was overwritten by Three.js `Scene` object leaked as global `scene` after globe.gl init (exacerbated by loading three.min.js before globe.gl). Fix: rename to `povScene` / `povLine` / `povReflect` / `povHotspot`; null-guard `startPOV`/`openPanel`. Asset `?v=20261028e`. Verified all 3 events desktop+iPhone, eras/slider/countries/peoples/events/ground/LOD/langs. Screenshot: screenshots/pov-experience.png.
 
 - 2026-10-28 (run 4) — Zoom detail + ground POV (Lee England AD 1450 zoom). Performance-first: (1) border LOD — simplified `borders/*.geojson` far away; full CDN historical-basemaps cached per year when altitude≤1.18 (mobile bbox-filters polygons); snap note shows overview/detail. (2) Esri World Imagery slippy tiles via globe.gl `tilesData` when close (mobile caps); polity fills more transparent mid/near; `Imagery © Esri` attribution. (3) Landmark base SCALE ~2.4× + altitude zoomScale; more nearby 3D when close. (4) Ground view 🎥 — separate from narrative `#pov` scenes: fly to selected country/landmark at low altitude, drag/orbit (touch OK), toggle off resets; hint pill. Asset `?v=20261028d`. Screenshots: screenshots/zoom-england-1450.png, screenshots/pov.png (+ iphone variants). Limits: historical-basemaps coastlines still coarse; night 2048 base until tiles cover; tiles are modern imagery; WebKit via Chromium iPhone UA.

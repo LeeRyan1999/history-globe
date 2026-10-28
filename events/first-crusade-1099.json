@@ -1,0 +1,147 @@
+{
+ "id": "first-crusade-1099",
+ "year": 1099,
+ "date": "15 July 1099",
+ "place": "Jerusalem",
+ "lat": 31.778,
+ "lng": 35.235,
+ "title": "First Crusade — Jerusalem",
+ "title_zh": "第一次十字軍攻陷耶路撒冷",
+ "title_ja": "第1回十字軍・エルサレム",
+ "title_fr": "Première croisade — Jérusalem",
+ "title_de": "Erster Kreuzzug — Jerusalem",
+ "perspective_role": "You are a Provençal foot soldier under the walls after a brutal siege.",
+ "perspective_role_zh": "殘酷圍城之後，你是城牆下的普羅旺斯步兵。",
+ "perspective_role_ja": "苛烈な包囲のあと、城壁下のプロヴァンス歩兵だ。",
+ "perspective_role_fr": "Tu es fantassin provençal sous les murs après un siège brutal.",
+ "perspective_role_de": "Du bist provenzalischer Fußsoldat unter den Mauern nach brutaler Belagerung.",
+ "summary": "Crusaders capture Jerusalem in July 1099 after the First Crusade’s long march — a victory stained by massacre and the founding of Latin states.",
+ "summary_zh": "1099 年 7 月十字軍攻下耶路撒冷——長征的勝利沾染屠殺，並建立拉丁國家。",
+ "summary_ja": "1099年7月、第1回十字軍がエルサレムを攻略——長征の勝利は虐殺に汚れ、ラテン国家が立つ。",
+ "summary_fr": "Les croisés prennent Jérusalem en juillet 1099 — victoire entachée de massacre et fondation d’États latins.",
+ "summary_de": "Kreuzfahrer erobern Jerusalem im Juli 1099 — ein von Massakern befleckter Sieg und lateinische Staaten.",
+ "anim": "siege",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "anim": "siege",
+   "caption": "1099 · Jerusalem",
+   "ambience": "siege",
+   "duration": 12,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "anim": "siege",
+   "ambience": "siege",
+   "lines": [
+    {
+     "speaker": "Chaplain",
+     "en": "The walls are close enough to smell smoke and myrrh. Pray with open eyes.",
+     "zh": "城牆近到聞得到煙與沒藥。睜眼祈禱。",
+     "ja": "壁は煙と没薬の匂いがするほど近い。目を開けて祈れ。",
+     "fr": "Les murs sont assez proches pour sentir fumée et myrrhe. Prie les yeux ouverts.",
+     "de": "Die Mauern sind nah genug für Rauch und Myrrhe. Bete mit offenen Augen."
+    },
+    {
+     "speaker": "Sergeant",
+     "en": "Ladders up at the signal. Don’t cheer until the gate is ours — then remember what you see.",
+     "zh": "信號一響就上梯。城門到手再歡呼——然後記住你所見的。",
+     "ja": "合図で梯子を上げろ。門が落ちるまで歓声を上げるな——それから見たものを覚えろ。",
+     "fr": "Échelles au signal. Ne crie pas avant la porte — puis souviens-toi de ce que tu vois.",
+     "de": "Leitern aufs Signal. Nicht jubeln vor dem Tor — dann merk dir, was du siehst."
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "the siege towers",
+    "target_zh": "攻城塔",
+    "target_ja": "攻城塔",
+    "target_fr": "les tours de siège",
+    "target_de": "die Belagerungstürme",
+    "x": 55,
+    "y": 35
+   }
+  },
+  {
+   "phase": "climax",
+   "anim": "siege",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "Veteran",
+     "en": "The city falls in fire and blood. History will argue; your throat tastes ash.",
+     "zh": "城市在火與血中陷落。歷史會爭辯；你的喉嚨只有灰。",
+     "ja": "都市は火と血で落ちる。歴史は議論する；喉は灰の味だ。",
+     "fr": "La ville tombe dans le feu et le sang. L’histoire disputera ; ta gorge goûte la cendre.",
+     "de": "Die Stadt fällt in Feuer und Blut. Geschichte wird streiten; dein Hals schmeckt Asche."
+    }
+   ],
+   "interaction": {
+    "type": "follow",
+    "target": "the guide",
+    "target_zh": "嚮導",
+    "target_ja": "案内人",
+    "target_fr": "le guide",
+    "target_de": "den Führer",
+    "x": 48,
+    "y": 55
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "15 July 1099: Crusaders take Jerusalem.",
+  "Launch of Crusader states in the Levant.",
+  "Contemporary accounts describe extreme violence."
+ ],
+ "facts_zh": [
+  "1099 年 7 月 15 日：十字軍攻陷耶路撒冷。",
+  "黎凡特十字軍國家就此建立。",
+  "當代記載描述極端暴力。"
+ ],
+ "facts_ja": [
+  "1099年7月15日：十字軍がエルサレムを占領。",
+  "レヴァントに十字軍国家が立つ。",
+  "同時代史料は極端な暴力を記す。"
+ ],
+ "facts_fr": [
+  "15 juil. 1099 : prise de Jérusalem.",
+  "Naissance des États croisés au Levant.",
+  "Les récits contemporains décrivent une violence extrême."
+ ],
+ "facts_de": [
+  "15. Juli 1099: Eroberung Jerusalems.",
+  "Kreuzfahrerstaaten im Levant entstehen.",
+  "Zeitgenossen beschreiben extreme Gewalt."
+ ],
+ "next": "Latin kingdoms last nearly two centuries; the trauma shapes Christian–Muslim relations for ages.",
+ "next_zh": "拉丁王國維持近兩世紀；創傷形塑往後長久的基督徒與穆斯林關係。",
+ "next_ja": "ラテン王国は約二世紀続き、トラウマが長くキリスト教徒とムスリムの関係を形作る。",
+ "next_fr": "Les royaumes latins durent près de deux siècles ; le trauma façonne longtemps les relations chrétiens–musulmans.",
+ "next_de": "Lateinische Reiche dauern fast zwei Jahrhunderte; das Trauma prägt christlich–muslimische Beziehungen lange.",
+ "then_now": {
+  "then": "Fatimid Jerusalem",
+  "now": "Old City, Jerusalem"
+ },
+ "quiz": {
+  "q": "In which year did Crusaders take Jerusalem in the First Crusade?",
+  "options": [
+   "1099",
+   "1187",
+   "1204"
+  ],
+  "answer": 0
+ },
+ "sources": [
+  {
+   "title": "Britannica: First Crusade",
+   "url": "https://www.britannica.com/event/First-Crusade"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}

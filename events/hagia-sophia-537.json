@@ -1,0 +1,147 @@
+{
+ "id": "hagia-sophia-537",
+ "year": 537,
+ "date": "27 December 537",
+ "place": "Constantinople",
+ "lat": 41.0086,
+ "lng": 28.9802,
+ "title": "Hagia Sophia Consecrated",
+ "title_zh": "聖索菲亞大教堂祝聖",
+ "title_ja": "アヤソフィア聖別",
+ "title_fr": "Consécration de Sainte-Sophie",
+ "title_de": "Weihe der Hagia Sophia",
+ "perspective_role": "You are a candle-bearer under Justinian’s vast new dome.",
+ "perspective_role_zh": "你是查士丁尼巨大新穹頂下的持燭人。",
+ "perspective_role_ja": "ユスティニアヌスの巨大な新ドームの下で燭を持つ者だ。",
+ "perspective_role_fr": "Tu portes un cierge sous le vaste dôme neuf de Justinien.",
+ "perspective_role_de": "Du bist Kerzenträger unter Justinians gewaltiger neuer Kuppel.",
+ "summary": "Emperor Justinian I consecrates Hagia Sophia in 537 — a dome that seems to float, rewriting sacred architecture for a millennium.",
+ "summary_zh": "537 年查士丁尼一世祝聖聖索菲亞——彷彿懸浮的穹頂，改寫了往後千年的神聖建築。",
+ "summary_ja": "537年、ユスティニアヌス1世がアヤソフィアを聖別——浮かぶようなドームが千年の聖建築を書き換える。",
+ "summary_fr": "En 537, Justinien Ier consacre Sainte-Sophie — un dôme qui semble flotter, réécrivant l’architecture sacrée pour un millénaire.",
+ "summary_de": "537 weiht Justinian I. die Hagia Sophia — eine schwebende Kuppel, die sakrale Architektur für ein Jahrtausend neu schreibt.",
+ "anim": "temple",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "anim": "temple",
+   "caption": "537 · Constantinople",
+   "ambience": "temple",
+   "duration": 12,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "anim": "temple",
+   "ambience": "temple",
+   "lines": [
+    {
+     "speaker": "Deacon",
+     "en": "Look up until your neck aches. Light pours like liquid gold.",
+     "zh": "抬頭到脖子酸。光像液態的金傾瀉下來。",
+     "ja": "首が痛くなるまで見上げろ。光が溶けた金のように注ぐ。",
+     "fr": "Lève les yeux jusqu’à ce que le cou brûle. La lumière coule comme de l’or liquide.",
+     "de": "Schau hoch, bis der Nacken schmerzt. Licht gießt wie flüssiges Gold."
+    },
+    {
+     "speaker": "Deacon",
+     "en": "Justinian whispers that Solomon is surpassed. Feel the marble cool under your soles.",
+     "zh": "查士丁尼低語所羅門已被超越。腳底大理石涼意。",
+     "ja": "ユスティニアヌスはソロモンを超えたと囁く。足裏の大理石の冷たさを感じろ。",
+     "fr": "Justinien murmure que Salomon est surpassé. Sens le marbre froid sous tes plantes.",
+     "de": "Justinian flüstert, Salomo sei übertroffen. Spür den kühlen Marmor unter den Sohlen."
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "the floating dome",
+    "target_zh": "懸浮穹頂",
+    "target_ja": "浮かぶドーム",
+    "target_fr": "le dôme flottant",
+    "target_de": "die schwebende Kuppel",
+    "x": 50,
+    "y": 25
+   }
+  },
+  {
+   "phase": "climax",
+   "anim": "temple",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "Choir boy",
+     "en": "The chant rises into the dome and comes back changed — as if heaven answered in Greek.",
+     "zh": "聖歌升上穹頂又變了樣回來——彷彿天堂用希臘語回答。",
+     "ja": "詠唱がドームに上がり、変わって戻る——天がギリシャ語で応えたようだ。",
+     "fr": "Le chant monte dans le dôme et revient changé — comme si le ciel répondait en grec.",
+     "de": "Der Gesang steigt in die Kuppel und kehrt verwandelt zurück — als antworte der Himmel auf Griechisch."
+    }
+   ],
+   "interaction": {
+    "type": "follow",
+    "target": "the guide",
+    "target_zh": "嚮導",
+    "target_ja": "案内人",
+    "target_fr": "le guide",
+    "target_de": "den Führer",
+    "x": 48,
+    "y": 55
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "Consecrated 27 Dec 537 under Justinian I.",
+  "Architects: Anthemius of Tralles and Isidore of Miletus.",
+  "Largest cathedral for nearly a thousand years."
+ ],
+ "facts_zh": [
+  "537 年 12 月 27 日由查士丁尼一世祝聖。",
+  "建築師：特拉勒斯的安提米烏斯與米利都的伊西多爾。",
+  "近千年內最大的主教座堂。"
+ ],
+ "facts_ja": [
+  "537年12月27日、ユスティニアヌス1世のもと聖別。",
+  "建築家：トラレスのアンテミオスとミレトスのイシドロス。",
+  "約千年にわたり最大の大聖堂。"
+ ],
+ "facts_fr": [
+  "Consacrée le 27 déc. 537 sous Justinien Ier.",
+  "Architectes : Anthémius de Tralles et Isidore de Milet.",
+  "Plus grande cathédrale pendant près d’un millénaire."
+ ],
+ "facts_de": [
+  "Geweiht am 27. Dez. 537 unter Justinian I.",
+  "Architekten: Anthemios von Tralleis und Isidor von Milet.",
+  "Fast tausend Jahre größte Kathedrale."
+ ],
+ "next": "It becomes mosque, museum, mosque again — still the silhouette of a city between continents.",
+ "next_zh": "它後來成清真寺、博物館、再成清真寺——仍是兩洲之間城市的輪廓。",
+ "next_ja": "モスク、博物館、再びモスクに——今も大陸の狭間の都市の輪郭だ。",
+ "next_fr": "Mosquée, musée, mosquée à nouveau — toujours la silhouette d’une ville entre les continents.",
+ "next_de": "Moschee, Museum, wieder Moschee — noch immer die Silhouette einer Stadt zwischen Kontinenten.",
+ "then_now": {
+  "then": "Byzantine Constantinople",
+  "now": "Istanbul, Türkiye"
+ },
+ "quiz": {
+  "q": "Which emperor consecrated Hagia Sophia in 537?",
+  "options": [
+   "Justinian I",
+   "Constantine I",
+   "Heraclius"
+  ],
+  "answer": 0
+ },
+ "sources": [
+  {
+   "title": "Britannica: Hagia Sophia",
+   "url": "https://www.britannica.com/topic/Hagia-Sophia"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}

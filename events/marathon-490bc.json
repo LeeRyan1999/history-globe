@@ -1,0 +1,147 @@
+{
+ "id": "marathon-490bc",
+ "year": -490,
+ "date": "490 BCE",
+ "place": "Marathon, Greece",
+ "lat": 38.153,
+ "lng": 23.963,
+ "title": "Battle of Marathon",
+ "title_zh": "馬拉松戰役",
+ "title_ja": "マラトンの戦い",
+ "title_fr": "Bataille de Marathon",
+ "title_de": "Schlacht bei Marathon",
+ "perspective_role": "You are an Athenian hoplite tasting salt and dust on the plain of Marathon.",
+ "perspective_role_zh": "你是雅典重裝步兵，平原上滿是鹽與塵土的味道。",
+ "perspective_role_ja": "マラトン平原で塩と砂の味がするアテネの重装歩兵だ。",
+ "perspective_role_fr": "Tu es un hoplite athénien ; le sel et la poussière collent à la plaine de Marathon.",
+ "perspective_role_de": "Du bist athenischer Hoplit; Salz und Staub kleben auf der Ebene von Marathon.",
+ "summary": "In 490 BCE, outnumbered Athenians and Plataeans smash a Persian landing force at Marathon — a shock that becomes legend and a long run home.",
+ "summary_zh": "西元前 490 年，人數居劣勢的雅典與普拉提亞聯軍在馬拉松擊潰波斯登陸部隊——這一擊成了傳說，也成了長跑回家的故事。",
+ "summary_ja": "紀元前490年、数で劣るアテネとプラタイアがマラトンでペルシャ上陸軍を打ち破る——衝撃は伝説となり、長い帰路の走りへとつながる。",
+ "summary_fr": "En 490 av. J.-C., Athéniens et Platéens en infériorité écrasent un débarquement perse à Marathon — un choc devenu légende et longue course vers chez soi.",
+ "summary_de": "490 v. Chr. schlagen unterlegene Athener und Platäer eine persische Landung bei Marathon — ein Schock, der Legende und langer Lauf heimwärts wird.",
+ "anim": "war",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "anim": "war",
+   "caption": "490 BCE · Marathon",
+   "ambience": "war",
+   "duration": 12,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "anim": "war",
+   "ambience": "war",
+   "lines": [
+    {
+     "speaker": "Taxiarch",
+     "en": "Shields up. The sea wind carries their horses’ fear — and ours.",
+     "zh": "舉盾。海風送來他們的馬驚——也有我們的。",
+     "ja": "盾を上げろ。海風が奴らの馬の怯えを運ぶ——俺たちのも。",
+     "fr": "Boucliers. Le vent de mer porte la peur de leurs chevaux — et la nôtre.",
+     "de": "Schilde hoch. Der Seewind trägt die Angst ihrer Pferde — und unsere."
+    },
+    {
+     "speaker": "Taxiarch",
+     "en": "When the flute stops, we run. Not a sprint of panic — a measured storm.",
+     "zh": "笛一停，我們就跑。不是慌亂衝刺——是有節奏的風暴。",
+     "ja": "笛が止まったら走る。恐慌の疾走ではない——測った嵐だ。",
+     "fr": "Quand la flûte cesse, on court. Pas une panique — une tempête mesurée.",
+     "de": "Wenn die Flöte stoppt, laufen wir. Keine Panik — ein gemessener Sturm."
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "the Persian beach",
+    "target_zh": "波斯海灘",
+    "target_ja": "ペルシャの浜",
+    "target_fr": "la plage perse",
+    "target_de": "den persischen Strand",
+    "x": 72,
+    "y": 48
+   }
+  },
+  {
+   "phase": "climax",
+   "anim": "war",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "Comrade",
+     "en": "They break for the ships! Keep the line — Marathon is ours if we hold breath and bronze.",
+     "zh": "他們往船逃！守住隊列——屏息握青銅，馬拉松就是我們的。",
+     "ja": "船へ崩れる！列を保て——息と青銅を握ればマラトンは俺たちのものだ。",
+     "fr": "Ils filent vers les navires ! Tiens la ligne — Marathon est à nous si on garde souffle et bronze.",
+     "de": "Sie fliehen zu den Schiffen! Halt die Linie — Marathon ist unseres, wenn Atem und Bronze halten."
+    }
+   ],
+   "interaction": {
+    "type": "follow",
+    "target": "the guide",
+    "target_zh": "嚮導",
+    "target_ja": "案内人",
+    "target_fr": "le guide",
+    "target_de": "den Führer",
+    "x": 48,
+    "y": 55
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "490 BCE: Athenians and Plataeans defeat Darius I’s expedition.",
+  "Tradition links a runner carrying news to Athens with the marathon race.",
+  "A turning point in the Greco-Persian Wars."
+ ],
+ "facts_zh": [
+  "西元前 490：雅典與普拉提亞擊敗大流士一世遠征軍。",
+  "傳說中跑回雅典報信者成為馬拉松路跑典故。",
+  "希臘波斯戰爭的轉折點。"
+ ],
+ "facts_ja": [
+  "紀元前490年：アテネとプラタイアがダレイオス1世遠征軍を破る。",
+  "アテネへの伝令走がマラソン競技の起源と伝わる。",
+  "ギリシャ・ペルシャ戦争の転換点。"
+ ],
+ "facts_fr": [
+  "490 av. J.-C. : Athéniens et Platéens battent l’expédition de Darius Ier.",
+  "La course vers Athènes inspire la légende du marathon.",
+  "Tournant des guerres médiques."
+ ],
+ "facts_de": [
+  "490 v. Chr.: Athener und Platäer schlagen Dareios’ I. Expedition.",
+  "Der Lauf nach Athen speist die Marathon-Legende.",
+  "Wendepunkt der Perserkriege."
+ ],
+ "next": "Athens keeps its democracy breathing; the idea of citizen-soldiers holding an empire at the shore echoes for centuries.",
+ "next_zh": "雅典守住了呼吸中的民主；公民兵在岸邊擋住帝國的意象迴盪數百年。",
+ "next_ja": "アテネは息づく民主政を守り、岸で帝国を止めた市民兵の像が何世紀も響く。",
+ "next_fr": "Athènes garde sa démocratie vivante ; l’image de citoyens arrêtant un empire sur la grève résonne pendant des siècles.",
+ "next_de": "Athen hält seine atmende Demokratie; das Bild von Bürgern, die ein Imperium am Strand stoppen, hallt Jahrhunderte nach.",
+ "then_now": {
+  "then": "Plain of Marathon",
+  "now": "Marathon, Attica, Greece"
+ },
+ "quiz": {
+  "q": "Who won at Marathon in 490 BCE?",
+  "options": [
+   "Athens (with Plataea)",
+   "Sparta alone",
+   "Persia"
+  ],
+  "answer": 0
+ },
+ "sources": [
+  {
+   "title": "Britannica: Battle of Marathon",
+   "url": "https://www.britannica.com/event/Battle-of-Marathon"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}

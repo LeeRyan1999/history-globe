@@ -1,0 +1,147 @@
+{
+ "id": "actium-31bc",
+ "year": -31,
+ "date": "2 September 31 BCE",
+ "place": "Actium, Greece",
+ "lat": 38.96,
+ "lng": 20.77,
+ "title": "Battle of Actium",
+ "title_zh": "亞克興海戰",
+ "title_ja": "アクティウムの海戦",
+ "title_fr": "Bataille d’Actium",
+ "title_de": "Schlacht bei Actium",
+ "perspective_role": "You are a rower in Octavian’s fleet, salt spray in your teeth off Actium.",
+ "perspective_role_zh": "你是屋大維艦隊的槳手，亞克興外海的鹽霧咬著牙。",
+ "perspective_role_ja": "アクティウム沖、オクタウィアヌス艦隊の漕ぎ手で歯に潮が染みる。",
+ "perspective_role_fr": "Tu es rameur dans la flotte d’Octave ; l’embrun d’Actium te salé les dents.",
+ "perspective_role_de": "Du bist Ruderer in Octavians Flotte; Gischt von Actium salzt dir die Zähne.",
+ "summary": "Octavian’s fleet under Agrippa defeats Antony and Cleopatra at Actium. The Roman Republic’s last civil war tilts toward empire.",
+ "summary_zh": "阿格里帕指揮的屋大維艦隊在亞克興擊敗安東尼與克莉奧佩特拉。羅馬共和最後的內戰朝向帝國傾斜。",
+ "summary_ja": "アグリッパ率いるオクタウィアヌス艦隊がアクティウムでアントニウスとクレオパトラを破る。共和政最後の内乱が帝政へ傾く。",
+ "summary_fr": "La flotte d’Octave, sous Agrippa, bat Antoine et Cléopâtre à Actium. La dernière guerre civile de la République penche vers l’Empire.",
+ "summary_de": "Octavians Flotte unter Agrippa besiegt Antonius und Kleopatra bei Actium. Roms letzter Bürgerkrieg kippt zum Kaiserreich.",
+ "anim": "ships",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "anim": "ships",
+   "caption": "31 BCE · Actium",
+   "ambience": "ships",
+   "duration": 12,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "anim": "ships",
+   "ambience": "ships",
+   "lines": [
+    {
+     "speaker": "Bosun",
+     "en": "Oars together — Agrippa wants their heavy ships pinned.",
+     "zh": "齊槳——阿格里帕要把他們的重船釘死。",
+     "ja": "櫂を揃えろ——アグリッパは重い船を釘付けにしたい。",
+     "fr": "Rames ensemble — Agrippa veut clouer leurs lourds navires.",
+     "de": "Ruder zusammen — Agrippa will ihre schweren Schiffe festnageln."
+    },
+    {
+     "speaker": "Bosun",
+     "en": "Smell the pitch and fear. Cleopatra’s sails may yet run for Egypt.",
+     "zh": "聞那瀝青與恐懼。克莉奧佩特拉的帆或許還會逃向埃及。",
+     "ja": "ピッチと恐怖の匂い。クレオパトラの帆はまだエジプトへ逃げるかもしれない。",
+     "fr": "Sens le brai et la peur. Les voiles de Cléopâtre peuvent encore fuir vers l’Égypte.",
+     "de": "Riech Pech und Angst. Kleopatras Segel könnten noch nach Ägypten fliehen."
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "Antony’s flagship",
+    "target_zh": "安東尼旗艦",
+    "target_ja": "アントニウスの旗艦",
+    "target_fr": "le navire amiral d’Antoine",
+    "target_de": "Antonius’ Flaggschiff",
+    "x": 65,
+    "y": 45
+   }
+  },
+  {
+   "phase": "climax",
+   "anim": "ships",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "Deck hand",
+     "en": "They’re breaking! Keep the beat — Rome’s tomorrow is in our stroke.",
+     "zh": "他們垮了！穩住拍子——羅馬的明天就在這一划。",
+     "ja": "崩れた！拍を保て——ローマの明日はこの一漕ぎにある。",
+     "fr": "Ils cassent ! Tiens le rythme — le demain de Rome est dans notre coup.",
+     "de": "Sie brechen! Halt den Takt — Roms Morgen steckt in unserem Schlag."
+    }
+   ],
+   "interaction": {
+    "type": "follow",
+    "target": "the guide",
+    "target_zh": "嚮導",
+    "target_ja": "案内人",
+    "target_fr": "le guide",
+    "target_de": "den Führer",
+    "x": 48,
+    "y": 55
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "2 Sep 31 BCE, Ionian Sea off Actium.",
+  "Agrippa’s tactics neutralize Antony’s larger ships.",
+  "Octavian becomes Augustus; principate begins."
+ ],
+ "facts_zh": [
+  "西元前 31 年 9 月 2 日，亞克興外愛奧尼亞海。",
+  "阿格里帕戰術化解安東尼較大的船。",
+  "屋大維成為奧古斯都；元首制開始。"
+ ],
+ "facts_ja": [
+  "紀元前31年9月2日、アクティウム沖イオニア海。",
+  "アグリッパの戦術がアントニウスの大型船を無力化。",
+  "オクタウィアヌスがアウグストゥスに、元首政が始まる。"
+ ],
+ "facts_fr": [
+  "2 sept. 31 av. J.-C., mer Ionienne.",
+  "Les tactiques d’Agrippa neutralisent les plus gros navires d’Antoine.",
+  "Octave devient Auguste ; le principat commence."
+ ],
+ "facts_de": [
+  "2. Sep. 31 v. Chr., Ionisches Meer.",
+  "Agrippas Taktik entkräftet Antonius’ größere Schiffe.",
+  "Octavian wird Augustus; das Prinzipat beginnt."
+ ],
+ "next": "Egypt falls to Rome; the Mediterranean becomes a Roman lake for centuries.",
+ "next_zh": "埃及落入羅馬之手；地中海成了數百年的羅馬內湖。",
+ "next_ja": "エジプトはローマのものに。地中海は何世紀もローマの湖となる。",
+ "next_fr": "L’Égypte tombe à Rome ; la Méditerranée devient un lac romain pour des siècles.",
+ "next_de": "Ägypten fällt an Rom; das Mittelmeer wird jahrhundertelang ein römischer See.",
+ "then_now": {
+  "then": "Actium promontory",
+  "now": "Near Preveza, Greece"
+ },
+ "quiz": {
+  "q": "Who won the Battle of Actium?",
+  "options": [
+   "Octavian (Agrippa)",
+   "Antony and Cleopatra",
+   "Pompey"
+  ],
+  "answer": 0
+ },
+ "sources": [
+  {
+   "title": "Britannica: Battle of Actium",
+   "url": "https://www.britannica.com/event/Battle-of-Actium"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}

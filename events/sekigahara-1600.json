@@ -1,0 +1,147 @@
+{
+ "id": "sekigahara-1600",
+ "year": 1600,
+ "date": "21 October 1600",
+ "place": "Sekigahara, Japan",
+ "lat": 35.37,
+ "lng": 136.47,
+ "title": "Battle of Sekigahara",
+ "title_zh": "關原之戰",
+ "title_ja": "関ヶ原の戦い",
+ "title_fr": "Bataille de Sekigahara",
+ "title_de": "Schlacht von Sekigahara",
+ "perspective_role": "You are an ashigaru archer in Tokugawa’s eastern army in the morning mist.",
+ "perspective_role_zh": "晨霧裡，你是德川東軍的足輕弓手。",
+ "perspective_role_ja": "朝霧の中、徳川東軍の足軽弓兵だ。",
+ "perspective_role_fr": "Tu es ashigaru archer de l’armée de l’Est de Tokugawa dans la brume du matin.",
+ "perspective_role_de": "Du bist Ashigaru-Bogenschütze in Tokugawas Ostheer im Morgennebel.",
+ "summary": "Tokugawa Ieyasu’s victory at Sekigahara in 1600 clears the path to the Tokugawa shogunate and more than two centuries of relative peace.",
+ "summary_zh": "1600 年德川家康在關原獲勝，鋪開德川幕府與兩百多年相對和平之路。",
+ "summary_ja": "1600年、徳川家康が関ヶ原で勝ち、徳川幕府と二世紀超の相対的平和への道を開く。",
+ "summary_fr": "La victoire de Tokugawa Ieyasu à Sekigahara (1600) ouvre la voie au shogunat Tokugawa et à plus de deux siècles de paix relative.",
+ "summary_de": "Tokugawa Ieyasus Sieg bei Sekigahara 1600 bahnt dem Tokugawa-Shogunat und über zwei Jahrhunderten relativen Friedens den Weg.",
+ "anim": "war",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "anim": "war",
+   "caption": "1600 · Sekigahara",
+   "ambience": "war",
+   "duration": 12,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "anim": "war",
+   "ambience": "war",
+   "lines": [
+    {
+     "speaker": "Yoriki",
+     "en": "Mist lifts off the valley like a sleeve. Keep your bowstring dry.",
+     "zh": "霧像衣袖從谷地掀起。弓弦保持乾燥。",
+     "ja": "谷から袖のように霧が上がる。弦を乾いたままに。",
+     "fr": "La brume se lève de la vallée comme une manche. Garde la corde sèche.",
+     "de": "Nebel hebt sich vom Tal wie ein Ärmel. Halt die Sehne trocken."
+    },
+    {
+     "speaker": "Yoriki",
+     "en": "When the western banners waver — that is the signal, not a cheer.",
+     "zh": "西軍旗幟一晃——那是信號，不是歡呼。",
+     "ja": "西軍の旗が揺れたら——それは合図、歓声ではない。",
+     "fr": "Quand les bannières de l’Ouest vacillent — c’est le signal, pas un cri.",
+     "de": "Wenn die Westbanner wanken — das ist das Signal, kein Jubel."
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "the western battle flags",
+    "target_zh": "西軍軍旗",
+    "target_ja": "西軍の旗",
+    "target_fr": "les bannières de l’Ouest",
+    "target_de": "die Westbanner",
+    "x": 62,
+    "y": 38
+   }
+  },
+  {
+   "phase": "climax",
+   "anim": "war",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "Ashigaru",
+     "en": "They break. The road to Edo tastes of wet grass and unfinished fear.",
+     "zh": "他們垮了。通往江戶的路有濕草與未完恐懼的味道。",
+     "ja": "崩れた。江戸への道は濡れた草と終わらない恐れの味だ。",
+     "fr": "Ils cassent. La route d’Edo goûte l’herbe mouillée et la peur inachevée.",
+     "de": "Sie brechen. Die Straße nach Edo schmeckt nach nassem Gras und unfertiger Angst."
+    }
+   ],
+   "interaction": {
+    "type": "follow",
+    "target": "the guide",
+    "target_zh": "嚮導",
+    "target_ja": "案内人",
+    "target_fr": "le guide",
+    "target_de": "den Führer",
+    "x": 48,
+    "y": 55
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "21 Oct 1600 in Mino Province.",
+  "Tokugawa Ieyasu defeats Ishida Mitsunari’s coalition.",
+  "Leads to Tokugawa shogunate (1603)."
+ ],
+ "facts_zh": [
+  "1600 年 10 月 21 日於美濃。",
+  "德川家康擊敗石田三成聯軍。",
+  "通向德川幕府（1603）。"
+ ],
+ "facts_ja": [
+  "1600年10月21日、美濃。",
+  "徳川家康が石田三成連合を破る。",
+  "徳川幕府（1603）へ。"
+ ],
+ "facts_fr": [
+  "21 oct. 1600 en province de Mino.",
+  "Tokugawa Ieyasu bat la coalition d’Ishida Mitsunari.",
+  "Mène au shogunat Tokugawa (1603)."
+ ],
+ "facts_de": [
+  "21. Okt. 1600 in der Provinz Mino.",
+  "Tokugawa Ieyasu besiegt Ishida Mitsunaris Koalition.",
+  "Führt zum Tokugawa-Shogunat (1603)."
+ ],
+ "next": "Edo becomes the political center; sakoku later limits foreign contact while culture flourishes inside.",
+ "next_zh": "江戶成政治中心；後來鎖國限制對外接觸，國內文化卻繁盛。",
+ "next_ja": "江戸が政治の中心に。のち鎖国が外との接触を限る一方、内では文化が咲く。",
+ "next_fr": "Edo devient le centre politique ; le sakoku limitera les contacts extérieurs tandis que la culture fleurit à l’intérieur.",
+ "next_de": "Edo wird politisches Zentrum; Sakoku begrenzt später Außenkontakte, während innen Kultur blüht.",
+ "then_now": {
+  "then": "Sekigahara valley",
+  "now": "Sekigahara, Gifu, Japan"
+ },
+ "quiz": {
+  "q": "Who won the Battle of Sekigahara?",
+  "options": [
+   "Tokugawa Ieyasu",
+   "Ishida Mitsunari",
+   "Toyotomi Hideyoshi"
+  ],
+  "answer": 0
+ },
+ "sources": [
+  {
+   "title": "Britannica: Battle of Sekigahara",
+   "url": "https://www.britannica.com/event/Battle-of-Sekigahara"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}

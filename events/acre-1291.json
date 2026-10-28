@@ -1,0 +1,147 @@
+{
+ "id": "acre-1291",
+ "year": 1291,
+ "date": "18 May 1291",
+ "place": "Acre (Akko)",
+ "lat": 32.92,
+ "lng": 35.07,
+ "title": "Fall of Acre",
+ "title_zh": "阿卡陷落",
+ "title_ja": "アッコン陥落",
+ "title_fr": "Chute d’Acre",
+ "title_de": "Fall von Akkon",
+ "perspective_role": "You are a Templar sergeant on the crumbling sea walls of Acre.",
+ "perspective_role_zh": "你是阿卡崩塌海牆上的聖殿騎士軍士。",
+ "perspective_role_ja": "崩れゆくアッコンの海壁に立つテンプル騎士団の軍曹だ。",
+ "perspective_role_fr": "Tu es sergent templier sur les remparts maritimes croulants d’Acre.",
+ "perspective_role_de": "Du bist Tempelritter-Sergeant auf den bröckelnden Seemauern Akkons.",
+ "summary": "Mamluk forces take Acre in 1291, ending the Crusader Kingdom of Jerusalem’s last major foothold on the Levantine coast.",
+ "summary_zh": "1291 年馬穆魯克攻下阿卡，結束十字軍耶路撒冷王國在黎凡特海岸的最後重要據點。",
+ "summary_ja": "1291年、マムルークがアッコンを陥落させ、十字軍エルサレム王国のレヴァント沿岸最後の主要拠点が終わる。",
+ "summary_fr": "Les Mamelouks prennent Acre en 1291, fin du dernier grand pied-à-terre du royaume croisé sur la côte levantine.",
+ "summary_de": "Mamluken nehmen 1291 Akkon — Ende des letzten großen Kreuzfahrer-Stützpunkts an der Levanteküste.",
+ "anim": "siege",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "anim": "siege",
+   "caption": "1291 · Acre",
+   "ambience": "siege",
+   "duration": 12,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "anim": "siege",
+   "ambience": "siege",
+   "lines": [
+    {
+     "speaker": "Castellan",
+     "en": "Catapult stones walk closer each hour. Salt spray mixes with mortar dust.",
+     "zh": "投石一小時比一小時近。鹽霧混著灰泥粉。",
+     "ja": "投石が刻々近づく。潮煙がモルタルの粉と混ざる。",
+     "fr": "Les pierriers se rapprochent chaque heure. Embrun et poussière de mortier.",
+     "de": "Steinschleudern kommen stündlich näher. Gischt mischt sich mit Mörtelstaub."
+    },
+    {
+     "speaker": "Castellan",
+     "en": "If the inner wall goes, make for the ships — if any still answer the horn.",
+     "zh": "內牆一破就衝向船——若還有船回應號角。",
+     "ja": "内壁が落ちたら船へ——角笛に答える船がまだあれば。",
+     "fr": "Si le mur intérieur cède, cours aux navires — s’ils répondent encore au cor.",
+     "de": "Fällt die innere Mauer, zu den Schiffen — falls noch welche dem Horn antworten."
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "the Mamluk engines",
+    "target_zh": "馬穆魯克攻城器",
+    "target_ja": "マムルークの攻城器械",
+    "target_fr": "les engins mamelouks",
+    "target_de": "die mamlukischen Maschinen",
+    "x": 65,
+    "y": 40
+   }
+  },
+  {
+   "phase": "climax",
+   "anim": "siege",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "Brother",
+     "en": "Acre falls with the kingdom’s last banner. The sea takes the smoke west.",
+     "zh": "阿卡與王國最後旗幟一同陷落。海把煙吹向西方。",
+     "ja": "アッコンが王国最後の旗とともに落ちる。海が煙を西へ運ぶ。",
+     "fr": "Acre tombe avec le dernier étendard. La mer emporte la fumée vers l’ouest.",
+     "de": "Akkon fällt mit dem letzten Banner. Das Meer trägt den Rauch westwärts."
+    }
+   ],
+   "interaction": {
+    "type": "follow",
+    "target": "the guide",
+    "target_zh": "嚮導",
+    "target_ja": "案内人",
+    "target_fr": "le guide",
+    "target_de": "den Führer",
+    "x": 48,
+    "y": 55
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "18 May 1291: Acre falls to the Mamluks.",
+  "Effective end of Crusader states in the Levant.",
+  "Survivors evacuate by sea to Cyprus."
+ ],
+ "facts_zh": [
+  "1291 年 5 月 18 日：阿卡落入馬穆魯克之手。",
+  "十字軍在黎凡特的政權實質結束。",
+  "倖存者由海路撤往塞浦路斯。"
+ ],
+ "facts_ja": [
+  "1291年5月18日：アッコンがマムルークに落ちる。",
+  "レヴァント十字軍国家の実質的終焉。",
+  "生存者は海路キプロスへ。"
+ ],
+ "facts_fr": [
+  "18 mai 1291 : chute d’Acre face aux Mamelouks.",
+  "Fin effective des États croisés au Levant.",
+  "Les survivants évacuent par mer vers Chypre."
+ ],
+ "facts_de": [
+  "18. Mai 1291: Akkon fällt an die Mamluken.",
+  "Effektives Ende der Kreuzfahrerstaaten in der Levante.",
+  "Überlebende evakuieren über See nach Zypern."
+ ],
+ "next": "Crusading ideals linger in Europe; the Eastern Mediterranean’s political map belongs to Mamluks and later Ottomans.",
+ "next_zh": "十字軍理想在歐洲餘響；東地中海政治版圖歸馬穆魯克，後來是鄂圖曼。",
+ "next_ja": "十字軍理念は欧州に残り、東地中海の政治地図はマムルーク、のちオスマンのものとなる。",
+ "next_fr": "L’idéal croisé survit en Europe ; la carte levantines passe aux Mamelouks puis aux Ottomans.",
+ "next_de": "Kreuzzugsideale bleiben in Europa; die ostmediterrane Karte gehört Mamluken, später Osmanen.",
+ "then_now": {
+  "then": "Crusader Acre",
+  "now": "Akko, Israel"
+ },
+ "quiz": {
+  "q": "Which power took Acre in 1291?",
+  "options": [
+   "Mamluks",
+   "Ottomans",
+   "Mongols"
+  ],
+  "answer": 0
+ },
+ "sources": [
+  {
+   "title": "Britannica: Acre",
+   "url": "https://www.britannica.com/place/Acre-Israel"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}

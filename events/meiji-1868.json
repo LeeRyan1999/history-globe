@@ -1,0 +1,147 @@
+{
+ "id": "meiji-1868",
+ "year": 1868,
+ "date": "3 January 1868",
+ "place": "Kyoto, Japan",
+ "lat": 35.01,
+ "lng": 135.77,
+ "title": "Meiji Restoration",
+ "title_zh": "明治維新",
+ "title_ja": "明治維新",
+ "title_fr": "Restauration de Meiji",
+ "title_de": "Meiji-Restauration",
+ "perspective_role": "You are a young samurai courier in Kyoto as the edict restoring imperial rule is proclaimed.",
+ "perspective_role_zh": "王政復古詔書宣佈時，你是京都的年輕武士信使。",
+ "perspective_role_ja": "王政復古の詔が発せられる京都の若い武士の飛脚だ。",
+ "perspective_role_fr": "Tu es jeune samouraï courrier à Kyōto quand l’édit de restauration impériale est proclamé.",
+ "perspective_role_de": "Du bist junger Samurai-Bote in Kyōto, als das Edikt der Kaiserlichen Restauration verkündet wird.",
+ "summary": "In 1868 power shifts from the Tokugawa shogunate back to the emperor — launching rapid modernization that transforms Japan into an industrial great power.",
+ "summary_zh": "1868 年權力由德川幕府回到天皇——啟動急速現代化，使日本成為工業強權。",
+ "summary_ja": "1868年、権力が徳川幕府から天皇へ——急速な近代化が日本を工業大国へ変える。",
+ "summary_fr": "En 1868 le pouvoir passe du shogunat Tokugawa à l’empereur — modernisation rapide qui fait du Japon une grande puissance industrielle.",
+ "summary_de": "1868 geht die Macht vom Tokugawa-Shogunat an den Kaiser — rasche Modernisierung macht Japan zur industriellen Großmacht.",
+ "anim": "crowd",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "anim": "crowd",
+   "caption": "1868 · Kyoto",
+   "ambience": "crowd",
+   "duration": 12,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "anim": "crowd",
+   "ambience": "crowd",
+   "lines": [
+    {
+     "speaker": "Court official",
+     "en": "The old bakufu seals crack in rumor. Keep your swords sheathed in the streets.",
+     "zh": "舊幕府的印在謠言裡裂開。街上刀且入鞘。",
+     "ja": "旧幕の印が噂でひび割れる。街では刀を鞘に。",
+     "fr": "Les vieux sceaux du bakufu se fissurent dans la rumeur. Gardes tes lames au fourreau.",
+     "de": "Alte Bakufu-Siegel springen im Gerücht. Schwerter in der Scheide auf der Straße."
+    },
+    {
+     "speaker": "Court official",
+     "en": "Charter Oath soon — five articles that will taste of steam and schoolbooks.",
+     "zh": "很快五條誓文——會有蒸汽與教科書的味道。",
+     "ja": "まもなく五箇条の御誓文——蒸気と教科書の味がする五条だ。",
+     "fr": "Bientôt le Serment en cinq articles — goût de vapeur et de manuels.",
+     "de": "Bald der Fünf-Artikel-Eid — Geschmack von Dampf und Schulbüchern."
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "the imperial palace gates",
+    "target_zh": "皇居門",
+    "target_ja": "御所の門",
+    "target_fr": "les portes du palais impérial",
+    "target_de": "die Tore des Kaiserpalasts",
+    "x": 50,
+    "y": 40
+   }
+  },
+  {
+   "phase": "climax",
+   "anim": "crowd",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "Courier",
+     "en": "You gallop the news toward the domains. The future arrives as a decree and a factory whistle.",
+     "zh": "你策馬把消息送往諸藩。未來以詔書與工廠汽笛抵達。",
+     "ja": "諸藩へ知らせを駆ける。未来は詔と工場の汽笛で来る。",
+     "fr": "Tu galopes la nouvelle vers les domaines. L’avenir arrive en décret et sifflet d’usine.",
+     "de": "Du galoppierst die Nachricht zu den Domänen. Die Zukunft kommt als Dekret und Fabrikspfiff."
+    }
+   ],
+   "interaction": {
+    "type": "follow",
+    "target": "the guide",
+    "target_zh": "嚮導",
+    "target_ja": "案内人",
+    "target_fr": "le guide",
+    "target_de": "den Führer",
+    "x": 48,
+    "y": 55
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "3 Jan 1868: Ōsei fukko (imperial restoration) declared.",
+  "Boshin War consolidates the new order.",
+  "Rapid reforms: conscript army, industry, constitution (1889)."
+ ],
+ "facts_zh": [
+  "1868 年 1 月 3 日：宣佈王政復古。",
+  "戊辰戰爭鞏固新政。",
+  "急速改革：徵兵、工業、憲法（1889）。"
+ ],
+ "facts_ja": [
+  "1868年1月3日：王政復古。",
+  "戊辰戦争が新政を固める。",
+  "急速改革：徴兵・工業・憲法（1889）。"
+ ],
+ "facts_fr": [
+  "3 janv. 1868 : restauration impériale.",
+  "La guerre de Boshin consolide le nouvel ordre.",
+  "Réformes rapides : conscription, industrie, constitution (1889)."
+ ],
+ "facts_de": [
+  "3. Jan. 1868: Kaiserliche Restauration.",
+  "Boshin-Krieg festigt die neue Ordnung.",
+  "Rasché Reformen: Wehrpflicht, Industrie, Verfassung (1889)."
+ ],
+ "next": "Japan defeats Qing China and Russia in coming decades; empire and modernity intertwine until 1945.",
+ "next_zh": "往後數十年日本戰勝清國與俄國；帝國與現代性交織直到 1945。",
+ "next_ja": "以後数十年で日本は清とロシアに勝ち、帝国と近代性が1945まで絡み合う。",
+ "next_fr": "Le Japon bat Qing et la Russie dans les décennies suivantes ; empire et modernité s’entrelacent jusqu’en 1945.",
+ "next_de": "Japan besiegt Qing und Russland in den folgenden Jahrzehnten; Imperium und Moderne verflechten sich bis 1945.",
+ "then_now": {
+  "then": "Imperial Kyoto",
+  "now": "Kyoto, Japan"
+ },
+ "quiz": {
+  "q": "What year marks the Meiji Restoration?",
+  "options": [
+   "1868",
+   "1853",
+   "1905"
+  ],
+  "answer": 0
+ },
+ "sources": [
+  {
+   "title": "Britannica: Meiji Restoration",
+   "url": "https://www.britannica.com/event/Meiji-Restoration"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}

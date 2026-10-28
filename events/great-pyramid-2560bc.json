@@ -1,0 +1,195 @@
+{
+ "id": "great-pyramid-2560bc",
+ "year": -2560,
+ "date": "c. 2560 BCE",
+ "place": "Giza, Egypt",
+ "lat": 29.9792,
+ "lng": 31.1342,
+ "title": "Building the Great Pyramid",
+ "title_zh": "建造大金字塔",
+ "title_ja": "ギザの大ピラミッド建設",
+ "title_fr": "Construction de la Grande Pyramide",
+ "title_de": "Bau der Großen Pyramide",
+ "perspective_role": "You are a copper-saw cutter on the Giza plateau at dawn.",
+ "perspective_role_zh": "破曉時分，你是吉薩高原上握著銅鋸的石工。",
+ "perspective_role_ja": "夜明けのギザ高原で、銅の鋸を握る石工だ。",
+ "perspective_role_fr": "À l’aube sur le plateau de Gizeh, tu es un tailleur de pierre à la scie de cuivre.",
+ "perspective_role_de": "Im Morgengrauen auf dem Plateau von Gizeh bist du Steinmetz mit Kupfersäge.",
+ "summary": "Khufu’s Great Pyramid rises block by block. Work gangs haul limestone from nearby quarries; the finished casing will blaze white in the desert sun.",
+ "summary_zh": "胡夫的大金字塔一層層升起。工隊從附近採石場拖運石灰岩；完工後的外層將在沙漠陽光下白得刺眼。",
+ "summary_ja": "クフ王の大ピラミッドが石を積み上げていく。近くの採石場から石灰岩を運び、完成した外装は砂漠の陽に白く輝く。",
+ "summary_fr": "La Grande Pyramide de Khéops s’élève bloc après bloc. Les équipes traînent le calcaire des carrières proches ; le revêtement fini éblouira sous le soleil du désert.",
+ "summary_de": "Cheops’ Große Pyramide wächst Block für Block. Arbeitstrupps schleppen Kalkstein von nahen Steinbrüchen; die fertige Verkleidung wird in der Wüstensonne weiß glänzen.",
+ "anim": "desert",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "anim": "desert",
+   "caption": "c. 2560 BCE · Giza",
+   "ambience": "desert",
+   "duration": 12,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "anim": "desert",
+   "ambience": "desert",
+   "lines": [
+    {
+     "speaker": "Foreman",
+     "en": "Feel that grit on your tongue? That’s the plateau waking up.",
+     "zh": "舌頭上那股砂？高原醒了。",
+     "ja": "舌の砂利がわかるか？高原が目を覚ます音だ。",
+     "fr": "Tu sens ce sable sur la langue ? Le plateau s’éveille.",
+     "de": "Spürst du den Sand auf der Zunge? Das Plateau erwacht."
+    },
+    {
+     "speaker": "Foreman",
+     "en": "Those white blocks will catch the sun like a knife. Keep your rhythm.",
+     "zh": "那些白石塊會像刀刃一樣接住陽光。跟上節奏。",
+     "ja": "白い石が刃のように陽を受ける。リズムを崩すな。",
+     "fr": "Ces blocs blancs prendront le soleil comme une lame. Garde le rythme.",
+     "de": "Diese weißen Blöcke fangen die Sonne wie eine Klinge. Halt den Rhythmus."
+    },
+    {
+     "speaker": "Foreman",
+     "en": "Khufu’s house for eternity — and your back will remember every cubit.",
+     "zh": "胡夫永恆之屋——你的背會記住每一肘尺。",
+     "ja": "クフの永遠の家——背中が肘尺を覚えるだろう。",
+     "fr": "La maison d’éternité de Khéops — ton dos se souviendra de chaque coudée.",
+     "de": "Cheops’ Haus der Ewigkeit — dein Rücken wird jede Elle erinnern."
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "the rising core",
+    "target_zh": "升起的塔心",
+    "target_ja": "積み上がる芯",
+    "target_fr": "le noyau qui s’élève",
+    "target_de": "den wachsenden Kern",
+    "x": 55,
+    "y": 40
+   }
+  },
+  {
+   "phase": "guide",
+   "anim": "desert",
+   "lines": [
+    {
+     "speaker": "Quarry mate",
+     "en": "Water ration at midday. Don’t gulp — the Nile’s heat is patient.",
+     "zh": "正午才有水配給。別猛灌——尼羅河的熱氣很有耐心。",
+     "ja": "昼に水が配られる。一気に飲むな——ナイルの熱は我慢強い。",
+     "fr": "Ration d’eau à midi. Ne bois pas d’un trait — la chaleur du Nil est patiente.",
+     "de": "Wasserration mittags. Nicht hinunterstürzen — die Nilhitze ist geduldig."
+    },
+    {
+     "speaker": "Quarry mate",
+     "en": "Listen — sledges on wet sand. That’s how the big ones slide.",
+     "zh": "聽——濕沙上的橇聲。大石就是這樣滑過來的。",
+     "ja": "聞け——濡れた砂の上の橇。大きい石はこうして滑る。",
+     "fr": "Écoute — les traîneaux sur le sable mouillé. C’est comme ça que les gros glissent.",
+     "de": "Hör — Schlitten auf nassem Sand. So gleiten die Großen."
+    }
+   ],
+   "interaction": {
+    "type": "tap",
+    "target": "a limestone sledge",
+    "target_zh": "石灰岩橇",
+    "target_ja": "石灰岩の橇",
+    "target_fr": "un traîneau de calcaire",
+    "target_de": "einen Kalkstein-Schlitten",
+    "x": 35,
+    "y": 65
+   }
+  },
+  {
+   "phase": "climax",
+   "anim": "desert",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "Foreman",
+     "en": "Hold! The surveyors shout — a finger’s width off and the whole course leans.",
+     "zh": "停！測量官在喊——差一指寬，整層就歪了。",
+     "ja": "待て！測量が叫ぶ——指一本ずれたら層が傾く。",
+     "fr": "Stop ! Les géomètres crient — un doigt de travers et tout le rang penche.",
+     "de": "Halt! Die Vermesser schreien — einen Finger daneben und die ganze Lage kippt."
+    },
+    {
+     "speaker": "Foreman",
+     "en": "You set the block true. Good. Now breathe the dust and look west — the desert keeps our names.",
+     "zh": "你把石擺正了。好。吸一口塵，望向西邊——沙漠會留下我們的名字。",
+     "ja": "石を正しく据えた。いい。塵を吸って西を見ろ——砂漠が名を残す。",
+     "fr": "Tu as posé le bloc juste. Bien. Respire la poussière et regarde à l’ouest — le désert garde nos noms.",
+     "de": "Du hast den Block richtig gesetzt. Gut. Atme den Staub und schau westwärts — die Wüste behält unsere Namen."
+    }
+   ],
+   "interaction": {
+    "type": "follow",
+    "target": "the foreman",
+    "target_zh": "工頭",
+    "target_ja": "親方",
+    "target_fr": "le contremaître",
+    "target_de": "den Vorarbeiter",
+    "x": 48,
+    "y": 55
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "Built for Pharaoh Khufu (Cheops), c. 2580–2560 BCE.",
+  "Original casing stones of Tura limestone reflected sunlight brilliantly.",
+  "About 2.3 million blocks; average ~2.5 tonnes each."
+ ],
+ "facts_zh": [
+  "為法老胡夫（齊阿普斯）建造，約西元前 2580–2560 年。",
+  "原外層為圖拉石灰岩，陽光下極為耀眼。",
+  "約 230 萬塊石材，平均每塊約 2.5 噸。"
+ ],
+ "facts_ja": [
+  "ファラオ・クフ（ケオプス）のため、紀元前2580–2560年頃。",
+  "トゥラ石灰岩の外装が陽光を強く反射した。",
+  "約230万個の石、平均約2.5トン。"
+ ],
+ "facts_fr": [
+  "Construite pour le pharaon Khéops, vers 2580–2560 av. J.-C.",
+  "Le revêtement de calcaire de Tourah reflétait intensément le soleil.",
+  "Environ 2,3 millions de blocs ; ~2,5 tonnes en moyenne."
+ ],
+ "facts_de": [
+  "Erbaut für Pharao Cheops, ca. 2580–2560 v. Chr.",
+  "Die Verkleidung aus Tura-Kalkstein reflektierte das Sonnenlicht stark.",
+  "Etwa 2,3 Millionen Blöcke; durchschnittlich ~2,5 Tonnen."
+ ],
+ "next": "The pyramid remains the last standing Wonder of the Ancient World and still defines Egypt’s skyline of memory.",
+ "next_zh": "大金字塔是古代七大奇蹟中唯一仍存者，至今仍是埃及記憶中的天際線。",
+ "next_ja": "古代世界の七不思議で唯一現存し、今もエジプトの記憶のスカイラインだ。",
+ "next_fr": "Dernière merveille antique encore debout, elle définit toujours la silhouette mémorielle de l’Égypte.",
+ "next_de": "Als einziges erhaltenes Weltwunder der Antike prägt sie bis heute Ägyptens Erinnerungssilhouette.",
+ "then_now": {
+  "then": "Giza necropolis, Old Kingdom Egypt",
+  "now": "Giza Plateau, Greater Cairo"
+ },
+ "quiz": {
+  "q": "Which pharaoh commissioned the Great Pyramid?",
+  "options": [
+   "Khufu (Cheops)",
+   "Ramesses II",
+   "Tutankhamun"
+  ],
+  "answer": 0
+ },
+ "sources": [
+  {
+   "title": "Britannica: Pyramids of Giza",
+   "url": "https://www.britannica.com/topic/Pyramids-of-Giza"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}

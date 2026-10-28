@@ -1,0 +1,147 @@
+{
+ "id": "westphalia-1648",
+ "year": 1648,
+ "date": "24 October 1648",
+ "place": "Münster & Osnabrück",
+ "lat": 52.0,
+ "lng": 7.63,
+ "title": "Peace of Westphalia",
+ "title_zh": "威斯特伐利亞和約",
+ "title_ja": "ウェストファリア条約",
+ "title_fr": "Paix de Westphalie",
+ "title_de": "Westfälischer Frieden",
+ "perspective_role": "You are a courier’s apprentice carrying sealed packets between Münster and Osnabrück.",
+ "perspective_role_zh": "你是信使學徒，在明斯特與奧斯納布呂克之間運送封印信函。",
+ "perspective_role_ja": "ミュンスターとオスナブリュックの間で封印文書を運ぶ飛脚見習いだ。",
+ "perspective_role_fr": "Tu es apprenti courrier portant des plis scellés entre Münster et Osnabrück.",
+ "perspective_role_de": "Du bist Botenlehrling und trägst versiegelte Pakete zwischen Münster und Osnabrück.",
+ "summary": "Treaties of 1648 end the Thirty Years’ War in the Holy Roman Empire and the Eighty Years’ War for the Dutch — reshaping European sovereignty ideas.",
+ "summary_zh": "1648 年和約結束神聖羅馬帝國內的三十年戰爭與荷蘭八十年戰爭——重塑歐洲主權觀念。",
+ "summary_ja": "1648年の条約が神聖ローマ帝国内の三十年戦争とオランダ八十年戦争を終わらせ、欧州の主権観念を作り直す。",
+ "summary_fr": "Les traités de 1648 finissent la guerre de Trente Ans dans l’Empire et la guerre de Quatre-Vingts Ans pour les Provinces-Unies — refonte des idées de souveraineté.",
+ "summary_de": "Die Verträge von 1648 beenden den Dreißigjährigen Krieg im Reich und den Achtzigjährigen Krieg der Niederlande — und formen europäische Souveränitätsideen neu.",
+ "anim": "city",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "anim": "city",
+   "caption": "1648 · Münster",
+   "ambience": "city",
+   "duration": 12,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "anim": "city",
+   "ambience": "city",
+   "lines": [
+    {
+     "speaker": "Secretary",
+     "en": "Church bells for peace, finally. The mud still smells of old campaigns.",
+     "zh": "終於為和平敲鐘。泥巴仍有舊戰役的氣味。",
+     "ja": "ようやく平和の鐘。泥はまだ古い遠征の匂いだ。",
+     "fr": "Cloches pour la paix, enfin. La boue sent encore les vieilles campagnes.",
+     "de": "Glocken für den Frieden, endlich. Der Schlamm riecht noch nach alten Feldzügen."
+    },
+    {
+     "speaker": "Secretary",
+     "en": "Cuius regio, eius religio — and new lines on maps that outlive the envoys.",
+     "zh": "誰的領地、誰的宗教——以及比使節更長壽的新地圖線。",
+     "ja": "領主の宗教——そして使節より長生きする地図の新しい線。",
+     "fr": "Cuius regio, eius religio — et de nouvelles lignes sur les cartes qui survivent aux envoyés.",
+     "de": "Cuius regio, eius religio — und neue Linien auf Karten, die die Gesandten überleben."
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "the peace hall doors",
+    "target_zh": "和談大廳門",
+    "target_ja": "講和の間の扉",
+    "target_fr": "les portes de la salle de paix",
+    "target_de": "die Türen des Friedensaals",
+    "x": 45,
+    "y": 50
+   }
+  },
+  {
+   "phase": "climax",
+   "anim": "city",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "Apprentice",
+     "en": "You deliver the last packet. Your boots are lighter; Europe’s wounds will take longer.",
+     "zh": "你送出最後一包。靴子輕了；歐洲的傷口還要更久。",
+     "ja": "最後の包を渡す。ブーツは軽い；欧州の傷はもっと長い。",
+     "fr": "Tu livres le dernier pli. Tes bottes sont plus légères ; les blessures de l’Europe prendront plus longtemps.",
+     "de": "Du lieferst das letzte Paket. Deine Stiefel sind leichter; Europas Wunden brauchen länger."
+    }
+   ],
+   "interaction": {
+    "type": "follow",
+    "target": "the guide",
+    "target_zh": "嚮導",
+    "target_ja": "案内人",
+    "target_fr": "le guide",
+    "target_de": "den Führer",
+    "x": 48,
+    "y": 55
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "Signed 1648 in Münster and Osnabrück.",
+  "Ends Thirty Years’ War (mostly).",
+  "Often cited in histories of the modern state system."
+ ],
+ "facts_zh": [
+  "1648 年於明斯特與奧斯納布呂克簽署。",
+  "大致結束三十年戰爭。",
+  "常被引用於現代國家體系史。"
+ ],
+ "facts_ja": [
+  "1648年、ミュンスターとオスナブリュックで署名。",
+  "三十年戦争をほぼ終結。",
+  "近代国家体系史でしばしば引用。"
+ ],
+ "facts_fr": [
+  "Signés en 1648 à Münster et Osnabrück.",
+  "Fin (surtout) de la guerre de Trente Ans.",
+  "Souvent cités dans l’histoire de l’État moderne."
+ ],
+ "facts_de": [
+  "1648 in Münster und Osnabrück unterzeichnet.",
+  "Beendet weitgehend den Dreißigjährigen Krieg.",
+  "Oft in Geschichten des modernen Staatensystems genannt."
+ ],
+ "next": "Balance-of-power diplomacy and confessional coexistence become templates — imperfect, contested, enduring.",
+ "next_zh": "權力平衡外交與教派共存成了範本——不完美、受爭議、卻持久。",
+ "next_ja": "勢力均衡外交と宗派共存が雛形になる——不完全で争いが多く、しかし続く。",
+ "next_fr": "Diplomatie d’équilibre et coexistence confessionnelle deviennent des modèles — imparfaits, contestés, durables.",
+ "next_de": "Gleichgewichtspolitik und konfessionelle Koexistenz werden Vorlagen — unperfekt, umstritten, dauerhaft.",
+ "then_now": {
+  "then": "Westphalian cities",
+  "now": "Münster & Osnabrück, Germany"
+ },
+ "quiz": {
+  "q": "Which war did the Peace of Westphalia largely end?",
+  "options": [
+   "Thirty Years’ War",
+   "Hundred Years’ War",
+   "Seven Years’ War"
+  ],
+  "answer": 0
+ },
+ "sources": [
+  {
+   "title": "Britannica: Peace of Westphalia",
+   "url": "https://www.britannica.com/topic/Peace-of-Westphalia"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}

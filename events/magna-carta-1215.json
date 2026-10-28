@@ -1,0 +1,147 @@
+{
+ "id": "magna-carta-1215",
+ "year": 1215,
+ "date": "15 June 1215",
+ "place": "Runnymede, England",
+ "lat": 51.444,
+ "lng": -0.565,
+ "title": "Magna Carta Sealed",
+ "title_zh": "大憲章簽署",
+ "title_ja": "マグナ・カルタ印章",
+ "title_fr": "Sceau de Magna Carta",
+ "title_de": "Siegel der Magna Carta",
+ "perspective_role": "You are a baron’s clerk at Runnymede as King John sets his seal.",
+ "perspective_role_zh": "你是蘭尼米德一位男爵的書記，看著約翰王蓋印。",
+ "perspective_role_ja": "ラニーミードでジョン王が印を押す場にいる男爵の書記だ。",
+ "perspective_role_fr": "Tu es clerc d’un baron à Runnymede quand Jean sans Terre appose son sceau.",
+ "perspective_role_de": "Du bist Schreiber eines Barons in Runnymede, als König Johann siegelt.",
+ "summary": "In 1215 English barons force King John to seal Magna Carta — a charter limiting royal power that later inspires constitutional thought worldwide.",
+ "summary_zh": "1215 年英格蘭男爵迫使約翰王簽署大憲章——限制王權的文件，日後啟發全球憲政思想。",
+ "summary_ja": "1215年、イングランドの男爵たちがジョン王にマグナ・カルタの印章を強いる——王権を限る文書が後に世界の憲政思想を刺激する。",
+ "summary_fr": "En 1215, les barons anglais forcent Jean à sceller Magna Carta — une charte limitant le pouvoir royal qui inspirera la pensée constitutionnelle mondiale.",
+ "summary_de": "1215 zwingen englische Barone Johann, die Magna Carta zu siegeln — eine königliche Macht begrenzende Urkunde, die später weltweite Verfassungsideen speist.",
+ "anim": "crowd",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "anim": "crowd",
+   "caption": "1215 · Runnymede",
+   "ambience": "crowd",
+   "duration": 12,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "anim": "crowd",
+   "ambience": "crowd",
+   "lines": [
+    {
+     "speaker": "Baron’s aide",
+     "en": "The Thames smells of wet wool and stubbornness. Don’t lose the schedule of clauses.",
+     "zh": "泰晤士河有濕羊毛與固執的氣味。別弄丟條款表。",
+     "ja": "テムズは濡れた羊毛と意地の匂い。条項表を落とすな。",
+     "fr": "La Tamise sent la laine mouillée et l’entêtement. Ne perds pas le rôle des clauses.",
+     "de": "Die Themse riecht nach nasser Wolle und Starrsinn. Verlier nicht die Klauselliste."
+    },
+    {
+     "speaker": "Baron’s aide",
+     "en": "No freeman… imprisoned… except by lawful judgment. Hear how the Latin bites.",
+     "zh": "凡自由人……不得……除非經合法判決。聽那拉丁文多锋利。",
+     "ja": "自由人は……合法の判決なく……監禁されず。ラテンの歯切れを聞け。",
+     "fr": "Nul homme libre… emprisonné… sauf par jugement légal. Entends comme le latin mord.",
+     "de": "Kein Freier… eingesperrt… außer durch rechtmäßiges Urteil. Hör, wie das Latein beißt."
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "the royal seal",
+    "target_zh": "王璽",
+    "target_ja": "王の印",
+    "target_fr": "le sceau royal",
+    "target_de": "das Königssiegel",
+    "x": 50,
+    "y": 55
+   }
+  },
+  {
+   "phase": "climax",
+   "anim": "crowd",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "Clerk",
+     "en": "Wax cools. The king’s face is storm. You pocket a copy — history fits in a saddlebag.",
+     "zh": "蠟涼了。國王臉色如風暴。你把抄本塞進鞍囊——歷史裝得下。",
+     "ja": "蝋が冷める。王の顔は嵐。写しを鞍袋へ——歴史はそこに収まる。",
+     "fr": "La cire refroidit. Le visage du roi est orage. Tu glisses une copie — l’histoire tient dans une sacoche.",
+     "de": "Wachs kühlt. Des Königs Gesicht ist Sturm. Du steckst eine Kopie weg — Geschichte passt in die Satteltasche."
+    }
+   ],
+   "interaction": {
+    "type": "follow",
+    "target": "the guide",
+    "target_zh": "嚮導",
+    "target_ja": "案内人",
+    "target_fr": "le guide",
+    "target_de": "den Führer",
+    "x": 48,
+    "y": 55
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "15 June 1215 at Runnymede.",
+  "Clauses on justice and taxation become famous later.",
+  "Reissued and reinterpreted across centuries."
+ ],
+ "facts_zh": [
+  "1215 年 6 月 15 日於蘭尼米德。",
+  "關於司法與稅收的條款後日出名。",
+  "數世紀間一再頒布與重新詮釋。"
+ ],
+ "facts_ja": [
+  "1215年6月15日、ラニーミード。",
+  "司法と課税の条項が後に有名に。",
+  "何世紀にも再発行・再解釈される。"
+ ],
+ "facts_fr": [
+  "15 juin 1215 à Runnymede.",
+  "Clauses sur justice et impôts deviennent célèbres plus tard.",
+  "Rééditée et réinterprétée au fil des siècles."
+ ],
+ "facts_de": [
+  "15. Juni 1215 in Runnymede.",
+  "Klauseln zu Recht und Steuern werden später berühmt.",
+  "Über Jahrhunderte neu ausgegeben und gedeutet."
+ ],
+ "next": "Parliament, due process ideas, and colonial charters all borrow its aura — even when the 1215 text was quickly annulled.",
+ "next_zh": "國會、正當程序與殖民地憲章都借用其光環——即使 1215 文本很快被廢。",
+ "next_ja": "議会・適正手続・植民地勅許がそのオーラを借りる——1215本文はすぐに無効とされたにもかかわらず。",
+ "next_fr": "Parlement, due process et chartes coloniales empruntent son aura — même si le texte de 1215 fut vite annulé.",
+ "next_de": "Parlament, due process und Kolonialcharter borgen ihre Aura — obwohl der Text von 1215 rasch annulliert wurde.",
+ "then_now": {
+  "then": "Runnymede meadow",
+  "now": "Runnymede, Surrey, UK"
+ },
+ "quiz": {
+  "q": "Which king sealed Magna Carta in 1215?",
+  "options": [
+   "John",
+   "Henry II",
+   "Edward I"
+  ],
+  "answer": 0
+ },
+ "sources": [
+  {
+   "title": "Britannica: Magna Carta",
+   "url": "https://www.britannica.com/topic/Magna-Carta"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}

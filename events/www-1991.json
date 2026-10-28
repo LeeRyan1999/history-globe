@@ -1,0 +1,147 @@
+{
+ "id": "www-1991",
+ "year": 1991,
+ "date": "6 August 1991",
+ "place": "CERN, Geneva",
+ "lat": 46.23,
+ "lng": 6.06,
+ "title": "World Wide Web Goes Public",
+ "title_zh": "全球資訊網公開",
+ "title_ja": "WWW公開",
+ "title_fr": "Ouverture publique du Web",
+ "title_de": "WWW wird öffentlich",
+ "perspective_role": "You are a CERN researcher clicking a line-mode browser for the first time.",
+ "perspective_role_zh": "你是 CERN 研究員，第一次點開行模式瀏覽器。",
+ "perspective_role_ja": "CERNの研究者で、初めてラインモードブラウザをクリックする。",
+ "perspective_role_fr": "Tu es chercheur au CERN, cliquant pour la première fois un navigateur en mode ligne.",
+ "perspective_role_de": "Du bist CERN-Forscher und klickst zum ersten Mal einen Zeilenmodus-Browser.",
+ "summary": "In 1991 Tim Berners-Lee’s World Wide Web becomes publicly available outside CERN — the hypertext system that remakes information and daily life.",
+ "summary_zh": "1991 年提姆·柏納-李的全球資訊網在 CERN 外公開——重塑資訊與日常生活的超文本系統。",
+ "summary_ja": "1991年、ティム・バーナーズ＝リーのWWWがCERN外で公開——情報と日常生活を作り直すハイパーテキスト。",
+ "summary_fr": "En 1991 le World Wide Web de Tim Berners-Lee devient public hors du CERN — l’hypertexte qui refait l’information et la vie quotidienne.",
+ "summary_de": "1991 wird Tim Berners-Lees World Wide Web außerhalb CERNs öffentlich — das Hypertextsystem, das Information und Alltag neu formt.",
+ "anim": "industrial",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "anim": "industrial",
+   "caption": "1991 · CERN",
+   "ambience": "industrial",
+   "duration": 12,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "anim": "industrial",
+   "ambience": "industrial",
+   "lines": [
+    {
+     "speaker": "Colleague",
+     "en": "Blue links on a grey screen. It feels small — until you follow three hops and forget the coffee.",
+     "zh": "灰螢幕上的藍連結。感覺很小——直到你點三跳，忘了咖啡。",
+     "ja": "灰色画面の青いリンク。小さく感じる——三ホップでコーヒーを忘れるまで。",
+     "fr": "Liens bleus sur écran gris. Ça semble petit — jusqu’à trois sauts et le café oublié.",
+     "de": "Blaue Links auf grauem Schirm. Wirkt klein — bis drei Sprünge und der Kaffee vergessen ist."
+    },
+    {
+     "speaker": "Colleague",
+     "en": "HTTP, HTML, URL — three letters that will outlive our punch cards.",
+     "zh": "HTTP、HTML、URL——會比我們的打孔卡活得更久的三組字母。",
+     "ja": "HTTP、HTML、URL——パンチカードより長生きする三つの略語。",
+     "fr": "HTTP, HTML, URL — trois sigles qui survivront à nos cartes perforées.",
+     "de": "HTTP, HTML, URL — drei Kürzel, die unsere Lochkarten überleben."
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "the first web page",
+    "target_zh": "第一個網頁",
+    "target_ja": "最初のウェブページ",
+    "target_fr": "la première page web",
+    "target_de": "die erste Webseite",
+    "x": 48,
+    "y": 45
+   }
+  },
+  {
+   "phase": "climax",
+   "anim": "industrial",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "You (quietly)",
+     "en": "You bookmark a physics preprint and somehow bookmark the century. The fan hums like a distant sea.",
+     "zh": "你收藏一篇物理預印本，不知怎麼也收藏了這個世紀。風扇聲像遠海。",
+     "ja": "物理のプレプリントをブックマークし、いつの間にか世紀をブックマークする。ファンが遠い海のように唸る。",
+     "fr": "Tu marques une prépublication — et quelque part le siècle. Le ventilateur ronronne comme une mer lointaine.",
+     "de": "Du setzt ein Physik-Preprint auf Lesezeichen — und irgendwie das Jahrhundert. Der Lüfter summt wie ein fernes Meer."
+    }
+   ],
+   "interaction": {
+    "type": "follow",
+    "target": "the guide",
+    "target_zh": "嚮導",
+    "target_ja": "案内人",
+    "target_fr": "le guide",
+    "target_de": "den Führer",
+    "x": 48,
+    "y": 55
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "6 Aug 1991: WWW announced publicly on Usenet / available beyond CERN.",
+  "Invented by Tim Berners-Lee at CERN.",
+  "Foundation of the modern internet user experience."
+ ],
+ "facts_zh": [
+  "1991 年 8 月 6 日：WWW 在 Usenet 公開／開放 CERN 以外使用。",
+  "提姆·柏納-李於 CERN 發明。",
+  "現代網路使用體驗的基礎。"
+ ],
+ "facts_ja": [
+  "1991年8月6日：WWWがUsenetで公開／CERN外で利用可能に。",
+  "CERNのティム・バーナーズ＝リーが発明。",
+  "現代インターネット体験の基盤。"
+ ],
+ "facts_fr": [
+  "6 août 1991 : WWW annoncé publiquement / hors CERN.",
+  "Inventé par Tim Berners-Lee au CERN.",
+  "Base de l’expérience internet moderne."
+ ],
+ "facts_de": [
+  "6. Aug. 1991: WWW öffentlich / außerhalb CERNs.",
+  "Erfunden von Tim Berners-Lee am CERN.",
+  "Grundlage der modernen Internet-Erfahrung."
+ ],
+ "next": "Browsers, search, social media, and the mobile web follow — with new publics and new risks.",
+ "next_zh": "瀏覽器、搜尋、社群與行動網路接踵——新的公眾與新的風險。",
+ "next_ja": "ブラウザ、検索、ソーシャル、モバイルが続き——新しい公共と新しいリスク。",
+ "next_fr": "Navigateurs, recherche, réseaux sociaux et web mobile suivent — nouveaux publics, nouveaux risques.",
+ "next_de": "Browser, Suche, Soziale Medien und mobiles Web folgen — neue Öffentlichkeiten, neue Risiken.",
+ "then_now": {
+  "then": "CERN",
+  "now": "Geneva, Switzerland"
+ },
+ "quiz": {
+  "q": "Who invented the World Wide Web?",
+  "options": [
+   "Tim Berners-Lee",
+   "Bill Gates",
+   "Steve Jobs"
+  ],
+  "answer": 0
+ },
+ "sources": [
+  {
+   "title": "CERN: The birth of the Web",
+   "url": "https://home.cern/science/computing/birth-web"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}

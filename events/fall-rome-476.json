@@ -1,0 +1,147 @@
+{
+ "id": "fall-rome-476",
+ "year": 476,
+ "date": "4 September 476",
+ "place": "Ravenna, Italy",
+ "lat": 44.42,
+ "lng": 12.2,
+ "title": "Fall of the Western Roman Empire",
+ "title_zh": "西羅馬帝國滅亡",
+ "title_ja": "西ローマ帝国の滅亡",
+ "title_fr": "Chute de l’Empire romain d’Occident",
+ "title_de": "Ende des Weströmischen Reichs",
+ "perspective_role": "You are a young scribe in Ravenna watching Odoacer’s men enter the palace.",
+ "perspective_role_zh": "你是拉溫納的年輕書記，看著奧多亞塞的人走進宮殿。",
+ "perspective_role_ja": "ラヴェンナの若い書記で、オドアケルの兵が宮殿に入るのを見ている。",
+ "perspective_role_fr": "Tu es un jeune scribe à Ravenne qui voit les hommes d’Odoacre entrer au palais.",
+ "perspective_role_de": "Du bist junger Schreiber in Ravenna und siehst Odoakers Männer den Palast betreten.",
+ "summary": "In 476, the Germanic general Odoacer deposes the boy-emperor Romulus Augustulus in Ravenna — the conventional end of the Western Roman Empire.",
+ "summary_zh": "476 年，日耳曼將軍奧多亞塞在拉溫納廢黜少年皇帝羅慕路斯·奧古斯都盧斯——通常被視為西羅馬帝國的終結。",
+ "summary_ja": "476年、ゲルマンの将軍オドアケルがラヴェンナで少年皇帝ロムルス・アウグストゥルスを廃位——西ローマ帝国終結の通説的年。",
+ "summary_fr": "En 476, Odoacre dépose à Ravenne l’enfant-empereur Romulus Augustule — fin conventionnelle de l’Empire d’Occident.",
+ "summary_de": "476 setzt Odoaker in Ravenna den Knabenkaiser Romulus Augustulus ab — das übliche Ende Westroms.",
+ "anim": "city",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "anim": "city",
+   "caption": "476 · Ravenna",
+   "ambience": "city",
+   "duration": 12,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "anim": "city",
+   "ambience": "city",
+   "lines": [
+    {
+     "speaker": "Chamberlain",
+     "en": "No trumpet. Just boots on mosaic. The purple is lighter than you think.",
+     "zh": "沒有號角。只有馬賽克上的靴聲。紫袍比你想的還輕。",
+     "ja": "喇叭はない。モザイクの上の靴音だけ。紫は思ったより軽い。",
+     "fr": "Pas de trompette. Juste des bottes sur la mosaïque. La pourpre est plus légère qu’on croit.",
+     "de": "Keine Trompete. Nur Stiefel auf dem Mosaik. Purpur ist leichter als du denkst."
+    },
+    {
+     "speaker": "Chamberlain",
+     "en": "They call him king of Italy now. Rome’s ghost still breathes in the East.",
+     "zh": "他們稱他為義大利之王。羅馬的鬼魂仍在東方呼吸。",
+     "ja": "今はイタリアの王と呼ぶ。ローマの幽霊は東でまだ息をしている。",
+     "fr": "On l’appelle roi d’Italie. Le fantôme de Rome respire encore à l’Est.",
+     "de": "Man nennt ihn König von Italien. Roms Geist atmet noch im Osten."
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "the imperial diadem",
+    "target_zh": "帝冠",
+    "target_ja": "帝冠",
+    "target_fr": "le diadème impérial",
+    "target_de": "das Kaiserdiadem",
+    "x": 45,
+    "y": 40
+   }
+  },
+  {
+   "phase": "climax",
+   "anim": "city",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "Scribe",
+     "en": "You write the date. Your hand shakes — history rarely announces itself so quietly.",
+     "zh": "你寫下日期。手在抖——歷史很少如此安靜地宣告自己。",
+     "ja": "日付を書く。手が震える——歴史がこんなに静かに名乗ることは稀だ。",
+     "fr": "Tu notes la date. Ta main tremble — l’histoire s’annonce rarement si bas.",
+     "de": "Du schreibst das Datum. Deine Hand zittert — Geschichte meldet sich selten so leise."
+    }
+   ],
+   "interaction": {
+    "type": "follow",
+    "target": "the guide",
+    "target_zh": "嚮導",
+    "target_ja": "案内人",
+    "target_fr": "le guide",
+    "target_de": "den Führer",
+    "x": 48,
+    "y": 55
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "4 Sep 476: Odoacer deposes Romulus Augustulus.",
+  "Often marked as the end of the Western Roman Empire.",
+  "Eastern (Byzantine) Empire continues from Constantinople."
+ ],
+ "facts_zh": [
+  "476 年 9 月 4 日：奧多亞塞廢黜羅慕路斯·奧古斯都盧斯。",
+  "常被視為西羅馬帝國終結。",
+  "東羅馬（拜占庭）帝國自君士坦丁堡延續。"
+ ],
+ "facts_ja": [
+  "476年9月4日：オドアケルがロムルス・アウグストゥルスを廃位。",
+  "西ローマ終結の通説的年。",
+  "東ローマ（ビザンツ）はコンスタンティノープルで続く。"
+ ],
+ "facts_fr": [
+  "4 sept. 476 : Odoacre dépose Romulus Augustule.",
+  "Fin conventionnelle de l’Empire d’Occident.",
+  "L’Empire d’Orient continue depuis Constantinople."
+ ],
+ "facts_de": [
+  "4. Sep. 476: Odoaker setzt Romulus Augustulus ab.",
+  "Übliches Ende Westroms.",
+  "Ostrom (Byzanz) besteht in Konstantinopel fort."
+ ],
+ "next": "Successor kingdoms reshape the West; Latin learning survives in monasteries and the Eastern court.",
+ "next_zh": "後繼王國重塑西方；拉丁學問在修道院與東方宮廷中延續。",
+ "next_ja": "後継王国が西方を形作り、ラテン学知は修道院と東方宮廷に残る。",
+ "next_fr": "Les royaumes successeurs refont l’Occident ; le savoir latin survit dans les monastères et à la cour d’Orient.",
+ "next_de": "Nachfolgereiche formen den Westen; lateinisches Wissen überlebt in Klöstern und am Osthof.",
+ "then_now": {
+  "then": "Imperial Ravenna",
+  "now": "Ravenna, Italy"
+ },
+ "quiz": {
+  "q": "Who deposed Romulus Augustulus in 476?",
+  "options": [
+   "Odoacer",
+   "Attila",
+   "Charlemagne"
+  ],
+  "answer": 0
+ },
+ "sources": [
+  {
+   "title": "Britannica: Fall of Rome",
+   "url": "https://www.britannica.com/place/ancient-Rome"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}

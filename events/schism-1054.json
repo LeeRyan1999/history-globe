@@ -1,0 +1,147 @@
+{
+ "id": "schism-1054",
+ "year": 1054,
+ "date": "16 July 1054",
+ "place": "Constantinople",
+ "lat": 41.0086,
+ "lng": 28.98,
+ "title": "East–West Schism",
+ "title_zh": "東西教會大分裂",
+ "title_ja": "東西教会の分裂",
+ "title_fr": "Schisme de 1054",
+ "title_de": "Morgenländisches Schisma",
+ "perspective_role": "You are a clerk in Hagia Sophia as papal legates confront the patriarch.",
+ "perspective_role_zh": "你是聖索菲亞的書記，看著教宗使節對峙宗主教。",
+ "perspective_role_ja": "アヤソフィアの書記で、教皇使節が総主教と対峙する場にいる。",
+ "perspective_role_fr": "Tu es clerc à Sainte-Sophie quand les légats pontificaux affrontent le patriarche.",
+ "perspective_role_de": "Du bist Kleriker in der Hagia Sophia, als päpstliche Legaten dem Patriarchen gegenübertreten.",
+ "summary": "Mutual excommunications in 1054 mark a rupture between Latin West and Greek East that hardens into lasting schism.",
+ "summary_zh": "1054 年的相互絕罰標誌拉丁西方與希臘東方的決裂，逐漸凝固成持久分裂。",
+ "summary_ja": "1054年の相互破門がラテン西方とギリシャ東方の決裂を示し、永続的分裂へと固まる。",
+ "summary_fr": "Les excommunications mutuelles de 1054 marquent une rupture entre Occident latin et Orient grec qui se fige en schisme durable.",
+ "summary_de": "Gegenseitige Exkommunikationen 1054 markieren den Bruch zwischen lateinischem Westen und griechischem Osten, der zum dauerhaften Schisma erhärtet.",
+ "anim": "temple",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "anim": "temple",
+   "caption": "1054 · Constantinople",
+   "ambience": "temple",
+   "duration": 12,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "anim": "temple",
+   "ambience": "temple",
+   "lines": [
+    {
+     "speaker": "Archdeacon",
+     "en": "Bull on the altar. Ink louder than incense today.",
+     "zh": "詔書放在祭壇上。今天墨水比乳香還響。",
+     "ja": "祭壇の教書。今日はインクが香より大きい。",
+     "fr": "Bulle sur l’autel. L’encre parle plus fort que l’encens.",
+     "de": "Bulle auf dem Altar. Tinte ist heute lauter als Weihrauch."
+    },
+    {
+     "speaker": "Archdeacon",
+     "en": "Two Romes, two tongues. Feel the chill under the dome.",
+     "zh": "兩個羅馬，兩種語言。穹頂下感到那股寒意。",
+     "ja": "二つのローマ、二つの舌。ドームの下の冷気を感じろ。",
+     "fr": "Deux Romes, deux langues. Sens le froid sous le dôme.",
+     "de": "Zwei Rom und zwei Zungen. Spür die Kälte unter der Kuppel."
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "the patriarchal throne",
+    "target_zh": "宗主教寶座",
+    "target_ja": "総主教の座",
+    "target_fr": "le trône patriarcal",
+    "target_de": "den Patriarchenthron",
+    "x": 40,
+    "y": 45
+   }
+  },
+  {
+   "phase": "climax",
+   "anim": "temple",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "Novice",
+     "en": "They walk out. The chant resumes — but the crack is already in the stone.",
+     "zh": "他們走出去。聖歌再起——裂縫已在石頭裡。",
+     "ja": "彼らが出て行く。詠唱が再開——だが亀裂はすでに石にある。",
+     "fr": "Ils sortent. Le chant reprend — mais la fissure est déjà dans la pierre.",
+     "de": "Sie gehen. Der Gesang setzt wieder ein — doch der Riss sitzt schon im Stein."
+    }
+   ],
+   "interaction": {
+    "type": "follow",
+    "target": "the guide",
+    "target_zh": "嚮導",
+    "target_ja": "案内人",
+    "target_fr": "le guide",
+    "target_de": "den Führer",
+    "x": 48,
+    "y": 55
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "16 July 1054: legates place a bull of excommunication in Hagia Sophia.",
+  "Patriarch Michael Cerularius responds in kind.",
+  "Roots are older; the date becomes symbolic."
+ ],
+ "facts_zh": [
+  "1054 年 7 月 16 日：使節將絕罰詔書置於聖索菲亞。",
+  "宗主教米哈伊爾·塞魯拉里烏斯以牙還牙。",
+  "根源更早；此日成為象徵。"
+ ],
+ "facts_ja": [
+  "1054年7月16日：使節が破門教書をアヤソフィアに置く。",
+  "総主教ミカエル・ケラルリオスが応酬。",
+  "根はより古く、この日が象徴となる。"
+ ],
+ "facts_fr": [
+  "16 juil. 1054 : bulle d’excommunication à Sainte-Sophie.",
+  "Le patriarche Michel Cérulaire répond.",
+  "Les racines sont plus anciennes ; la date devient symbole."
+ ],
+ "facts_de": [
+  "16. Juli 1054: Exkommunikationsbulle in der Hagia Sophia.",
+  "Patriarch Michael Kerullarios antwortet.",
+  "Wurzeln sind älter; das Datum wird Symbol."
+ ],
+ "next": "Catholic and Orthodox communions remain distinct; dialogue continues into the modern era.",
+ "next_zh": "天主教與東正教仍各成共融；對話延續到現代。",
+ "next_ja": "カトリックと正教は別の交わりのまま、対話は現代まで続く。",
+ "next_fr": "Communions catholique et orthodoxe restent distinctes ; le dialogue se poursuit à l’ère moderne.",
+ "next_de": "Katholische und orthodoxe Gemeinschaften bleiben getrennt; Dialog geht in die Moderne weiter.",
+ "then_now": {
+  "then": "Byzantine Constantinople",
+  "now": "Istanbul, Türkiye"
+ },
+ "quiz": {
+  "q": "What year marks the symbolic East–West Schism?",
+  "options": [
+   "1054",
+   "1204",
+   "1453"
+  ],
+  "answer": 0
+ },
+ "sources": [
+  {
+   "title": "Britannica: Schism of 1054",
+   "url": "https://www.britannica.com/event/East-West-Schism-1054"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}

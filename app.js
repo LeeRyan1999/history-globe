@@ -1,11 +1,15 @@
 const I18N={
-en:{evList:'Events',countries:'Countries',peoples:'Peoples / cultures',peoplesOn:'Peoples on',peoplesOff:'Peoples off',ctyNote:'Polities in this border snapshot. Tap to fly & highlight.',ethNote:'Approximate cultural / ethnic regions from historical-basemaps (not precise borders).',ethSnap:' · peoples layer on (approx.)',peopleTag:'people',ground:'Ground view',groundOn:'Ground view — drag to look around',groundOff:'Back to globe',tilesNote:'Imagery © Esri',lodFull:'detail',lodSimple:'overview',earlier:'Earlier',later:'Later',loading:'Loading borders…',replay:'↻ Replay',cont:'Continue ▸',doAct:'(do the action ↑)',snap:'Borders snapshot',fail:'Border data failed to load',built:'built',destroyed:'destroyed',enter:'▶ Enter POV',close:'Close',thenNow:'Then & Now',then:'Then',now:'Now',facts:'3 Facts',next:'What happened next',quiz:'Quiz',sources:'Sources',script:'Script by',status:'status',art:'Scene art: AI-generated illustration',back:'🌍 Back to globe',kofi:'Support on Ko-fi',look:'👁 Look at',tap:'☝ Tap',follow:'👣 Follow',bc:'BC',ad:'AD',eras:['Ancient Egypt','Classical','Early Middle Ages','11th c.','13th c.','15th c.','17th c.','19th c.','1914','Today']},
-ja:{evList:'出来事',countries:'国・勢力',peoples:'民族・文化',peoplesOn:'民族表示オン',peoplesOff:'民族表示オフ',ctyNote:'この年の国境データに含まれる勢力。タップで移動・強調。',ethNote:'historical-basemaps の文化・民族領域（概略。精密な境界ではありません）。',ethSnap:' · 民族レイヤー（概略）',peopleTag:'民族',ground:'地上ビュー',groundOn:'地上ビュー — ドラッグで見回す',groundOff:'地球に戻る',tilesNote:'Imagery © Esri',lodFull:'詳細',lodSimple:'俯瞰',earlier:'前へ',later:'次へ',loading:'国境データを読み込み中…',replay:'↻ もう一度',cont:'続ける ▸',doAct:'（上の操作をしてください ↑）',snap:'国境データの年',fail:'国境データを読み込めませんでした',built:'建造',destroyed:'破壊',enter:'▶ 体験する',close:'閉じる',thenNow:'当時と今',then:'当時',now:'今',facts:'3つの知識',next:'その後どうなった',quiz:'クイズ',sources:'出典',script:'脚本',status:'状態',art:'場面画像：AI生成イラスト',back:'🌍 地球に戻る',kofi:'Ko-fiで支援する',look:'👁 見る',tap:'☝ タップ',follow:'👣 ついて行く',bc:'紀元前',ad:'西暦',eras:['古代エジプト','古典期','中世初期','11世紀','13世紀','15世紀','17世紀','19世紀','1914','今日']},
-fr:{evList:'Événements',countries:'Pays',peoples:'Peuples / cultures',peoplesOn:'Peuples activés',peoplesOff:'Peuples désactivés',ctyNote:'Entités de cette carte. Touchez pour y aller et les souligner.',ethNote:'Régions culturelles / ethniques approximatives (historical-basemaps), pas des frontières précises.',ethSnap:' · couche peuples (approx.)',peopleTag:'peuple',ground:'Vue au sol',groundOn:'Vue au sol — glissez pour regarder',groundOff:'Retour au globe',tilesNote:'Imagery © Esri',lodFull:'détail',lodSimple:'aperçu',earlier:'Plus tôt',later:'Plus tard',loading:'Chargement des frontières…',replay:'↻ Rejouer',cont:'Continuer ▸',doAct:'(faites l’action ↑)',snap:'Frontières de',fail:'Échec du chargement des frontières',built:'construit',destroyed:'détruit',enter:'▶ Vivre la scène',close:'Fermer',thenNow:'Hier et aujourd’hui',then:'Hier',now:'Aujourd’hui',facts:'3 faits',next:'Et ensuite',quiz:'Quiz',sources:'Sources',script:'Scénario',status:'statut',art:'Illustration générée par IA',back:'🌍 Retour au globe',kofi:'Soutenir sur Ko-fi',look:'👁 Regarder',tap:'☝ Toucher',follow:'👣 Suivre',bc:'av. J.-C.',ad:'',eras:['Égypte antique','Antiquité classique','Haut Moyen Âge','XIe s.','XIIIe s.','XVe s.','XVIIe s.','XIXe s.','1914','Aujourd’hui']},
-de:{evList:'Ereignisse',countries:'Länder',peoples:'Völker / Kulturen',peoplesOn:'Völker an',peoplesOff:'Völker aus',ctyNote:'Politische Einheiten in diesem Grenzstand. Tippen zum Anfliegen.',ethNote:'Ungefähre Kultur-/Ethnoregionen aus historical-basemaps (keine präzisen Grenzen).',ethSnap:' · Völker-Ebene (approx.)',peopleTag:'Volk',ground:'Bodenansicht',groundOn:'Bodenansicht — ziehen zum Umschauen',groundOff:'Zurück zum Globus',tilesNote:'Imagery © Esri',lodFull:'Detail',lodSimple:'Übersicht',earlier:'Früher',later:'Später',loading:'Grenzen werden geladen…',replay:'↻ Wiederholen',cont:'Weiter ▸',doAct:'(Aktion ausführen ↑)',snap:'Grenzen-Stand',fail:'Grenzdaten konnten nicht geladen werden',built:'erbaut',destroyed:'zerstört',enter:'▶ Szene erleben',close:'Schließen',thenNow:'Damals & heute',then:'Damals',now:'Heute',facts:'3 Fakten',next:'Wie ging es weiter',quiz:'Quiz',sources:'Quellen',script:'Skript von',status:'Status',art:'Szenenbild: KI-generierte Illustration',back:'🌍 Zurück zum Globus',kofi:'Auf Ko-fi unterstützen',look:'👁 Ansehen',tap:'☝ Antippen',follow:'👣 Folgen',bc:'v. Chr.',ad:'n. Chr.',eras:['Altes Ägypten','Antike','Frühmittelalter','11. Jh.','13. Jh.','15. Jh.','17. Jh.','19. Jh.','1914','Heute']},
-zh:{evList:'歷史事件',countries:'國家／政權',peoples:'民族／文化',peoplesOn:'民族分佈開啟',peoplesOff:'民族分佈關閉',ctyNote:'此年份國界資料中的政權。點選後飛過去並金色標示。',ethNote:'民族／文化分佈為 historical-basemaps 的概略區域，非精確邊界。',ethSnap:' · 已開民族層（概略）',peopleTag:'民族',ground:'地面視角',groundOn:'地面視角 — 拖曳環視',groundOff:'回到地球',tilesNote:'影像 © Esri',lodFull:'精細',lodSimple:'概覽',earlier:'較早',later:'較晚',loading:'載入國界中…',replay:'↻ 重播',cont:'繼續 ▸',doAct:'（請做上方的動作 ↑）',snap:'國界資料年份',fail:'國界資料載入失敗',built:'建於',destroyed:'毀於',enter:'▶ 親身體驗',close:'關閉',thenNow:'當時與今天',then:'當時',now:'今天',facts:'3 個知識點',next:'後來呢',quiz:'小測驗',sources:'來源',script:'劇本',status:'狀態',art:'場景圖：AI 生成插畫',back:'🌍 回到地球',kofi:'在 Ko-fi 支持',look:'👁 看',tap:'☝ 點',follow:'👣 跟著',bc:'西元前',ad:'西元',eras:['古埃及','古典','中世紀早期','11世紀','13世紀','15世紀','17世紀','19世紀','1914','今天']}};
+en:{evList:'Events',evEra:'Events near this era (sorted by year; nearest highlighted)',countries:'Countries',peoples:'Peoples / cultures',peoplesOn:'Peoples on',peoplesOff:'Peoples off',ctyNote:'Polities in this border snapshot. Tap to fly & highlight.',ethNote:'Approximate cultural / ethnic regions from historical-basemaps (not precise borders).',ethSnap:' · peoples layer on (approx.)',peopleTag:'people',ground:'Ground view',groundOn:'Ground view — drag to look around',groundOff:'Back to globe',tilesNote:'Imagery © Esri',lodFull:'detail',lodSimple:'overview',earlier:'Earlier',later:'Later',loading:'Loading borders…',replay:'↻ Replay',cont:'Continue ▸',doAct:'(do the action ↑)',snap:'Borders snapshot',fail:'Border data failed to load',built:'built',destroyed:'destroyed',enter:'▶ Enter POV',close:'Close',thenNow:'Then & Now',then:'Then',now:'Now',facts:'3 Facts',next:'What happened next',quiz:'Quiz',sources:'Sources',script:'Script by',status:'status',art:'Animated scene (lightweight canvas)',back:'🌍 Back to globe',kofi:'Support on Ko-fi',look:'👁 Look at',tap:'☝ Tap',follow:'👣 Follow',bc:'BC',ad:'AD',eras:['Ancient Egypt','Classical','Early Middle Ages','11th c.','13th c.','15th c.','17th c.','19th c.','1914','Today']},
+ja:{evList:'出来事',evEra:'この時代付近の出来事（年順・最も近いものを強調）',countries:'国・勢力',peoples:'民族・文化',peoplesOn:'民族表示オン',peoplesOff:'民族表示オフ',ctyNote:'この年の国境データに含まれる勢力。タップで移動・強調。',ethNote:'historical-basemaps の文化・民族領域（概略。精密な境界ではありません）。',ethSnap:' · 民族レイヤー（概略）',peopleTag:'民族',ground:'地上ビュー',groundOn:'地上ビュー — ドラッグで見回す',groundOff:'地球に戻る',tilesNote:'Imagery © Esri',lodFull:'詳細',lodSimple:'俯瞰',earlier:'前へ',later:'次へ',loading:'国境データを読み込み中…',replay:'↻ もう一度',cont:'続ける ▸',doAct:'（上の操作をしてください ↑）',snap:'国境データの年',fail:'国境データを読み込めませんでした',built:'建造',destroyed:'破壊',enter:'▶ 体験する',close:'閉じる',thenNow:'当時と今',then:'当時',now:'今',facts:'3つの知識',next:'その後どうなった',quiz:'クイズ',sources:'出典',script:'脚本',status:'状態',art:'アニメ場面（軽量キャンバス）',back:'🌍 地球に戻る',kofi:'Ko-fiで支援する',look:'👁 見る',tap:'☝ タップ',follow:'👣 ついて行く',bc:'紀元前',ad:'西暦',eras:['古代エジプト','古典期','中世初期','11世紀','13世紀','15世紀','17世紀','19世紀','1914','今日']},
+fr:{evList:'Événements',evEra:'Événements proches de cette ère (triés; le plus proche en surbrillance)',countries:'Pays',peoples:'Peuples / cultures',peoplesOn:'Peuples activés',peoplesOff:'Peuples désactivés',ctyNote:'Entités de cette carte. Touchez pour y aller et les souligner.',ethNote:'Régions culturelles / ethniques approximatives (historical-basemaps), pas des frontières précises.',ethSnap:' · couche peuples (approx.)',peopleTag:'peuple',ground:'Vue au sol',groundOn:'Vue au sol — glissez pour regarder',groundOff:'Retour au globe',tilesNote:'Imagery © Esri',lodFull:'détail',lodSimple:'aperçu',earlier:'Plus tôt',later:'Plus tard',loading:'Chargement des frontières…',replay:'↻ Rejouer',cont:'Continuer ▸',doAct:'(faites l’action ↑)',snap:'Frontières de',fail:'Échec du chargement des frontières',built:'construit',destroyed:'détruit',enter:'▶ Vivre la scène',close:'Fermer',thenNow:'Hier et aujourd’hui',then:'Hier',now:'Aujourd’hui',facts:'3 faits',next:'Et ensuite',quiz:'Quiz',sources:'Sources',script:'Scénario',status:'statut',art:'Scène animée (canvas léger)',back:'🌍 Retour au globe',kofi:'Soutenir sur Ko-fi',look:'👁 Regarder',tap:'☝ Toucher',follow:'👣 Suivre',bc:'av. J.-C.',ad:'',eras:['Égypte antique','Antiquité classique','Haut Moyen Âge','XIe s.','XIIIe s.','XVe s.','XVIIe s.','XIXe s.','1914','Aujourd’hui']},
+de:{evList:'Ereignisse',evEra:'Ereignisse nahe dieser Epoche (sortiert; Nächstes hervorgehoben)',countries:'Länder',peoples:'Völker / Kulturen',peoplesOn:'Völker an',peoplesOff:'Völker aus',ctyNote:'Politische Einheiten in diesem Grenzstand. Tippen zum Anfliegen.',ethNote:'Ungefähre Kultur-/Ethnoregionen aus historical-basemaps (keine präzisen Grenzen).',ethSnap:' · Völker-Ebene (approx.)',peopleTag:'Volk',ground:'Bodenansicht',groundOn:'Bodenansicht — ziehen zum Umschauen',groundOff:'Zurück zum Globus',tilesNote:'Imagery © Esri',lodFull:'Detail',lodSimple:'Übersicht',earlier:'Früher',later:'Später',loading:'Grenzen werden geladen…',replay:'↻ Wiederholen',cont:'Weiter ▸',doAct:'(Aktion ausführen ↑)',snap:'Grenzen-Stand',fail:'Grenzdaten konnten nicht geladen werden',built:'erbaut',destroyed:'zerstört',enter:'▶ Szene erleben',close:'Schließen',thenNow:'Damals & heute',then:'Damals',now:'Heute',facts:'3 Fakten',next:'Wie ging es weiter',quiz:'Quiz',sources:'Quellen',script:'Skript von',status:'Status',art:'Animierte Szene (leichtes Canvas)',back:'🌍 Zurück zum Globus',kofi:'Auf Ko-fi unterstützen',look:'👁 Ansehen',tap:'☝ Antippen',follow:'👣 Folgen',bc:'v. Chr.',ad:'n. Chr.',eras:['Altes Ägypten','Antike','Frühmittelalter','11. Jh.','13. Jh.','15. Jh.','17. Jh.','19. Jh.','1914','Heute']},
+zh:{evList:'歷史事件',evEra:'接近此時代的事件（依年份排序；最近的會醒目標示）',countries:'國家／政權',peoples:'民族／文化',peoplesOn:'民族分佈開啟',peoplesOff:'民族分佈關閉',ctyNote:'此年份國界資料中的政權。點選後飛過去並金色標示。',ethNote:'民族／文化分佈為 historical-basemaps 的概略區域，非精確邊界。',ethSnap:' · 已開民族層（概略）',peopleTag:'民族',ground:'地面視角',groundOn:'地面視角 — 拖曳環視',groundOff:'回到地球',tilesNote:'影像 © Esri',lodFull:'精細',lodSimple:'概覽',earlier:'較早',later:'較晚',loading:'載入國界中…',replay:'↻ 重播',cont:'繼續 ▸',doAct:'（請做上方的動作 ↑）',snap:'國界資料年份',fail:'國界資料載入失敗',built:'建於',destroyed:'毀於',enter:'▶ 親身體驗',close:'關閉',thenNow:'當時與今天',then:'當時',now:'今天',facts:'3 個知識點',next:'後來呢',quiz:'小測驗',sources:'來源',script:'劇本',status:'狀態',art:'動畫場景（輕量 canvas）',back:'🌍 回到地球',kofi:'在 Ko-fi 支持',look:'👁 看',tap:'☝ 點',follow:'👣 跟著',bc:'西元前',ad:'西元',eras:['古埃及','古典','中世紀早期','11世紀','13世紀','15世紀','17世紀','19世紀','1914','今天']}};
 let LANG=localStorage.getItem('hg_lang');if(!I18N[LANG])LANG='en';
 const t=k=>I18N[LANG][k]??I18N.en[k];const ZH=()=>LANG==='zh';const z=s=>ZH()&&s?s:'';
+const loc=(o,base)=>{if(!o)return'';const k=base+(LANG==='en'?'':'_'+LANG);if(o[k])return o[k];if(LANG!=='en'&&o[base+'_en'])return o[base+'_en'];return o[base]||o[base+'_zh']||''};
+const locLine=(l)=>{if(!l)return['',''];const prim=l[LANG]||l.en||'';const sec=LANG==='en'?(l.zh||''):(l.en||'');return[prim,sec]};
+const locArr=(e,base)=>{const a=e[base+(LANG==='en'?'':'_'+LANG)]||e[base]||[];const zh=e[base+'_zh']||[];return a.map((f,i)=>({t:f,s:LANG==='en'?(zh[i]||''):(LANG==='zh'?(e[base]||[])[i]||'':(e[base]||[])[i]||'')}))};
+
 const SNAPS=[-123000,-10000,-8000,-5000,-4000,-3000,-2000,-1500,-1000,-700,-500,-400,-323,-300,-200,-100,-1,100,200,300,400,500,600,700,800,900,1000,1100,1200,1279,1300,1400,1492,1500,1530,1600,1650,1700,1715,1783,1800,1815,1878,1880,1900,1914,1920,1930,1938,1945,1960,1994,2000,2010];
 const BASE='https://cdn.jsdelivr.net/gh/aourednik/historical-basemaps@master/geojson/';
 const snapFile=y=>'world_'+(y<0?'bc'+(-y):y)+'.geojson';
@@ -76,7 +80,7 @@ function buildBorderPaths(feats){
 const MOB=/iPad|iPhone|iPod/.test(navigator.userAgent)||(navigator.maxTouchPoints>1&&/Mac/.test(navigator.userAgent));
 let zoomBand='far'; /* far | mid | near — fill alpha, tiles, border LOD */
 const G=Globe()($('globe'))
- .globeImageUrl('img/earth-night.jpg?v=20261028e')
+ .globeImageUrl('img/earth-night.jpg?v=20261028f')
  .backgroundImageUrl('https://unpkg.com/three-globe/example/img/night-sky.png')
  .polygonsTransitionDuration(0).atmosphereColor('#c9a96e').atmosphereAltitude(.2)
  .polygonAltitude(d=>{const n=featLabel(d);if(!n)return 0.003; const base=MOB?0.016:0.009; return zoomBand==='near'?base*0.55:(zoomBand==='mid'?base*0.75:base)})
@@ -534,7 +538,26 @@ async function loadBorders(){
   }
   if(loadId===borderLoadId)$('loading').hidden=true;
 }
-function active(e){const end=e.year_end||e.year;return year>=e.year-50&&year<=end+50}
+function nearestEra(y){return ERAS.reduce((a,b)=>Math.abs(b-y)<Math.abs(a-y)?b:a)}
+function eraBounds(y){
+  const e=nearestEra(y);const i=ERAS.indexOf(e);
+  const lo=i===0?e-800:(ERAS[i-1]+e)/2;
+  const hi=i===ERAS.length-1?e+100:(e+ERAS[i+1])/2;
+  return[lo,hi];
+}
+function active(e){
+  const end=e.year_end||e.year;
+  if(nearestEra(e.year)===nearestEra(year)||nearestEra(end)===nearestEra(year))return true;
+  const[lo,hi]=eraBounds(year);return e.year<=hi&&end>=lo;
+}
+function eventsInEra(){
+  const era=nearestEra(year);const[lo,hi]=eraBounds(year);
+  const byEra=events.filter(e=>nearestEra(e.year)===era||nearestEra(e.year_end||e.year)===era);
+  const byWin=events.filter(e=>{const end=e.year_end||e.year;return e.year<=hi&&end>=lo});
+  const map=new Map();for(const e of byEra.concat(byWin))map.set(e.id,e);
+  return[...map.values()].sort((a,b)=>Math.abs(a.year-year)-Math.abs(b.year-year)||a.year-b.year);
+}
+function nearestEvent(list){if(!list.length)return null;return list.reduce((a,b)=>Math.abs(b.year-year)<Math.abs(a.year-year)?b:a)}
 function mk(cls,html,fn){const el=document.createElement('div');el.className=cls;el.innerHTML=html;if(fn){el.addEventListener('click',ev=>{ev.stopPropagation();fn()});el.addEventListener('touchend',ev=>{ev.preventDefault();ev.stopPropagation();fn()})}return el}
 function flyToLM(l){
  tip(`${l.icon||''} ${ZH()?l.zh:l.name} (${t('built')} ${fmt(l.built)}${l.destroyed!=null?', '+t('destroyed')+' '+fmt(l.destroyed):''})`);
@@ -571,7 +594,7 @@ function paintHtml(pov){
   const lms=landmarks.filter(aliveLM).filter(l=>!(nearIds&&nearIds.has(l.id))).map(l=>({lat:l.lat,lng:l.lng,el:mk('lm',l.icon,()=>flyToLM(l))}));
   const evs=events.filter(active);
   const cns=labelCandidates(pov).map(m=>({lat:m.lat,lng:m.lng,el:mk('cn'+(m.people?' people':''),m.name)}));
-  G.htmlElementsData([...cns,...lms,...evs.map(e=>({lat:e.lat,lng:e.lng,el:mk('ev',`<b>${ZH()?e.title_zh:e.title}</b>`,()=>openPanel(e))}))]);
+  G.htmlElementsData([...cns,...lms,...evs.map(e=>({lat:e.lat,lng:e.lng,el:mk('ev',`<b>${loc(e,'title')||e.title}</b>`,()=>openPanel(e))}))]);
   G.ringsData(evs);
 }
 function refreshLabelsOnly(){
@@ -600,7 +623,11 @@ function applyLang(){document.documentElement.lang=LANG==='zh'?'zh-Hant':LANG;$(
  if(!$('evlist').hidden)drawList();if(!$('ctylist').hidden)drawCountries();
  const k=$('kofi');k.title=t('kofi');k.setAttribute('aria-label',t('kofi'));$('next').textContent=$('hot').hidden?t('cont'):t('doAct');drawEras();updateSnapNote();render()}
 $('lang').onchange=e=>{LANG=e.target.value;localStorage.setItem('hg_lang',LANG);applyLang()};
-function drawList(){const L=$('evlist');L.innerHTML=`<h3>${t('evList')}</h3>`+[...events].sort((a,b)=>a.year-b.year).map(e=>`<button data-id="${e.id}"><span>${fmt(e.year)}</span>${ZH()?e.title_zh:e.title}</button>`).join('');
+function drawList(){const L=$('evlist');const list=eventsInEra();const near=nearestEvent(list);const[lo,hi]=eraBounds(year);
+ L.innerHTML=`<h3>${t('evList')}</h3><div class="evnote">${t('evEra')} · ${fmt(Math.round(lo))} – ${fmt(Math.round(hi))} · ${list.length}</div>`+list.map(e=>{
+  const title=loc(e,'title')||e.title;const cls=near&&e.id===near.id?'near':'';
+  return`<button data-id="${e.id}" class="${cls}"><span class="ey">${fmt(e.year)}</span>${title}</button>`;
+ }).join('')||`<p class="evnote">—</p>`;
  L.querySelectorAll('button').forEach(b=>b.onclick=()=>{const e=events.find(x=>x.id===b.dataset.id);L.hidden=true;setYear(e.year);openPanel(e)})}
 $('evbtn').onclick=()=>{const L=$('evlist');$('ctylist').hidden=true;if(L.hidden)drawList();L.hidden=!L.hidden};
 function drawCountries(){
@@ -638,7 +665,9 @@ function setEthnic(on){
 $('ethbtn').onclick=()=>setEthnic(!ethnicOn);
 if($('gvbtn'))$('gvbtn').onclick=()=>toggleGround();
 function openPanel(e){if(!e)return;G.controls().autoRotate=false;G.pointOfView({lat:e.lat,lng:e.lng,altitude:1.4},1000);const p=$('panel');p.hidden=false;
- p.innerHTML=`<h2>${e.title}</h2><div class="zh">${z(e.title_zh)} ${e.date}</div><p>${e.summary}</p><p class="zh">${z(e.summary_zh)}</p><p><i>${e.perspective_role}</i><br><span class="zh">${z(e.perspective_role_zh)}</span></p>
+ const title=loc(e,'title')||e.title, sum=loc(e,'summary')||e.summary, role=loc(e,'perspective_role')||e.perspective_role;
+ const sumEn=e.summary, roleEn=e.perspective_role;
+ p.innerHTML=`<h2>${title}</h2><div class="zh">${e.date} · ${e.place}</div><p>${sum}</p>${LANG!=='en'?`<p class="zh">${sumEn}</p>`:z(e.summary_zh)?`<p class="zh">${e.summary_zh}</p>`:''}<p><i>${role}</i></p>${LANG!=='en'?`<p class="zh"><i>${roleEn}</i></p>`:z(e.perspective_role_zh)?`<p class="zh"><i>${e.perspective_role_zh}</i></p>`:''}
  <button class="btn" id="go">${t('enter')}</button> <button class="btn ghost" id="cl">${t('close')}</button>`;
  $('go').onclick=()=>{p.hidden=true;startPOV(e)};$('cl').onclick=()=>{p.hidden=true;G.controls().autoRotate=true}}
 // ---- audio ----
@@ -653,30 +682,39 @@ if('speechSynthesis'in window){pickVoice();speechSynthesis.onvoiceschanged=pickV
 function say(txt){if(!('speechSynthesis'in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(txt);u.lang='en-GB';if(voice)u.voice=voice;u.rate=.92;u.pitch=.9;speechSynthesis.speak(u)}
 // ---- POV: arrival → guide → climax → reflection ----
 let E,si,li,waiting;
-function startPOV(e){if(!e||!e.scenes){console.warn("startPOV: missing event");return}E=e;si=0;li=-1;$('pov').hidden=false;G.pauseAnimation();$('reflect').hidden=true;$('role').textContent=e.perspective_role+(ZH()?' · '+e.perspective_role_zh:'');povScene()}
+const AMB_AUDIO={desert:'wind',temple:'wind',siege:'wind',war:'wind',smoke:'wind',city:'wind',crowd:'wind',night:'wind',industrial:'wind',sea:'waves',ships:'waves',wind:'wind'};
+function povAnimTheme(s){return(s&&(s.anim||s.ambience))||(E&&E.anim)||'wind'}
+function ensurePovAnim(){if(!window.HGPovAnim)return;const bg=$('bg');if(!bg.querySelector('#povfx'))HGPovAnim.mount(bg)}
+function startPOV(e){if(!e||!e.scenes){console.warn("startPOV: missing event");return}E=e;si=0;li=-1;$('pov').hidden=false;G.pauseAnimation();$('reflect').hidden=true;
+ const role=loc(e,'perspective_role')||e.perspective_role;$('role').textContent=role+(LANG!=='en'&&e.perspective_role&&role!==e.perspective_role?' · '+e.perspective_role:'');
+ ensurePovAnim();povScene()}
 function povScene(){const s=E.scenes[si];if(!s||s.phase==='reflection')return povReflect();
- const bg=$('bg');if(s.bg)bg.style.backgroundImage=`url(${s.bg})`;bg.classList.toggle('zoom',!!s.zoom);ambience(s.ambience||null);li=-1;waiting=false;$('hot').hidden=true;
+ const bg=$('bg');bg.style.backgroundImage=s.bg?`url(${s.bg})`:'none';bg.classList.toggle('zoom',!!s.zoom);
+ const theme=povAnimTheme(s);if(window.HGPovAnim)HGPovAnim.start(theme);ambience(AMB_AUDIO[theme]||AMB_AUDIO[s.ambience]||null);li=-1;waiting=false;$('hot').hidden=true;
  if(s.phase==='arrival'){bg.style.opacity=0;$('sub').classList.add('off');$('caption').textContent=s.caption||E.date;$('caption').style.opacity=1;
-  setTimeout(()=>{bg.style.opacity=1},800);setTimeout(()=>{$('caption').style.opacity=0},3500);$('next').textContent=t('cont');return}
+  setTimeout(()=>{bg.style.opacity=1},400);setTimeout(()=>{$('caption').style.opacity=0},3200);$('next').textContent=t('cont');return}
  bg.style.opacity=1;$('caption').style.opacity=0;povLine()}
 function povLine(){const s=E.scenes[si];li++;
  if(li>=s.lines.length){if(s.interaction&&!waiting){waiting=true;return povHotspot(s.interaction)}si++;return povScene()}
- const l=s.lines[li];$('sub').classList.remove('off');$('speaker').textContent=l.speaker;$('en').textContent=l.en;$('zh').textContent=z(l.zh);say(l.en)}
+ const l=s.lines[li];const[prim,sec]=locLine(l);$('sub').classList.remove('off');$('speaker').textContent=l.speaker;$('en').textContent=prim;$('zh').textContent=sec;say(l.en||prim)}
 function povHotspot(it){const h=$('hot');h.hidden=false;h.style.left=it.x+'%';h.style.top=it.y+'%';
- h.querySelector('span').textContent=`${t(it.type)} ${it.target}${ZH()?' · '+it.target_zh:''}`;
+ const tgt=it['target'+(LANG==='en'?'':'_'+LANG)]||it.target;
+ h.querySelector('span').textContent=`${t(it.type)} ${tgt}${LANG!=='en'&&it.target&&tgt!==it.target?' · '+it.target:''}`;
  $('sub').classList.add('off');$('next').textContent=t('doAct');
  h.onclick=()=>{h.hidden=true;$('next').textContent=t('cont');const bg=$('bg');
   if(it.type==='look'||it.type==='follow')bg.style.transformOrigin=`${it.x}% ${it.y}%`;if(it.type==='follow')bg.classList.add('zoom');
+  if(window.HGPovAnim)HGPovAnim.setTheme(povAnimTheme(E.scenes[si+1]||E.scenes[si]));
   si++;povScene()}}
 $('next').onclick=()=>{if(!$('hot').hidden)return;const s=E.scenes[si];if(s&&s.phase==='arrival'){si++;return povScene()}povLine()};
-$('replay').onclick=()=>{const l=E.scenes[si]?.lines[li];if(l)say(l.en)};
+$('replay').onclick=()=>{const l=E.scenes[si]?.lines[li];if(l){const[prim]=locLine(l);say(l.en||prim)}};
 $('exit').onclick=closePOV;
-function closePOV(){speechSynthesis?.cancel();stopAmb();$('pov').hidden=true;G.resumeAnimation();$('bg').classList.remove('zoom');$('bg').style.transformOrigin='center';G.controls().autoRotate=true}
-function povReflect(){speechSynthesis?.cancel();stopAmb();const r=$('reflect');r.hidden=false;const q=E.quiz;
- r.innerHTML=`<div class="card"><h2>${E.title}${ZH()?' · '+E.title_zh:''}</h2><p><i>${E.date} — ${E.place}</i></p>
+function closePOV(){speechSynthesis?.cancel();stopAmb();if(window.HGPovAnim)HGPovAnim.stop();$('pov').hidden=true;G.resumeAnimation();$('bg').classList.remove('zoom');$('bg').style.transformOrigin='center';$('bg').style.backgroundImage='';G.controls().autoRotate=true}
+function povReflect(){speechSynthesis?.cancel();stopAmb();if(window.HGPovAnim)HGPovAnim.stop();const r=$('reflect');r.hidden=false;const q=E.quiz;
+ const title=loc(E,'title')||E.title;const facts=locArr(E,'facts');const nextT=loc(E,'next')||E.next;
+ r.innerHTML=`<div class="card"><h2>${title}</h2><p><i>${E.date} — ${E.place}</i></p>
  <h3>${t('thenNow')}</h3><div class="tn"><div><b>${t('then')}</b><br>${E.then_now.then}</div><div><b>${t('now')}</b><br>${E.then_now.now}</div></div>
- <h3>${t('facts')}</h3><ol>${E.facts.map((f,i)=>`<li>${f}<br><small>${z(E.facts_zh[i])}</small></li>`).join('')}</ol>
- <h3>${t('next')}</h3><p>${E.next}</p><p><small>${z(E.next_zh)}</small></p>
+ <h3>${t('facts')}</h3><ol>${facts.map(f=>`<li>${f.t}${f.s?`<br><small>${f.s}</small>`:''}</li>`).join('')}</ol>
+ <h3>${t('next')}</h3><p>${nextT}</p>${LANG!=='en'&&E.next&&nextT!==E.next?`<p><small>${E.next}</small></p>`:''}
  <h3>${t('quiz')}</h3><div class="q"><p>${q.q}</p>${q.options.map((o,i)=>`<button data-i="${i}">${o}</button>`).join('')}</div>
  <h3>${t('sources')}</h3><ul>${E.sources.map(s=>`<li><a href="${s.url}" target="_blank" rel="noopener">${s.title}</a></li>`).join('')}</ul>
  <p><small>${t('script')} ${E.author} · ${t('status')}: ${E.review_status} · ${t('art')}</small></p>
@@ -684,6 +722,6 @@ function povReflect(){speechSynthesis?.cancel();stopAmb();const r=$('reflect');r
  r.querySelectorAll('.q button').forEach(b=>b.onclick=()=>b.classList.add(+b.dataset.i===q.answer?'right':'wrong'));$('back').onclick=closePOV}
 // ---- boot ----
 if('serviceWorker'in navigator){navigator.serviceWorker.getRegistrations().then(rs=>rs.forEach(r=>r.unregister())).catch(()=>{})}
-(async()=>{landmarks=await (await fetch('landmarks.json?v=20261028e')).json();const idx=await (await fetch('events/index.json?v=20261028e')).json();
- events=await Promise.all(idx.map(f=>fetch('events/'+f+'?v=20261028e').then(r=>r.json())));applyLang()})();
+(async()=>{landmarks=await (await fetch('landmarks.json?v=20261028f')).json();const idx=await (await fetch('events/index.json?v=20261028f')).json();
+ events=await Promise.all(idx.map(f=>fetch('events/'+f+'?v=20261028f').then(r=>r.json())));applyLang()})();
 window.__HG={setYear,startPOV:id=>startPOV(events.find(e=>e.id===id)),openPanel:id=>openPanel(events.find(e=>e.id===id)),glow:n=>{const f=(borderIndex.find(x=>x.name===n)||{}).feat||(cache[curSnap]||cacheFull[curSnap]||[]).find(x=>featLabel(x)===n);if(f){setGlow(f);tip(n)}},clear:clearGlow,pov:(o,ms)=>G.pointOfView(o,ms),refresh3D,landmarks:()=>landmarks,year:()=>year,flyToLM:id=>{const l=landmarks.find(x=>x.id===id);if(l)flyToLM(l)},countries:()=>borderIndex,ethnic:setEthnic,selectCountry:n=>{const m=borderIndex.find(x=>x.name===n);selectCountry(m)},ground:toggleGround,exitGround,enterGround,borderMode:()=>borderMode,zoomBand:()=>zoomBand};

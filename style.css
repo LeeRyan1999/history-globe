@@ -69,3 +69,18 @@
 #attrib{position:fixed;left:10px;bottom:calc(env(safe-area-inset-bottom) + 8px);z-index:6;font-size:10px;opacity:.55;max-width:70vw;line-height:1.3;pointer-events:none}
 #gvhint{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom) + 52px);transform:translateX(-50%);z-index:6;background:#0c111dee;border:1px solid #c9a96e55;padding:6px 12px;border-radius:10px;font-size:12px;display:none}
 #gvhint.on{display:block}
+
+
+/* Animated POV canvas */
+#bg{background-color:#0a1018}
+#bg #povfx, #povfx{position:absolute;inset:0;width:100%;height:100%;display:block;pointer-events:none;z-index:0}
+#bg{z-index:0}
+#vignette{z-index:1}
+#hot,#caption,#role,#sub,#ctrl,#reflect{z-index:2}
+#evlist button.near{border-color:#ffb347;background:rgba(255,179,71,.18);box-shadow:0 0 0 1px #ffb34788}
+#evlist button .ey{opacity:.7;font-variant-numeric:tabular-nums;margin-right:.5em}
+#evlist .evnote{font-size:.75rem;opacity:.7;margin:.25rem 0 .6rem;padding:0 .2rem}
+@media (prefers-reduced-motion:reduce){
+  #bg{animation:none!important;transition:opacity .4s!important}
+  #bg.zoom{transform:none}
+}

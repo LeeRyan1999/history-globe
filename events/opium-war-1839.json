@@ -1,0 +1,147 @@
+{
+ "id": "opium-war-1839",
+ "year": 1839,
+ "date": "1839–1842",
+ "place": "Pearl River / Guangzhou",
+ "lat": 23.1,
+ "lng": 113.25,
+ "title": "First Opium War Begins",
+ "title_zh": "第一次鴉片戰爭爆發",
+ "title_ja": "第1次アヘン戦争開始",
+ "title_fr": "Début de la première guerre de l’opium",
+ "title_de": "Erster Opiumkrieg beginnt",
+ "perspective_role": "You are a Canton linguist on the waterfront as British warships gather beyond the Bogue.",
+ "perspective_role_zh": "虎門外英艦聚集時，你是碼頭上的廣州通事。",
+ "perspective_role_ja": "ボカ・ティグリスの外に英艦が集まるなか、埠頭の広州通事だ。",
+ "perspective_role_fr": "Tu es linguiste de Canton sur le quai tandis que les navires de guerre britanniques s’assemblent au-delà du Bogue.",
+ "perspective_role_de": "Du bist Kanton-Dolmetscher am Kai, während britische Kriegsschiffe jenseits des Bogue sammeln.",
+ "summary": "Conflict over opium trade and sovereignty escalates into the First Opium War (1839–42); Qing defeat leads to the Treaty of Nanjing and the unequal-treaty era.",
+ "summary_zh": "鴉片貿易與主權衝突升級為第一次鴉片戰爭（1839–42）；清朝戰敗帶來南京條約與不平等條約時代。",
+ "summary_ja": "アヘン貿易と主権をめぐる対立が第1次アヘン戦争（1839–42）へ。清の敗北が南京条約と不平等条約の時代を開く。",
+ "summary_fr": "Le conflit sur l’opium et la souveraineté devient la première guerre de l’opium (1839–42) ; la défaite Qing mène au traité de Nankin et à l’ère des traités inégaux.",
+ "summary_de": "Konflikt um Opiumhandel und Souveränität wird zum Ersten Opiumkrieg (1839–42); Qing-Niederlage führt zum Vertrag von Nanjing und zur Ära ungleicher Verträge.",
+ "anim": "ships",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "anim": "ships",
+   "caption": "1839 · Pearl River",
+   "ambience": "ships",
+   "duration": 12,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "anim": "ships",
+   "ambience": "ships",
+   "lines": [
+    {
+     "speaker": "Senior linguist",
+     "en": "Gunports open like eyes. Translate carefully — every word can become a casus belli.",
+     "zh": "砲門像眼睛睜開。翻譯要小心——每個字都可能變成開戰藉口。",
+     "ja": "砲門が目のように開く。慎重に訳せ——一言が開戦事由になりうる。",
+     "fr": "Sabords ouverts comme des yeux. Traduis avec soin — chaque mot peut devenir casus belli.",
+     "de": "Stückpforten öffnen sich wie Augen. Übersetz vorsichtig — jedes Wort kann Casus belli werden."
+    },
+    {
+     "speaker": "Senior linguist",
+     "en": "The river smells of tea, mud, and something bitter China did not invite.",
+     "zh": "江水有茶、泥，還有中國並未邀請的苦味。",
+     "ja": "川は茶と泥、そして中国が招いていない苦さの匂いだ。",
+     "fr": "Le fleuve sent le thé, la vase, et quelque chose d’amer que la Chine n’a pas invité.",
+     "de": "Der Fluss riecht nach Tee, Schlamm und etwas Bitterem, das China nicht eingeladen hat."
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "the British squadron",
+    "target_zh": "英國艦隊",
+    "target_ja": "イギリス艦隊",
+    "target_fr": "l’escadre britannique",
+    "target_de": "das britische Geschwader",
+    "x": 70,
+    "y": 40
+   }
+  },
+  {
+   "phase": "climax",
+   "anim": "ships",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "Clerk",
+     "en": "Dispatches fly. You taste metal in the humid air — the century’s hinge is a treaty you haven’t seen yet.",
+     "zh": "公文飛來飛去。潮濕空氣有金屬味——這個世紀的鉸鏈是你還沒見過的條約。",
+     "ja": "公文書が飛ぶ。湿った空気に金属の味——世紀の蝶番はまだ見ぬ条約だ。",
+     "fr": "Les dépêches volent. Tu goûtes le métal dans l’air humide — la charnière du siècle est un traité que tu n’as pas encore vu.",
+     "de": "Depeschen fliegen. Du schmeckst Metall in der feuchten Luft — das Scharnier des Jahrhunderts ist ein Vertrag, den du noch nicht gesehen hast."
+    }
+   ],
+   "interaction": {
+    "type": "follow",
+    "target": "the guide",
+    "target_zh": "嚮導",
+    "target_ja": "案内人",
+    "target_fr": "le guide",
+    "target_de": "den Führer",
+    "x": 48,
+    "y": 55
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "War 1839–1842 between Qing China and Britain.",
+  "Treaty of Nanjing (1842) cedes Hong Kong Island.",
+  "Opens ports and extraterritorial privileges."
+ ],
+ "facts_zh": [
+  "1839–1842 清英戰爭。",
+  "南京條約（1842）割讓香港島。",
+  "開放口岸與治外法權。"
+ ],
+ "facts_ja": [
+  "1839–1842、清とイギリス。",
+  "南京条約（1842）で香港島割譲。",
+  "開港と治外法権。"
+ ],
+ "facts_fr": [
+  "Guerre 1839–1842 Qing–Royaume-Uni.",
+  "Traité de Nankin (1842) : cession de Hong Kong.",
+  "Ports ouverts et extraterritorialité."
+ ],
+ "facts_de": [
+  "Krieg 1839–1842 Qing–Britannien.",
+  "Vertrag von Nanjing (1842): Abtretung Hongkongs.",
+  "Offene Häfen und Extraterritorialität."
+ ],
+ "next": "Further wars and reforms follow; the ‘century of humiliation’ shapes modern Chinese historical memory.",
+ "next_zh": "後續戰爭與改革接踵；「百年國恥」形塑近代中國歷史記憶。",
+ "next_ja": "さらなる戦争と改革が続き、「百年国恥」が近代中国の歴史記憶を形作る。",
+ "next_fr": "D’autres guerres et réformes suivent ; le « siècle d’humiliation » façonne la mémoire historique chinoise moderne.",
+ "next_de": "Weitere Kriege und Reformen folgen; das ‚Jahrhundert der Demütigung‘ prägt modernes chinesisches Geschichtsgedächtnis.",
+ "then_now": {
+  "then": "Canton / Pearl River Delta",
+  "now": "Guangzhou, China"
+ },
+ "quiz": {
+  "q": "Which treaty ended the First Opium War?",
+  "options": [
+   "Treaty of Nanjing",
+   "Treaty of Versailles",
+   "Treaty of Shimonoseki"
+  ],
+  "answer": 0
+ },
+ "sources": [
+  {
+   "title": "Britannica: Opium Wars",
+   "url": "https://www.britannica.com/topic/Opium-Wars"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}

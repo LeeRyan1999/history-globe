@@ -1,0 +1,147 @@
+{
+ "id": "baghdad-1258",
+ "year": 1258,
+ "date": "February 1258",
+ "place": "Baghdad",
+ "lat": 33.34,
+ "lng": 44.4,
+ "title": "Mongol Sack of Baghdad",
+ "title_zh": "蒙古軍攻陷巴格達",
+ "title_ja": "バグダード陥落",
+ "title_fr": "Sac de Bagdad",
+ "title_de": "Mongolensturm auf Bagdad",
+ "perspective_role": "You are a house scholar hiding manuscripts as Hulagu’s armies close in.",
+ "perspective_role_zh": "旭烈兀大軍逼近時，你是藏起手稿的宅邸學者。",
+ "perspective_role_ja": "フレグ軍が迫るなか、写本を隠す邸の学者だ。",
+ "perspective_role_fr": "Tu es savant de maison cachant des manuscrits tandis que les armées de Hülegü approchent.",
+ "perspective_role_de": "Du bist Hausgelehrter und versteckst Handschriften, während Hülegüs Heere nahen.",
+ "summary": "In 1258 Mongol forces under Hulagu Khan sack Baghdad, ending the Abbasid caliphate’s political power and devastating a great center of learning.",
+ "summary_zh": "1258 年旭烈兀率蒙古軍攻陷巴格達，結束阿拔斯哈里發的政治權威，重創學術重鎮。",
+ "summary_ja": "1258年、フレグ率いるモンゴル軍がバグダードを略奪。アッバース朝カリフの政治権力は終わり、学問の中心が壊滅する。",
+ "summary_fr": "En 1258, les Mongols de Hülegü mettent Bagdad à sac, fin du pouvoir politique abbasside et devastation d’un grand centre savant.",
+ "summary_de": "1258 plündern Mongolen unter Hülegü Bagdad, beenden die politische Macht der Abbasiden und verwüsten ein großes Gelehrtenzentrum.",
+ "anim": "siege",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "anim": "siege",
+   "caption": "1258 · Baghdad",
+   "ambience": "siege",
+   "duration": 12,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "anim": "siege",
+   "ambience": "siege",
+   "lines": [
+    {
+     "speaker": "Librarian",
+     "en": "Ink and ash already share the air. Choose which books can swim the Tigris.",
+     "zh": "墨與灰已混在空氣裡。選哪些書能游過底格里斯。",
+     "ja": "インクと灰がすでに空気を分け合う。チグリスを泳げる本を選べ。",
+     "fr": "L’encre et la cendre partagent déjà l’air. Choisis quels livres peuvent nager le Tigre.",
+     "de": "Tinte und Asche teilen schon die Luft. Wähl, welche Bücher den Tigris schwimmen können."
+    },
+    {
+     "speaker": "Librarian",
+     "en": "The House of Wisdom was a metaphor and a real hunger. Tonight hunger wins.",
+     "zh": "智慧宮曾是隱喻也是真實渴望。今晚，飢餓贏了。",
+     "ja": "知恵の館は比喩であり本物の飢えだった。今夜、飢えが勝つ。",
+     "fr": "La Maison de la Sagesse était métaphore et vraie faim. Ce soir la faim gagne.",
+     "de": "Das Haus der Weisheit war Metapher und echter Hunger. Heute Nacht siegt der Hunger."
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "the burning libraries",
+    "target_zh": "燃燒的書庫",
+    "target_ja": "燃える書庫",
+    "target_fr": "les bibliothèques en feu",
+    "target_de": "die brennenden Bibliotheken",
+    "x": 60,
+    "y": 40
+   }
+  },
+  {
+   "phase": "climax",
+   "anim": "siege",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "Neighbor",
+     "en": "The river runs black with pages. Hold your child’s hand — and one thin volume if you can.",
+     "zh": "河水被書頁染黑。抓住孩子的手——若能，再帶一本薄書。",
+     "ja": "川が頁で黒くなる。子の手を握れ——できれば薄い一冊も。",
+     "fr": "Le fleuve noircit de pages. Tiens la main de ton enfant — et un mince volume si tu peux.",
+     "de": "Der Fluss schwärzt sich mit Seiten. Halt die Hand deines Kindes — und einen dünnen Band, wenn du kannst."
+    }
+   ],
+   "interaction": {
+    "type": "follow",
+    "target": "the guide",
+    "target_zh": "嚮導",
+    "target_ja": "案内人",
+    "target_fr": "le guide",
+    "target_de": "den Führer",
+    "x": 48,
+    "y": 55
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "Feb 1258: Hulagu’s Mongols take Baghdad.",
+  "Abbasid caliph al-Mustaʿṣim is killed.",
+  "Learning centers suffer catastrophic loss."
+ ],
+ "facts_zh": [
+  "1258 年 2 月：旭烈兀蒙古軍攻下巴格達。",
+  "阿拔斯哈里發穆斯台爾綏姆被殺。",
+  "學術中心遭受災難性損失。"
+ ],
+ "facts_ja": [
+  "1258年2月：フレグのモンゴルがバグダードを占領。",
+  "アッバース朝カリフ・ムスタアスィムが殺される。",
+  "学問中心が壊滅的打撃を受ける。"
+ ],
+ "facts_fr": [
+  "Fév. 1258 : prise de Bagdad par Hülegü.",
+  "Le calife abbasside al-Mustaʿṣim est tué.",
+  "Les centres savants subissent une perte catastrophique."
+ ],
+ "facts_de": [
+  "Feb. 1258: Hülegüs Mongolen nehmen Bagdad.",
+  "Der abbasidische Kalif al-Mustaʿṣim wird getötet.",
+  "Gelehrtenzentren erleiden katastrophalen Verlust."
+ ],
+ "next": "Ilkhanid rule remakes the region; stories of lost books haunt Islamic and world memory.",
+ "next_zh": "伊兒汗統治重塑區域；失落書冊的故事纏繞伊斯蘭與世界記憶。",
+ "next_ja": "イルハン支配が地域を作り直し、失われた書の物語がイスラームと世界の記憶を憑く。",
+ "next_fr": "La domination ilkhanide refait la région ; les livres perdus hantent les mémoires islamique et mondiale.",
+ "next_de": "Ilkhanidische Herrschaft formt die Region neu; verlorene Bücher heimsuchen islamische und Weltgedächtnisse.",
+ "then_now": {
+  "then": "Abbasid Baghdad",
+  "now": "Baghdad, Iraq"
+ },
+ "quiz": {
+  "q": "Which Mongol leader’s forces sacked Baghdad in 1258?",
+  "options": [
+   "Hulagu Khan",
+   "Genghis Khan",
+   "Kublai Khan"
+  ],
+  "answer": 0
+ },
+ "sources": [
+  {
+   "title": "Britannica: Baghdad",
+   "url": "https://www.britannica.com/place/Baghdad"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}

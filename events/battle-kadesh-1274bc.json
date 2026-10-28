@@ -1,0 +1,155 @@
+{
+ "id": "battle-kadesh-1274bc",
+ "year": -1274,
+ "date": "c. 1274 BCE",
+ "place": "Kadesh (near Homs, Syria)",
+ "lat": 34.55,
+ "lng": 36.52,
+ "title": "Battle of Kadesh",
+ "title_zh": "卡迭石之戰",
+ "title_ja": "カデシュの戦い",
+ "title_fr": "Bataille de Qadech",
+ "title_de": "Schlacht bei Kadesch",
+ "perspective_role": "You are a light chariot runner in Ramesses II’s division near the Orontes.",
+ "perspective_role_zh": "你是拉美西斯二世軍團裡、奧龍特斯河附近的輕戰車傳令。",
+ "perspective_role_ja": "オロンテス川付近、ラメセス二世師団の軽戦車伝令だ。",
+ "perspective_role_fr": "Tu es coureur de char léger dans la division de Ramsès II près de l’Oronte.",
+ "perspective_role_de": "Du bist leichter Wagenläufer in Ramses’ II. Division nahe dem Orontes.",
+ "summary": "One of history’s earliest well-documented battles: Ramesses II of Egypt clashes with Muwatalli II’s Hittites at Kadesh. Both claim victory; a later treaty becomes the oldest surviving peace accord.",
+ "summary_zh": "史上最早詳載的戰役之一：埃及拉美西斯二世與赫梯穆瓦塔里二世在卡迭石交鋒。雙方皆稱勝；後來的條約成為現存最古老的和約。",
+ "summary_ja": "史上最も早く詳しく記された戦いの一つ。エジプトのラメセス二世とヒッタイトのムワタリ二世がカデシュで衝突。双方が勝利を主張し、後の条約は現存最古の平和条約となる。",
+ "summary_fr": "L’une des plus anciennes batailles bien documentées : Ramsès II affronte Muwatalli II à Qadech. Les deux campent sur la victoire ; un traité ultérieur est le plus vieux accord de paix conservé.",
+ "summary_de": "Eine der frühesten gut bezeugten Schlachten: Ramses II. trifft auf Muwatalli II. bei Kadesch. Beide beanspruchen den Sieg; ein späterer Vertrag ist der älteste erhaltene Friedensschluss.",
+ "anim": "war",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "anim": "war",
+   "caption": "c. 1274 BCE · Kadesh",
+   "ambience": "war",
+   "duration": 12,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "anim": "war",
+   "ambience": "war",
+   "lines": [
+    {
+     "speaker": "Chariot officer",
+     "en": "Dust on the Orontes. Hittite chariots — more than the scouts promised.",
+     "zh": "奧龍特斯河上揚塵。赫梯戰車——比斥候說的還多。",
+     "ja": "オロンテスの砂塵。ヒッタイトの戦車——斥候の話より多い。",
+     "fr": "Poussière sur l’Oronte. Des chars hittites — plus que promis.",
+     "de": "Staub am Orontes. Hethitische Wagen — mehr als die Späher sagten."
+    },
+    {
+     "speaker": "Chariot officer",
+     "en": "Stay on the king’s left wheel. If the line folds, you shout and ride.",
+     "zh": "守在國王左輪旁。防線一垮，你就喊、你就衝。",
+     "ja": "王の左輪に付け。線が折れれば叫んで走れ。",
+     "fr": "Reste à la roue gauche du roi. Si la ligne plie, tu cries et tu charges.",
+     "de": "Bleib am linken Rad des Königs. Bricht die Linie, schreist du und reitest."
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "the Hittite dust cloud",
+    "target_zh": "赫梯塵雲",
+    "target_ja": "ヒッタイトの砂塵",
+    "target_fr": "le nuage de poussière hittite",
+    "target_de": "die hethitische Staubwolke",
+    "x": 70,
+    "y": 40
+   }
+  },
+  {
+   "phase": "climax",
+   "anim": "siege",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "Ramesses’ runner",
+     "en": "The king charges alone into the fray — and the Amun division answers.",
+     "zh": "國王獨自衝進混戰——阿蒙軍團回應了。",
+     "ja": "王が単身乱戦へ——アメン師団が応える。",
+     "fr": "Le roi charge seul — et la division d’Amon répond.",
+     "de": "Der König stürmt allein — und die Amun-Division antwortet."
+    },
+    {
+     "speaker": "Ramesses’ runner",
+     "en": "When the dust settles, both kings will carve ‘victory’ in stone. Remember the taste of grit.",
+     "zh": "塵落定後，兩位國王都會在石頭上刻『勝利』。記住這口砂礫的味道。",
+     "ja": "砂が沈めば両王が石に『勝利』を刻む。砂利の味を覚えろ。",
+     "fr": "Quand la poussière retombe, les deux rois graveront ‘victoire’. Garde le goût du grit.",
+     "de": "Wenn der Staub sich legt, meißeln beide Könige ‚Sieg‘. Merk dir den Sandgeschmack."
+    }
+   ],
+   "interaction": {
+    "type": "follow",
+    "target": "the royal chariot",
+    "target_zh": "王車",
+    "target_ja": "王の戦車",
+    "target_fr": "le char royal",
+    "target_de": "den Königswagen",
+    "x": 45,
+    "y": 55
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "Fought c. 1274 BCE between Egypt (Ramesses II) and the Hittites (Muwatalli II).",
+  "Often cited among the largest chariot battles in history.",
+  "The later Egyptian–Hittite treaty (c. 1259 BCE) is the oldest surviving peace treaty."
+ ],
+ "facts_zh": [
+  "約西元前 1274 年，埃及（拉美西斯二世）對赫梯（穆瓦塔里二世）。",
+  "常被視為史上最大規模戰車戰之一。",
+  "後來的埃赫和約（約前 1259）是現存最古老的和平條約。"
+ ],
+ "facts_ja": [
+  "紀元前1274年頃、エジプト（ラメセス二世）対ヒッタイト（ムワタリ二世）。",
+  "史上最大級の戦車戦の一つとされる。",
+  "後のエジプト＝ヒッタイト条約（前1259頃）は現存最古の平和条約。"
+ ],
+ "facts_fr": [
+  "Vers 1274 av. J.-C., Égypte (Ramsès II) contre Hittites (Muwatalli II).",
+  "Souvent citée parmi les plus grandes batailles de chars.",
+  "Le traité égypto-hittite (~1259) est le plus ancien traité de paix conservé."
+ ],
+ "facts_de": [
+  "Ca. 1274 v. Chr., Ägypten (Ramses II.) gegen Hethiter (Muwatalli II.).",
+  "Oft als eine der größten Streitwagenschlachten genannt.",
+  "Der spätere ägyptisch-hethitische Vertrag (~1259) ist der älteste erhaltene Friedensvertrag."
+ ],
+ "next": "Propaganda on both sides froze the battle into temple walls; diplomacy later cooled the frontier for generations.",
+ "next_zh": "雙方宣傳把戰役刻進神廟牆；後來的外交讓邊界消停數代。",
+ "next_ja": "双方の宣伝が戦いを神殿の壁に凍らせ、後の外交が国境を何世代も冷やした。",
+ "next_fr": "La propagande des deux camps figea la bataille sur les murs des temples ; la diplomatie refroidit ensuite la frontière pour des générations.",
+ "next_de": "Propaganda beider Seiten meißelte die Schlacht in Tempelwände; Diplomatie kühlte die Grenze danach über Generationen.",
+ "then_now": {
+  "then": "Kadesh on the Orontes",
+  "now": "Near Tell Nebi Mend, Syria"
+ },
+ "quiz": {
+  "q": "Who led Egypt at Kadesh?",
+  "options": [
+   "Ramesses II",
+   "Thutmose III",
+   "Akhenaten"
+  ],
+  "answer": 0
+ },
+ "sources": [
+  {
+   "title": "Britannica: Battle of Kadesh",
+   "url": "https://www.britannica.com/event/Battle-of-Kadesh"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}

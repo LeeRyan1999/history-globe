@@ -1,109 +1,90 @@
 {
  "id": "zheng-he-1405",
  "year": 1405,
- "year_end": 1433,
- "date": "1405–1433",
- "place": "Ming fleet, South China Sea",
- "lat": 12.0,
- "lng": 112.0,
- "title": "Zheng He's treasure voyages",
- "title_zh": "鄭和下西洋",
- "perspective_role": "You are a young navigator's apprentice on a Ming treasure ship.",
- "perspective_role_zh": "你是明朝寶船上的年輕領航學徒。",
- "summary": "Between 1405 and 1433, Admiral Zheng He led seven great Ming voyages across the Indian Ocean, reaching Southeast Asia, India, Arabia and East Africa, with fleets of over 200 ships and about 27,000 men.",
- "summary_zh": "1405 至 1433 年間，鄭和率領明朝船隊七次遠航印度洋，到達東南亞、印度、阿拉伯與東非，船隊超過 200 艘、約兩萬七千人。",
+ "date": "1405",
+ "place": "Nanjing / South China Sea",
+ "lat": 32.06,
+ "lng": 118.8,
+ "title": "Zheng He’s First Voyage",
+ "title_zh": "鄭和第一次下西洋",
+ "title_ja": "鄭和の第1次航海",
+ "title_fr": "Premier voyage de Zheng He",
+ "title_de": "Zheng Hes erste Reise",
+ "perspective_role": "You are a deck hand on the treasure fleet as sails bloom over the Yangtze mouth.",
+ "perspective_role_zh": "你是寶船水手，看著長江口風帆一張張綻開。",
+ "perspective_role_ja": "宝船の甲板員で、長江河口に帆が咲くのを見ている。",
+ "perspective_role_fr": "Tu es matelot de la flotte aux trésors ; les voiles s’ouvrent à l’embouchure du Yangtsé.",
+ "perspective_role_de": "Du bist Decksmann der Schatzflotte; Segel blühen an der Jangtse-Mündung.",
+ "summary": "In 1405 Admiral Zheng He leads Ming China’s first treasure fleet south and west — diplomacy, trade, and spectacle on an oceanic scale.",
+ "summary_zh": "1405 年鄭和率明朝第一次寶船艦隊南下西航——外交、貿易與海上盛景。",
+ "summary_ja": "1405年、鄭和が明の第1次宝船艦隊を率いて南へ西へ——外交・交易・海の壮観。",
+ "summary_fr": "En 1405, l’amiral Zheng He mène la première flotte aux trésors des Ming vers le sud et l’ouest — diplomatie, commerce et spectacle océanique.",
+ "summary_de": "1405 führt Admiral Zheng He die erste Ming-Schatzflotte südwärts und westwärts — Diplomatie, Handel und ozeanisches Spektakel.",
+ "anim": "ships",
  "scenes": [
   {
    "phase": "arrival",
-   "bg": "img/zhenghe-1405.jpg",
-   "caption": "1405 · South China Sea",
-   "ambience": "waves",
-   "duration": 15,
+   "anim": "ships",
+   "caption": "1405 · Yangtze mouth",
+   "ambience": "ships",
+   "duration": 12,
    "lines": []
   },
   {
    "phase": "guide",
-   "bg": "img/zhenghe-1405.jpg",
-   "ambience": "waves",
+   "anim": "ships",
+   "ambience": "ships",
    "lines": [
     {
-     "speaker": "Ming officer",
-     "en": "Welcome aboard, apprentice.",
-     "zh": "歡迎上船，學徒。"
+     "speaker": "Boatswain",
+     "en": "Feel the deck lift — that’s the river letting go into the sea.",
+     "zh": "感覺甲板升起——那是江水放手，交給大海。",
+     "ja": "甲板が浮く——川が海に手を離す感触だ。",
+     "fr": "Sens le pont se soulever — le fleuve lâche prise vers la mer.",
+     "de": "Spür das Deck heben — der Fluss lässt los zum Meer."
     },
     {
-     "speaker": "Ming officer",
-     "en": "The Yongle Emperor sent us west.",
-     "zh": "永樂皇帝派我們出使西洋。"
-    },
-    {
-     "speaker": "Ming officer",
-     "en": "Look at the fleet behind me.",
-     "zh": "看看我身後的船隊。"
+     "speaker": "Boatswain",
+     "en": "Keep the lantern lines clear. The admiral wants no smoke in the emperor’s eyes even out here.",
+     "zh": "燈索別纏住。就算出海，提督也不要煙遮了皇帝的眼。",
+     "ja": "提灯の索を残せ。提督はここでも皇帝の目に煙を入れたくない。",
+     "fr": "Garde les drisses de lanternes libres. L’amiral ne veut pas de fumée dans les yeux de l’empereur, même ici.",
+     "de": "Lass die Laternenleinen frei. Der Admiral will keinen Rauch in des Kaisers Augen — auch hier nicht."
     }
    ],
    "interaction": {
     "type": "look",
-    "target": "the fleet",
-    "target_zh": "船隊",
-    "x": 70,
-    "y": 45
-   }
-  },
-  {
-   "phase": "guide",
-   "bg": "img/zhenghe-1405.jpg",
-   "lines": [
-    {
-     "speaker": "Ming officer",
-     "en": "Over two hundred ships sail with us.",
-     "zh": "有兩百多艘船與我們同行。"
-    },
-    {
-     "speaker": "Ming officer",
-     "en": "We steer by compass and by stars.",
-     "zh": "我們靠羅盤和星辰導航。"
-    },
-    {
-     "speaker": "Ming officer",
-     "en": "Hold the compass. Keep us true.",
-     "zh": "拿好羅盤，別偏了航線。"
-    }
-   ],
-   "interaction": {
-    "type": "tap",
-    "target": "the compass lantern",
-    "target_zh": "羅盤燈",
-    "x": 4,
-    "y": 40
+    "target": "the treasure ship masts",
+    "target_zh": "寶船桅杆",
+    "target_ja": "宝船のマスト",
+    "target_fr": "les mâts des navires aux trésors",
+    "target_de": "die Masten der Schatzschiffe",
+    "x": 50,
+    "y": 30
    }
   },
   {
    "phase": "climax",
-   "bg": "img/zhenghe-1405.jpg",
+   "anim": "ships",
    "zoom": true,
    "lines": [
     {
-     "speaker": "Ming officer",
-     "en": "Admiral Zheng He commands us all.",
-     "zh": "鄭和大人統領全軍。"
-    },
-    {
-     "speaker": "Ming officer",
-     "en": "We bring silk and porcelain as gifts.",
-     "zh": "我們帶著絲綢和瓷器作為禮物。"
-    },
-    {
-     "speaker": "Ming officer",
-     "en": "One day we will reach Africa.",
-     "zh": "總有一天我們會到達非洲。"
+     "speaker": "Mate",
+     "en": "Horizon after horizon. You carry porcelain and pepper dreams — and the Ming’s long arm of courtesy.",
+     "zh": "一望又一望的海平線。你載著瓷器與胡椒的夢——還有明朝那只客氣的長臂。",
+     "ja": "水平線の先に水平線。磁器と胡椒の夢を運び——明の長い礼儀の腕も。",
+     "fr": "Horizon après horizon. Tu portes porcelaine et rêves de poivre — et le long bras courtois des Ming.",
+     "de": "Horizont um Horizont. Du trägst Porzellan und Pfefferträume — und den langen höflichen Arm der Ming."
     }
    ],
    "interaction": {
     "type": "follow",
-    "target": "the officer",
-    "target_zh": "軍官",
-    "x": 20,
+    "target": "the guide",
+    "target_zh": "嚮導",
+    "target_ja": "案内人",
+    "target_fr": "le guide",
+    "target_de": "den Führer",
+    "x": 48,
     "y": 55
    }
   },
@@ -113,38 +94,52 @@
   }
  ],
  "facts": [
-  "Zheng He was a Muslim eunuch from Yunnan in the Yongle Emperor's service.",
-  "The fleets reached Malindi on the coast of modern Kenya; a giraffe was brought back to Beijing in 1414.",
-  "The voyages served diplomacy and tribute, not conquest."
+  "First voyage 1405–1407 under the Yongle Emperor.",
+  "Fleet visited Southeast Asia and the Indian Ocean rim.",
+  "Later voyages reached as far as East Africa."
  ],
  "facts_zh": [
-  "鄭和是出身雲南的回族宦官，為永樂皇帝效力。",
-  "船隊到達今肯亞的馬林迪，1414 年還有長頸鹿被送到北京。",
-  "遠航目的在外交與朝貢，而非征服。"
+  "第一次航行 1405–1407，永樂年間。",
+  "艦隊造訪東南亞與印度洋沿岸。",
+  "後來航次遠至東非。"
  ],
- "next": "After the seventh voyage (1431–33) the Ming court halted the expeditions and later restricted sea trade. China turned inward just as Portuguese ships began exploring the African coast — one of history's great 'what ifs'.",
- "next_zh": "第七次遠航（1431–33）之後，明廷停止遠航並限制海上貿易。中國轉向內斂，同時葡萄牙船隻正開始探索非洲海岸，成為歷史上著名的「如果」。",
+ "facts_ja": [
+  "第1次航海は1405–1407、永楽帝の治世。",
+  "東南アジアとインド洋沿岸を訪れる。",
+  "後の航海は東アフリカに達する。"
+ ],
+ "facts_fr": [
+  "Premier voyage 1405–1407 sous Yongle.",
+  "La flotte visite l’Asie du Sud-Est et l’océan Indien.",
+  "Des voyages ultérieurs atteignent l’Afrique de l’Est."
+ ],
+ "facts_de": [
+  "Erste Reise 1405–1407 unter Yongle.",
+  "Die Flotte besucht Südostasien und den Indischen Ozean.",
+  "Spätere Fahrten reichen bis Ostafrika."
+ ],
+ "next": "After the 1430s voyages stop; Europe’s later Age of Sail takes a different oceanic story.",
+ "next_zh": "1430 年代後航行中止；歐洲後來的大航海寫下另一種海洋史。",
+ "next_ja": "1430年代以降、航海は止まり、欧州の大航海時代が別の海の物語を書く。",
+ "next_fr": "Après les années 1430 les voyages cessent ; l’âge de la voile européen écrira une autre histoire océanique.",
+ "next_de": "Nach den 1430ern enden die Fahrten; Europas Zeitalter der Segelschiffe schreibt eine andere Ozeangeschichte.",
  "then_now": {
-  "then": "Ming 'Western Ocean' voyages",
-  "now": "Routes across modern Vietnam, Indonesia, Sri Lanka, India, Oman, Kenya"
+  "then": "Ming Nanjing / South China Sea",
+  "now": "Nanjing / South China Sea"
  },
  "quiz": {
-  "q": "Which emperor launched Zheng He's voyages?",
+  "q": "Which Ming admiral led the treasure fleets?",
   "options": [
-   "Hongwu",
-   "Yongle",
-   "Kangxi"
+   "Zheng He",
+   "Qi Jiguang",
+   "Koxinga"
   ],
-  "answer": 1
+  "answer": 0
  },
  "sources": [
   {
    "title": "Britannica: Zheng He",
    "url": "https://www.britannica.com/biography/Zheng-He"
-  },
-  {
-   "title": "Edward L. Dreyer, Zheng He: China and the Oceans in the Early Ming (2007)",
-   "url": "https://en.wikipedia.org/wiki/Zheng_He"
   }
  ],
  "author": "Lee & Grok Bot",

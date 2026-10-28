@@ -2,107 +2,89 @@
  "id": "columbus-1492",
  "year": 1492,
  "date": "12 October 1492",
- "place": "Guanahani, Bahamas",
- "lat": 24.05,
- "lng": -74.53,
- "title": "Columbus reaches the Americas",
+ "place": "Guanahani (San Salvador), Bahamas",
+ "lat": 24.1,
+ "lng": -74.5,
+ "title": "Columbus Lands in the Americas",
  "title_zh": "哥倫布抵達美洲",
- "perspective_role": "You are a young sailor aboard the Santa María.",
- "perspective_role_zh": "你是聖瑪利亞號上的年輕水手。",
- "summary": "Sailing for the Spanish Crown, Christopher Columbus crossed the Atlantic with three ships. On 12 October 1492 they landed on an island the Lucayan (Taíno) people called Guanahani. Columbus believed he had reached Asia.",
- "summary_zh": "哥倫布受西班牙王室資助，率三艘船橫越大西洋，1492 年 10 月 12 日登上當地盧卡亞（泰諾）人稱為瓜納哈尼的島嶼。他以為自己到了亞洲。",
+ "title_ja": "コロンブス、アメリカ上陸",
+ "title_fr": "Colomb en Amérique",
+ "title_de": "Kolumbus landet in Amerika",
+ "perspective_role": "You are a sailor on the Pinta, bare feet on wet deck as land smell cuts the salt.",
+ "perspective_role_zh": "你是「平塔號」水手，赤腳踩在濕甲板上，陸地氣息切開鹽味。",
+ "perspective_role_ja": "ピンタ号の水夫、濡れた甲板に裸足で、陸の匂いが塩を切る。",
+ "perspective_role_fr": "Tu es matelot sur la Pinta ; pieds nus sur le pont mouillé, l’odeur de terre coupe le sel.",
+ "perspective_role_de": "Du bist Matrose auf der Pinta; barfuß auf nassem Deck schneidet Landgeruch das Salz.",
+ "summary": "On 12 October 1492 Columbus’s ships reach an island in the Bahamas, opening a violent, transformative encounter between Europe and the Americas.",
+ "summary_zh": "1492 年 10 月 12 日哥倫布船隊抵達巴哈馬一座島嶼，開啟歐洲與美洲之間暴力而劇變的相遇。",
+ "summary_ja": "1492年10月12日、コロンブスの船がバハマの島に達し、欧州とアメリカの暴力的で変革的な出会いが始まる。",
+ "summary_fr": "Le 12 octobre 1492, les navires de Colomb atteignent une île des Bahamas — rencontre violente et transformative entre Europe et Amériques.",
+ "summary_de": "Am 12. Oktober 1492 erreichen Kolumbus’ Schiffe eine Bahamas-Insel — gewaltsame, transformative Begegnung Europas mit den Amerikas.",
+ "anim": "ships",
  "scenes": [
   {
    "phase": "arrival",
-   "bg": "img/columbus-1492.jpg",
-   "caption": "12 October 1492 · Bahamas",
-   "ambience": "waves",
-   "duration": 15,
+   "anim": "ships",
+   "caption": "12 Oct 1492 · Guanahani",
+   "ambience": "ships",
+   "duration": 12,
    "lines": []
   },
   {
    "phase": "guide",
-   "bg": "img/columbus-1492.jpg",
-   "ambience": "waves",
+   "anim": "ships",
+   "ambience": "ships",
    "lines": [
     {
-     "speaker": "Spanish sailor",
-     "en": "Wake up, boy! Rodrigo saw land!",
-     "zh": "醒醒，小子！羅德里戈看到陸地了！"
+     "speaker": "Boatswain",
+     "en": "Birds before dawn. Then that green line — don’t cheer until the lead finds bottom.",
+     "zh": "黎明前有鳥。然後那道綠線——測深錘觸底前別歡呼。",
+     "ja": "夜明け前の鳥。それから緑の線——測鉛が底を取るまで歓声を上げるな。",
+     "fr": "Des oiseaux avant l’aube. Puis cette ligne verte — ne crie pas avant que le plomb touche.",
+     "de": "Vögel vor dem Morgengrauen. Dann jene grüne Linie — nicht jubeln, bis das Lot Grund findet."
     },
     {
-     "speaker": "Spanish sailor",
-     "en": "From the Pinta, at two in the morning.",
-     "zh": "就在凌晨兩點，從平塔號上看到的。"
-    },
-    {
-     "speaker": "Spanish sailor",
-     "en": "Look! Trees, a white beach!",
-     "zh": "看！有樹，還有白色沙灘！"
+     "speaker": "Boatswain",
+     "en": "Fresh water smell under the tar. Your throat tightens — forty days of ocean end here.",
+     "zh": "柏油下有淡水氣息。喉嚨發緊——四十天大洋到此為止。",
+     "ja": "タールの下に淡水の匂い。喉が締まる——四十日の海がここで終わる。",
+     "fr": "Odeur d’eau douce sous le goudron. Ta gorge se serre — quarante jours d’océan finissent ici.",
+     "de": "Süßwassergeruch unter dem Teer. Deine Kehle engt sich — vierzig Tage Ozean enden hier."
     }
    ],
    "interaction": {
     "type": "look",
-    "target": "the island",
-    "target_zh": "島嶼",
-    "x": 82,
-    "y": 40
-   }
-  },
-  {
-   "phase": "guide",
-   "bg": "img/columbus-1492.jpg",
-   "lines": [
-    {
-     "speaker": "Spanish sailor",
-     "en": "Over a month with no land in sight.",
-     "zh": "一個多月都看不到陸地。"
-    },
-    {
-     "speaker": "Spanish sailor",
-     "en": "The men nearly turned back.",
-     "zh": "大家差點就要掉頭回去。"
-    },
-    {
-     "speaker": "Spanish sailor",
-     "en": "The Admiral says this is the Indies.",
-     "zh": "司令說這裡就是印度群島。"
-    }
-   ],
-   "interaction": {
-    "type": "tap",
-    "target": "the Pinta's sail",
-    "target_zh": "平塔號的船帆",
-    "x": 56,
-    "y": 48
+    "target": "the green shoreline",
+    "target_zh": "綠色海岸線",
+    "target_ja": "緑の海岸線",
+    "target_fr": "le rivage vert",
+    "target_de": "die grüne Küstenlinie",
+    "x": 55,
+    "y": 42
    }
   },
   {
    "phase": "climax",
-   "bg": "img/columbus-1492.jpg",
+   "anim": "ships",
    "zoom": true,
    "lines": [
     {
-     "speaker": "Spanish sailor",
-     "en": "People on the shore! They are watching us.",
-     "zh": "岸上有人！他們在看著我們。"
-    },
-    {
-     "speaker": "Spanish sailor",
-     "en": "The Admiral names it San Salvador.",
-     "zh": "司令把它命名為聖薩爾瓦多。"
-    },
-    {
-     "speaker": "Spanish sailor",
-     "en": "But they already have a name for it.",
-     "zh": "可是他們早就為它取了名字。"
+     "speaker": "Lookout",
+     "en": "Canoes on the water. People watching us watch them. History’s hinge feels like wet rope in your hands.",
+     "zh": "水上有獨木舟。他們看著我們看著他們。歷史的鉸鏈摸起來像你手裡的濕繩。",
+     "ja": "水にカヌー。彼らが俺たちを見るのを俺たちが見る。歴史の蝶番は手の中の濡れたロープの感触だ。",
+     "fr": "Des pirogues. Des gens qui nous regardent nous regarder. La charnière de l’histoire est une corde mouillée dans tes mains.",
+     "de": "Einbäume. Menschen, die uns zusehen, wie wir sie ansehen. Das Scharnier der Geschichte fühlt sich an wie nasses Tau in deinen Händen."
     }
    ],
    "interaction": {
     "type": "follow",
-    "target": "the sailor to the boat",
-    "target_zh": "跟著水手上小船",
-    "x": 30,
+    "target": "the guide",
+    "target_zh": "嚮導",
+    "target_ja": "案内人",
+    "target_fr": "le guide",
+    "target_de": "den Führer",
+    "x": 48,
     "y": 55
    }
   },
@@ -112,38 +94,52 @@
   }
  ],
  "facts": [
-  "The fleet was the Niña, the Pinta and the Santa María, leaving Palos on 3 August 1492.",
-  "Lookout Rodrigo de Triana on the Pinta first sighted land.",
-  "The islanders were Lucayan Taíno, who had lived there for centuries."
+  "12 Oct 1492 landfall in the Bahamas (Guanahani).",
+  "Columbus sails for Castile under Isabel and Ferdinand.",
+  "Begins European colonization of the Americas with catastrophic indigenous impact."
  ],
  "facts_zh": [
-  "船隊有尼尼亞號、平塔號和聖瑪利亞號，1492 年 8 月 3 日從帕洛斯出發。",
-  "平塔號瞭望員羅德里戈・德特里亞納最先看見陸地。",
-  "島民是盧卡亞泰諾人，已在此居住數百年。"
+  "1492 年 10 月 12 日於巴哈馬（瓜納哈尼）登陸。",
+  "哥倫布為卡斯提爾的伊莎貝拉與費爾南多航行。",
+  "開啟歐洲殖民美洲，對原住民造成災難性衝擊。"
  ],
- "next": "The voyage began lasting contact between Europe and the Americas: the Columbian Exchange of crops, animals and ideas, but also conquest, enslavement and epidemics that devastated Indigenous peoples. Within decades the Taíno population had collapsed.",
- "next_zh": "這趟航行開啟了歐洲與美洲的長期接觸：作物、動物與思想的「哥倫布大交換」，也帶來征服、奴役和疫病，原住民大量死亡，泰諾人口在數十年內崩潰。",
+ "facts_ja": [
+  "1492年10月12日、バハマ（グアナハニ）に上陸。",
+  "イサベルとフェルナンドのカスティーリャのために航海。",
+  "欧州のアメリカ植民地化が始まり、先住民に壊滅的影響。"
+ ],
+ "facts_fr": [
+  "12 oct. 1492 : atterrissage aux Bahamas (Guanahani).",
+  "Colomb navigue pour la Castille d’Isabelle et Ferdinand.",
+  "Début de la colonisation européenne des Amériques, impact indigène catastrophique."
+ ],
+ "facts_de": [
+  "12. Okt. 1492 Landung auf den Bahamas (Guanahani).",
+  "Kolumbus segelt für Kastilien unter Isabel und Ferdinand.",
+  "Beginn europäischer Kolonisation der Amerikas mit katastrophaler Wirkung auf Indigene."
+ ],
+ "next": "Columbian Exchange remakes diets, diseases, and empires on both sides of the Atlantic.",
+ "next_zh": "哥倫布大交換重塑大西洋兩岸的飲食、疾病與帝國。",
+ "next_ja": "コロンブス交換が大西洋両岸の食・病・帝国を作り直す。",
+ "next_fr": "L’échange colombien refait régimes alimentaires, maladies et empires des deux côtés de l’Atlantique.",
+ "next_de": "Der kolumbianische Austausch formt Ernährung, Krankheiten und Reiche diesseits und jenseits des Atlantiks neu.",
  "then_now": {
-  "then": "Guanahani (Lucayan Taíno)",
-  "now": "San Salvador Island, The Bahamas (probable)"
+  "then": "Lucayan Guanahani",
+  "now": "San Salvador Island, Bahamas"
  },
  "quiz": {
-  "q": "Where did Columbus believe he had arrived?",
+  "q": "In which year did Columbus first reach the Americas?",
   "options": [
-   "Africa",
-   "Asia (the Indies)",
-   "A new continent"
+   "1492",
+   "1498",
+   "1502"
   ],
-  "answer": 1
+  "answer": 0
  },
  "sources": [
   {
    "title": "Britannica: Christopher Columbus",
    "url": "https://www.britannica.com/biography/Christopher-Columbus"
-  },
-  {
-   "title": "Library of Congress: 1492 – An Ongoing Voyage",
-   "url": "https://www.loc.gov/exhibits/1492/"
   }
  ],
  "author": "Lee & Grok Bot",

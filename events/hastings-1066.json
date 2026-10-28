@@ -1,0 +1,147 @@
+{
+ "id": "hastings-1066",
+ "year": 1066,
+ "date": "14 October 1066",
+ "place": "Hastings / Battle, England",
+ "lat": 50.91,
+ "lng": 0.49,
+ "title": "Battle of Hastings",
+ "title_zh": "黑斯廷斯戰役",
+ "title_ja": "ヘイスティングズの戦い",
+ "title_fr": "Bataille d’Hastings",
+ "title_de": "Schlacht bei Hastings",
+ "perspective_role": "You are an English housecarl on Senlac Hill, axe resting on the shield-wall.",
+ "perspective_role_zh": "你是森拉克山上的英格蘭親兵，斧靠在盾牆上。",
+ "perspective_role_ja": "センラックの丘のイングランド親兵、斧を盾壁に預けている。",
+ "perspective_role_fr": "Tu es un housecarl anglais sur la colline de Senlac, hache contre le mur de boucliers.",
+ "perspective_role_de": "Du bist englischer Housecarl auf dem Senlac-Hügel, Axt am Schildwall.",
+ "summary": "William of Normandy defeats King Harold II at Hastings (1066), remaking England’s ruling class, language, and landscape of castles.",
+ "summary_zh": "1066 年諾曼第的威廉在黑斯廷斯擊敗哈羅德二世，重塑英格蘭統治階層、語言與城堡地景。",
+ "summary_ja": "1066年、ノルマンディーのウィリアムがヘイスティングズでハロルド2世を破る。イングランドの支配層・言語・城の風景が作り直される。",
+ "summary_fr": "Guillaume de Normandie bat Harold II à Hastings (1066), refondant élite, langue et paysage castral de l’Angleterre.",
+ "summary_de": "Wilhelm von der Normandie besiegt Harold II. bei Hastings (1066) und formt Englands Elite, Sprache und Burgenlandschaft neu.",
+ "anim": "war",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "anim": "war",
+   "caption": "1066 · Senlac Hill",
+   "ambience": "war",
+   "duration": 12,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "anim": "war",
+   "ambience": "war",
+   "lines": [
+    {
+     "speaker": "Thegn",
+     "en": "Keep the wall locked. Their knights want you to chase — don’t.",
+     "zh": "盾牆鎖死。他們的騎士想引你追——別追。",
+     "ja": "壁を噛み合わせろ。騎士は追わせたい——追うな。",
+     "fr": "Garde le mur fermé. Leurs chevaliers veulent que tu courses — ne le fais pas.",
+     "de": "Halt die Wand geschlossen. Ihre Ritter wollen, dass du jagst — tu’s nicht."
+    },
+    {
+     "speaker": "Thegn",
+     "en": "Arrow-storm first. Heads down. Count your breath between volleys.",
+     "zh": "先是箭雨。低頭。兩波之間數你的呼吸。",
+     "ja": "まず矢の嵐。頭を伏せろ。斉射の間で息を数えろ。",
+     "fr": "D’abord la tempête de flèches. Tête basse. Compte ton souffle entre les salves.",
+     "de": "Zuerst der Pfeilregen. Kopf runter. Zähl den Atem zwischen den Salven."
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "the Norman cavalry",
+    "target_zh": "諾曼騎兵",
+    "target_ja": "ノルマン騎兵",
+    "target_fr": "la cavalerie normande",
+    "target_de": "die normannische Reiterei",
+    "x": 68,
+    "y": 42
+   }
+  },
+  {
+   "phase": "climax",
+   "anim": "war",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "Housecarl",
+     "en": "The king is down… the wall frays. Remember the taste of iron and autumn mud.",
+     "zh": "國王倒下了……盾牆散了。記住鐵與秋泥的味道。",
+     "ja": "王が倒れた……壁がほどける。鉄と秋の泥の味を覚えろ。",
+     "fr": "Le roi est à terre… le mur s’effiloche. Souviens-toi du goût du fer et de la boue d’automne.",
+     "de": "Der König liegt… die Wand franst aus. Merk dir den Geschmack von Eisen und Herbstschlamm."
+    }
+   ],
+   "interaction": {
+    "type": "follow",
+    "target": "the guide",
+    "target_zh": "嚮導",
+    "target_ja": "案内人",
+    "target_fr": "le guide",
+    "target_de": "den Führer",
+    "x": 48,
+    "y": 55
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "14 Oct 1066 near Hastings.",
+  "Harold II dies; William is crowned at Westminster.",
+  "Norman Conquest reshapes English society."
+ ],
+ "facts_zh": [
+  "1066 年 10 月 14 日，黑斯廷斯附近。",
+  "哈羅德二世戰死；威廉在西敏加冕。",
+  "諾曼征服重塑英格蘭社會。"
+ ],
+ "facts_ja": [
+  "1066年10月14日、ヘイスティングズ付近。",
+  "ハロルド2世戦死、ウィリアムがウェストミンスターで戴冠。",
+  "ノルマン征服がイングランド社会を再編。"
+ ],
+ "facts_fr": [
+  "14 oct. 1066 près d’Hastings.",
+  "Harold II meurt ; Guillaume est couronné à Westminster.",
+  "La conquête normande refait la société anglaise."
+ ],
+ "facts_de": [
+  "14. Okt. 1066 bei Hastings.",
+  "Harold II. fällt; Wilhelm wird in Westminster gekrönt.",
+  "Die normannische Eroberung formt England neu."
+ ],
+ "next": "Domesday survey, stone keeps, and a French-speaking elite leave deep traces in English life.",
+ "next_zh": "末日審判書、石堡與法語精英在英格蘭生活中留下深痕。",
+ "next_ja": "ドゥームズデイ調査、石の城、フランス語エリートが英語圏の生活に深い跡を残す。",
+ "next_fr": "Le Domesday, les donjons de pierre et une élite francophone marquent durablement l’Angleterre.",
+ "next_de": "Domesday, steinerne Keeps und eine französischsprachige Elite hinterlassen tiefe Spuren.",
+ "then_now": {
+  "then": "Senlac / Battle Abbey",
+  "now": "Battle, East Sussex, UK"
+ },
+ "quiz": {
+  "q": "Who won the Battle of Hastings?",
+  "options": [
+   "William of Normandy",
+   "Harold Godwinson",
+   "Harald Hardrada"
+  ],
+  "answer": 0
+ },
+ "sources": [
+  {
+   "title": "Britannica: Battle of Hastings",
+   "url": "https://www.britannica.com/event/Battle-of-Hastings"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}

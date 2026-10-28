@@ -1,0 +1,147 @@
+{
+ "id": "berlin-wall-1989",
+ "year": 1989,
+ "date": "9 November 1989",
+ "place": "Berlin",
+ "lat": 52.52,
+ "lng": 13.4,
+ "title": "Fall of the Berlin Wall",
+ "title_zh": "柏林圍牆倒塌",
+ "title_ja": "ベルリンの壁崩壊",
+ "title_fr": "Chute du mur de Berlin",
+ "title_de": "Fall der Berliner Mauer",
+ "perspective_role": "You are a East Berliner at Bornholmer Strasse as the checkpoint crowds surge.",
+ "perspective_role_zh": "檢查哨人潮湧動時，你是伯恩霍爾默街的東柏林人。",
+ "perspective_role_ja": "検問所に人が押し寄せるボルンホルマー通りの東ベルリン市民だ。",
+ "perspective_role_fr": "Tu es Berlinois de l’Est à Bornholmer Straße quand la foule submerge le poste.",
+ "perspective_role_de": "Du bist Ostberliner an der Bornholmer Straße, als die Menge den Übergang überrennt.",
+ "summary": "On 9 November 1989 border crossings open in Berlin; the Wall that divided the city since 1961 falls amid jubilation — a climax of 1989 revolutions in Eastern Europe.",
+ "summary_zh": "1989 年 11 月 9 日柏林過境點開放；1961 年以來分隔城市的圍牆在歡騰中倒下——東歐 1989 革命的高潮。",
+ "summary_ja": "1989年11月9日、ベルリンの国境が開き、1961年以来街を分けた壁が歓喜のなか崩れる——東欧1989革命の頂点。",
+ "summary_fr": "Le 9 novembre 1989 les postes s’ouvrent à Berlin ; le mur qui divisait la ville depuis 1961 tombe dans l’allégresse — sommet des révolutions de 1989.",
+ "summary_de": "Am 9. November 1989 öffnen Übergänge in Berlin; die Mauer seit 1961 fällt im Jubel — Höhepunkt der Revolutionen von 1989.",
+ "anim": "crowd",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "anim": "crowd",
+   "caption": "1989 · Berlin",
+   "ambience": "crowd",
+   "duration": 12,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "anim": "crowd",
+   "ambience": "crowd",
+   "lines": [
+    {
+     "speaker": "Neighbor",
+     "en": "They said tonight — just go. Your breath fogs; someone hands you a chisel later.",
+     "zh": "他們說今晚——就去。你的呼吸起霧；之後有人塞給你鑿子。",
+     "ja": "今夜だと言った——行け。息が白く、あとで誰かがノミを渡す。",
+     "fr": "Ils ont dit ce soir — vas-y. Ton souffle fume ; plus tard on te tend un ciseau.",
+     "de": "Sie sagten heute Abend — geh. Dein Atem dampft; später reicht dir jemand einen Meißel."
+    },
+    {
+     "speaker": "Neighbor",
+     "en": "West lights look the same and utterly new. Hold your child’s hand through the crush.",
+     "zh": "西邊燈光既一樣又全新。在擁擠中抓住孩子的手。",
+     "ja": "西の灯は同じでまったく新しい。押し合いのなかで子の手を握れ。",
+     "fr": "Les lumières de l’Ouest sont les mêmes et toutes neuves. Tiens la main de ton enfant dans la presse.",
+     "de": "Westlichter sind dieselben und völlig neu. Halt die Hand deines Kindes im Gedränge."
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "the open checkpoint",
+    "target_zh": "開放的檢查哨",
+    "target_ja": "開いた検問所",
+    "target_fr": "le poste ouvert",
+    "target_de": "den offenen Übergang",
+    "x": 50,
+    "y": 50
+   }
+  },
+  {
+   "phase": "climax",
+   "anim": "crowd",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "Stranger",
+     "en": "Concrete rains as souvenirs. You taste tear-gas ghosts and champagne on the same tongue.",
+     "zh": "混凝土碎成紀念品落下。同一條舌頭嚐到催淚瓦斯的鬼魂與香檳。",
+     "ja": "コンクリートが土産として降る。催涙の幽霊とシャンパンを同じ舌で味わう。",
+     "fr": "Le béton tombe en souvenirs. Tu goûtes fantômes de gaz lacrymo et champagne sur la même langue.",
+     "de": "Beton fällt als Souvenir. Du schmeckst Tränengasgeister und Champagner auf derselben Zunge."
+    }
+   ],
+   "interaction": {
+    "type": "follow",
+    "target": "the guide",
+    "target_zh": "嚮導",
+    "target_ja": "案内人",
+    "target_fr": "le guide",
+    "target_de": "den Führer",
+    "x": 48,
+    "y": 55
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "9 Nov 1989: GDR opens borders after a botched press conference.",
+  "Wall largely dismantled in following months.",
+  "German reunification 3 Oct 1990."
+ ],
+ "facts_zh": [
+  "1989 年 11 月 9 日：記者會失誤後東德開放邊界。",
+  "隨後數月圍牆大致拆除。",
+  "1990 年 10 月 3 日德國統一。"
+ ],
+ "facts_ja": [
+  "1989年11月9日：記者会見の誤り後、東独が国境開放。",
+  "数か月で壁はほぼ解体。",
+  "1990年10月3日ドイツ再統一。"
+ ],
+ "facts_fr": [
+  "9 nov. 1989 : ouverture après une conférence de presse ratée.",
+  "Mur surtout démantelé dans les mois suivants.",
+  "Réunification allemande le 3 oct. 1990."
+ ],
+ "facts_de": [
+  "9. Nov. 1989: Öffnung nach verunglückter Pressekonferenz.",
+  "Mauer in Folgemonaten weitgehend abgebaut.",
+  "Deutsche Einheit 3. Okt. 1990."
+ ],
+ "next": "Cold War ends unevenly; 1991 dissolves the USSR; Europe’s map and memory keep shifting.",
+ "next_zh": "冷戰不均勻地結束；1991 蘇聯解體；歐洲地圖與記憶持續改寫。",
+ "next_ja": "冷戦は不均一に終わり、1991年ソ連解体。欧州の地図と記憶は変わり続ける。",
+ "next_fr": "La guerre froide finit inégalement ; l’URSS se dissout en 1991 ; carte et mémoire européennes bougent encore.",
+ "next_de": "Der Kalte Krieg endet ungleichmäßig; 1991 löst sich die UdSSR auf; Europas Karte und Gedächtnis wandeln weiter.",
+ "then_now": {
+  "then": "Divided Berlin",
+  "now": "Berlin, Germany"
+ },
+ "quiz": {
+  "q": "In which year did the Berlin Wall fall?",
+  "options": [
+   "1989",
+   "1961",
+   "1991"
+  ],
+  "answer": 0
+ },
+ "sources": [
+  {
+   "title": "Britannica: Berlin Wall",
+   "url": "https://www.britannica.com/topic/Berlin-Wall"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}

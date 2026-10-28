@@ -1,0 +1,147 @@
+{
+ "id": "waterloo-1815",
+ "year": 1815,
+ "date": "18 June 1815",
+ "place": "Waterloo, Belgium",
+ "lat": 50.68,
+ "lng": 4.41,
+ "title": "Battle of Waterloo",
+ "title_zh": "滑鐵盧戰役",
+ "title_ja": "ワーテルローの戦い",
+ "title_fr": "Bataille de Waterloo",
+ "title_de": "Schlacht bei Waterloo",
+ "perspective_role": "You are a British rifleman in the mud as cannon smoke rolls over the ridge.",
+ "perspective_role_zh": "你是山脊上泥濘裡的英軍步槍兵，砲煙滾過。",
+ "perspective_role_ja": "尾根の泥の中の英軍ライフル兵、砲煙が転がる。",
+ "perspective_role_fr": "Tu es tireur britannique dans la boue ; la fumée des canons roule sur la crête.",
+ "perspective_role_de": "Du bist britischer Schütze im Schlamm; Kanonenrauch rollt über den Kamm.",
+ "summary": "Coalition forces under Wellington and Blücher defeat Napoleon at Waterloo (1815), ending the Hundred Days and the Napoleonic Wars.",
+ "summary_zh": "1815 年威靈頓與布呂歇爾聯軍在滑鐵盧擊敗拿破崙，結束百日王朝與拿破崙戰爭。",
+ "summary_ja": "1815年、ウェリントンとブリュッヘルの連合がワーテルローでナポレオンを破り、百日天下とナポレオン戦争が終わる。",
+ "summary_fr": "Wellington et Blücher battent Napoléon à Waterloo (1815), fin des Cent-Jours et des guerres napoléoniennes.",
+ "summary_de": "Wellington und Blücher besiegen Napoleon bei Waterloo (1815) — Ende der Hundert Tage und der Napoleonischen Kriege.",
+ "anim": "war",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "anim": "war",
+   "caption": "1815 · Waterloo",
+   "ambience": "war",
+   "duration": 12,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "anim": "war",
+   "ambience": "war",
+   "lines": [
+    {
+     "speaker": "Sergeant",
+     "en": "Form square when the cuirassiers come. Bite the cartridge — powder tastes like old coins.",
+     "zh": "胸甲騎兵來時組成方陣。咬開紙彈——火藥像舊硬幣的味道。",
+     "ja": "胸甲騎兵が来たら方陣。薬包を噛め——火薬は古い硬貨の味だ。",
+     "fr": "Carré quand les cuirassiers arrivent. Mords la cartouche — la poudre goûte les vieilles pièces.",
+     "de": "Karree, wenn die Kürassiere kommen. Beiß die Patrone — Pulver schmeckt nach alten Münzen."
+    },
+    {
+     "speaker": "Sergeant",
+     "en": "Prussian guns to the east — that thunder is Blücher. Hold until it arrives.",
+     "zh": "東邊普軍砲聲——那雷是布呂歇爾。撐到它抵達。",
+     "ja": "東のプロイセン砲——あの雷がブリュッヘルだ。来るまで耐えろ。",
+     "fr": "Canons prussiens à l’est — ce tonnerre est Blücher. Tiens jusqu’à ce qu’il arrive.",
+     "de": "Preußische Geschütze im Osten — jener Donner ist Blücher. Halt, bis er kommt."
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "the French Guard columns",
+    "target_zh": "法軍近衛縱隊",
+    "target_ja": "フランス近衛の縦隊",
+    "target_fr": "les colonnes de la Garde",
+    "target_de": "die Kolonnen der Garde",
+    "x": 58,
+    "y": 42
+   }
+  },
+  {
+   "phase": "climax",
+   "anim": "war",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "Private",
+     "en": "The Guard falls back. Your ears ring for hours. Europe’s map will be redrawn in quiet rooms.",
+     "zh": "近衛軍退了。耳鳴數小時。歐洲地圖將在安靜房間重畫。",
+     "ja": "近衛が退く。何時間も耳鳴り。欧州の地図は静かな部屋で描き直される。",
+     "fr": "La Garde recule. Tes oreilles sonnent des heures. La carte d’Europe se redessinera dans des salles calmes.",
+     "de": "Die Garde weicht. Deine Ohren klingen stundenlang. Europas Karte wird in stillen Zimmern neu gezeichnet."
+    }
+   ],
+   "interaction": {
+    "type": "follow",
+    "target": "the guide",
+    "target_zh": "嚮導",
+    "target_ja": "案内人",
+    "target_fr": "le guide",
+    "target_de": "den Führer",
+    "x": 48,
+    "y": 55
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "18 June 1815 near Waterloo.",
+  "Wellington + Blücher defeat Napoleon.",
+  "Napoleon abdicates; exile to St Helena."
+ ],
+ "facts_zh": [
+  "1815 年 6 月 18 日滑鐵盧附近。",
+  "威靈頓＋布呂歇爾擊敗拿破崙。",
+  "拿破崙退位，流放聖赫勒拿。"
+ ],
+ "facts_ja": [
+  "1815年6月18日、ワーテルロー付近。",
+  "ウェリントン＋ブリュッヘルがナポレオンを破る。",
+  "ナポレオン退位、セントヘレナへ。"
+ ],
+ "facts_fr": [
+  "18 juin 1815 près de Waterloo.",
+  "Wellington + Blücher battent Napoléon.",
+  "Abdication ; exil à Sainte-Hélène."
+ ],
+ "facts_de": [
+  "18. Juni 1815 bei Waterloo.",
+  "Wellington + Blücher besiegen Napoleon.",
+  "Abdankung; Exil auf St. Helena."
+ ],
+ "next": "The Congress system tries to freeze a conservative order; nationalism and industry soon strain it.",
+ "next_zh": "會議體系試圖凍結保守秩序；民族主義與工業很快使之緊繃。",
+ "next_ja": "会議体制が保守秩序を凍らせようとし、国民主義と産業がすぐに緊張させる。",
+ "next_fr": "Le système du Congrès tente de figer un ordre conservateur ; nationalisme et industrie le tendront vite.",
+ "next_de": "Das Kongresssystem will eine konservative Ordnung einfrieren; Nationalismus und Industrie spannen sie bald.",
+ "then_now": {
+  "then": "Waterloo battlefield",
+  "now": "Waterloo, Belgium"
+ },
+ "quiz": {
+  "q": "Who commanded the Anglo-Allied army at Waterloo?",
+  "options": [
+   "Wellington",
+   "Nelson",
+   "Marlborough"
+  ],
+  "answer": 0
+ },
+ "sources": [
+  {
+   "title": "Britannica: Battle of Waterloo",
+   "url": "https://www.britannica.com/event/Battle-of-Waterloo"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}

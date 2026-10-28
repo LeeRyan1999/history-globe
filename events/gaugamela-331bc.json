@@ -1,0 +1,147 @@
+{
+ "id": "gaugamela-331bc",
+ "year": -331,
+ "date": "331 BCE",
+ "place": "Gaugamela (near Mosul)",
+ "lat": 36.56,
+ "lng": 43.4,
+ "title": "Battle of Gaugamela",
+ "title_zh": "高加米拉戰役",
+ "title_ja": "ガウガメラの戦い",
+ "title_fr": "Bataille de Gaugamèles",
+ "title_de": "Schlacht von Gaugamela",
+ "perspective_role": "You are a Companion cavalry outrider under Alexander on the dusty plain.",
+ "perspective_role_zh": "你是亞歷山大麾下、塵土平原上的夥伴騎兵前哨。",
+ "perspective_role_ja": "塵の平原でアレクサンドロス配下のコンパニオン騎兵斥候だ。",
+ "perspective_role_fr": "Tu es éclaireur de la cavalerie des Compagnons d’Alexandre sur la plaine poussiéreuse.",
+ "perspective_role_de": "Du bist Vorreiter der Gefährtenreiterei Alexanders auf der staubigen Ebene.",
+ "summary": "Alexander III defeats Darius III at Gaugamela, opening the heart of the Achaemenid Empire — one of antiquity’s decisive clashes.",
+ "summary_zh": "亞歷山大三世在高加米拉擊敗大流士三世，打開阿契美尼德帝國的心臟——古代決定性戰役之一。",
+ "summary_ja": "アレクサンドロス3世がガウガメラでダレイオス3世を破り、アケメネス朝の心臓部を開く——古代の決定的衝突の一つ。",
+ "summary_fr": "Alexandre III vainc Darius III à Gaugamèles et ouvre le cœur de l’Empire achéménide — un choc décisif de l’Antiquité.",
+ "summary_de": "Alexander III. besiegt Dareios III. bei Gaugamela und öffnet das Herz des Achämenidenreichs — ein entscheidender Zusammenstoß der Antike.",
+ "anim": "war",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "anim": "war",
+   "caption": "331 BCE · Gaugamela",
+   "ambience": "war",
+   "duration": 12,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "anim": "war",
+   "ambience": "war",
+   "lines": [
+    {
+     "speaker": "Hephaestion’s aide",
+     "en": "The plain is leveled for their scythed chariots. Watch the gaps.",
+     "zh": "平原被鏟平，好讓他們的鐮刀戰車衝。盯著缺口。",
+     "ja": "平原は鎌戦車のために均されている。隙を見ろ。",
+     "fr": "La plaine est aplanie pour leurs chars à faux. Guette les brèches.",
+     "de": "Die Ebene ist für Sichelwagen geebnet. Achte auf Lücken."
+    },
+    {
+     "speaker": "Hephaestion’s aide",
+     "en": "When the king wheeling left finds air — we pour through like water.",
+     "zh": "國王左轉找到空隙時——我們像水一樣灌進去。",
+     "ja": "王が左に回って隙を見つけたら——水のように流れ込め。",
+     "fr": "Quand le roi vire à gauche et trouve de l’air — on se déverse comme de l’eau.",
+     "de": "Wenn der König nach links Luft findet — gießen wir uns wie Wasser hindurch."
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "Darius’s center",
+    "target_zh": "大流士中軍",
+    "target_ja": "ダレイオスの中央",
+    "target_fr": "le centre de Darius",
+    "target_de": "Dareios’ Zentrum",
+    "x": 60,
+    "y": 42
+   }
+  },
+  {
+   "phase": "climax",
+   "anim": "war",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "Companion",
+     "en": "Darius flees! The empire’s center is a cloud of dust and broken standards.",
+     "zh": "大流士逃了！帝國的中心只剩塵雲與斷旗。",
+     "ja": "ダレイオスが逃げる！帝国の中心は砂塵と折れた旗だ。",
+     "fr": "Darius fuit ! Le centre de l’empire n’est plus que poussière et étendards brisés.",
+     "de": "Dareios flieht! Das Zentrum des Reichs ist Staub und gebrochene Standarten."
+    }
+   ],
+   "interaction": {
+    "type": "follow",
+    "target": "the guide",
+    "target_zh": "嚮導",
+    "target_ja": "案内人",
+    "target_fr": "le guide",
+    "target_de": "den Führer",
+    "x": 48,
+    "y": 55
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "331 BCE near Arbela (Erbil region).",
+  "Alexander’s Companion cavalry strike decides the day.",
+  "Darius flees; the Achaemenid capital falls soon after."
+ ],
+ "facts_zh": [
+  "西元前 331，阿貝拉（厄比爾一帶）附近。",
+  "亞歷山大夥伴騎兵的突擊決定勝負。",
+  "大流士逃走；阿契美尼德都城不久陷落。"
+ ],
+ "facts_ja": [
+  "紀元前331年、アルベラ（エルビル）付近。",
+  "コンパニオン騎兵の突撃が勝負を決す。",
+  "ダレイオス逃走、まもなくアケメネス都が落ちる。"
+ ],
+ "facts_fr": [
+  "331 av. J.-C. près d’Arbèles.",
+  "La charge des Compagnons décide du jour.",
+  "Darius fuit ; la capitale achéménide tombe bientôt."
+ ],
+ "facts_de": [
+  "331 v. Chr. nahe Arbela.",
+  "Der Stoß der Gefährten entscheidet.",
+  "Dareios flieht; die achämenidische Hauptstadt fällt bald."
+ ],
+ "next": "Hellenistic kingdoms will carve the wreck of Persia; Greek becomes a language of power from Egypt to the Indus.",
+ "next_zh": "希臘化王國將瓜分波斯殘骸；希臘語成為從埃及到印度河的權力語言。",
+ "next_ja": "ヘレニズム諸国がペルシャの残骸を分け、ギリシャ語はエジプトからインダスまでの権力の言語になる。",
+ "next_fr": "Les royaumes hellénistiques se partageront la Perse ; le grec devient langue du pouvoir de l’Égypte à l’Indus.",
+ "next_de": "Hellenistische Reiche teilen Persiens Trümmer; Griechisch wird Machtprache von Ägypten bis zum Indus.",
+ "then_now": {
+  "then": "Gaugamela plain",
+  "now": "Near Mosul / Erbil, Iraq"
+ },
+ "quiz": {
+  "q": "Whom did Alexander defeat at Gaugamela?",
+  "options": [
+   "Darius III",
+   "Xerxes I",
+   "Cyrus the Great"
+  ],
+  "answer": 0
+ },
+ "sources": [
+  {
+   "title": "Britannica: Battle of Gaugamela",
+   "url": "https://www.britannica.com/event/Battle-of-Gaugamela"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}

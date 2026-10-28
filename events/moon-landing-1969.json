@@ -1,0 +1,147 @@
+{
+ "id": "moon-landing-1969",
+ "year": 1969,
+ "date": "20 July 1969",
+ "place": "Moon / Mission Control Houston",
+ "lat": 29.56,
+ "lng": -95.09,
+ "title": "Apollo 11 Moon Landing",
+ "title_zh": "阿波羅 11 號登月",
+ "title_ja": "アポロ11号月面着陸",
+ "title_fr": "Alunissage d’Apollo 11",
+ "title_de": "Apollo-11-Mondlandung",
+ "perspective_role": "You are a Mission Control officer in Houston listening to the Eagle’s static.",
+ "perspective_role_zh": "你是休士頓航太中心的飛行官，聽著「鷹」號的靜電雜訊。",
+ "perspective_role_ja": "ヒューストン管制の担当官で、「イーグル」の静電ノイズを聞いている。",
+ "perspective_role_fr": "Tu es officier du contrôle de mission à Houston, écoutant le souffle radio de l’Aigle.",
+ "perspective_role_de": "Du bist Flugkontrolleur in Houston und hörst das Rauschen des Adlers.",
+ "summary": "On 20 July 1969 Neil Armstrong and Buzz Aldrin walk on the Moon — a Cold War race climax and a shared human milestone watched worldwide.",
+ "summary_zh": "1969 年 7 月 20 日尼爾·阿姆斯壯與巴茲·艾德林踏上月球——冷戰競賽高潮，也是全球共睹的人類里程碑。",
+ "summary_ja": "1969年7月20日、アームストロングとオルドリンが月面を歩く——冷戦競争の頂点であり、世界が見守った人類の里程碑。",
+ "summary_fr": "Le 20 juillet 1969, Armstrong et Aldrin marchent sur la Lune — sommet de la course froide et jalon humain suivi mondialement.",
+ "summary_de": "Am 20. Juli 1969 gehen Armstrong und Aldrin auf dem Mond — Höhepunkt des Wettrennens und weltweites Menschen-Meilenstein.",
+ "anim": "night",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "anim": "night",
+   "caption": "20 Jul 1969 · Houston / Moon",
+   "ambience": "night",
+   "duration": 12,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "anim": "night",
+   "ambience": "night",
+   "lines": [
+    {
+     "speaker": "CAPCOM",
+     "en": "Telemetry is a heartbeat in numbers. Don’t blink on the descent fuel.",
+     "zh": "遙測是數字裡的心跳。下降燃料別眨眼。",
+     "ja": "テレメトリは数字の心拍だ。降下燃料で瞬きするな。",
+     "fr": "La télémétrie est un cœur en chiffres. Ne cligne pas sur le carburant de descente.",
+     "de": "Telemetrie ist Herzschlag in Zahlen. Nicht blinzeln beim Abstiegstreibstoff."
+    },
+    {
+     "speaker": "CAPCOM",
+     "en": "‘The Eagle has landed.’ The room exhales as one animal. Your coffee goes cold mid-sip.",
+     "zh": "『鷹已著陸。』整間房像一隻動物吐氣。咖啡喝到一半涼了。",
+     "ja": "『イーグル着陸』。部屋が一匹の動物のように息を吐く。コーヒーが途中で冷める。",
+     "fr": "‘L’Aigle a atterri.’ La salle expire comme un seul animal. Ton café refroidit à mi-gorgée.",
+     "de": "‚Der Adler ist gelandet.‘ Der Raum atmet aus wie ein Tier. Dein Kaffee wird mittendrin kalt."
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "the big screen telemetry",
+    "target_zh": "大螢幕遙測",
+    "target_ja": "大画面のテレメトリ",
+    "target_fr": "la télémétrie sur grand écran",
+    "target_de": "die Telemetrie auf der Großleinwand",
+    "x": 55,
+    "y": 35
+   }
+  },
+  {
+   "phase": "climax",
+   "anim": "night",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "Controller",
+     "en": "Bootprint on dust older than kingdoms. You hear ‘one small step’ and feel the floor under Houston.",
+     "zh": "比王國更古老的塵上的靴印。你聽見『一小步』，感覺休士頓地板。",
+     "ja": "王国より古い塵の上の靴跡。『小さな一歩』を聞き、ヒューストンの床を感じる。",
+     "fr": "Empreinte sur une poussière plus vieille que les royaumes. Tu entends ‘un petit pas’ et sens le sol de Houston.",
+     "de": "Fußabdruck auf Staub älter als Königreiche. Du hörst ‚ein kleiner Schritt‘ und spürst Houstons Boden."
+    }
+   ],
+   "interaction": {
+    "type": "follow",
+    "target": "the guide",
+    "target_zh": "嚮導",
+    "target_ja": "案内人",
+    "target_fr": "le guide",
+    "target_de": "den Führer",
+    "x": 48,
+    "y": 55
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "20 Jul 1969: Armstrong & Aldrin on the lunar surface.",
+  "Apollo program peak of US–Soviet space race.",
+  "Broadcast to an estimated global audience of hundreds of millions."
+ ],
+ "facts_zh": [
+  "1969 年 7 月 20 日：阿姆斯壯與艾德林踏上月面。",
+  "阿波羅計畫是美蘇太空競賽高峰。",
+  "全球估計數億人收看轉播。"
+ ],
+ "facts_ja": [
+  "1969年7月20日：アームストロングとオルドリンが月面へ。",
+  "アポロは米ソ宇宙競争の頂点。",
+  "世界で推定数億人が視聴。"
+ ],
+ "facts_fr": [
+  "20 juil. 1969 : Armstrong et Aldrin sur la Lune.",
+  "Sommet de la course spatiale.",
+  "Centaines de millions de téléspectateurs estimés."
+ ],
+ "facts_de": [
+  "20. Juli 1969: Armstrong & Aldrin auf dem Mond.",
+  "Höhepunkt des Weltraumrennens.",
+  "Geschätzt Hunderte Millionen Zuschauer."
+ ],
+ "next": "Further Apollo landings follow; spaceflight becomes both rivalry and cooperation (Apollo–Soyuz, ISS).",
+ "next_zh": "後續阿波羅登月；太空飛行兼具競爭與合作（阿波羅－聯盟、國際太空站）。",
+ "next_ja": "続くアポロ着陸。宇宙飛行は競争と協力の両方に（アポロ・ソユーズ、ISS）。",
+ "next_fr": "D’autres alunissages Apollo suivent ; le vol spatial devient rivalité et coopération (Apollo–Soyouz, ISS).",
+ "next_de": "Weitere Apollo-Landungen; Raumfahrt wird Rivalität und Kooperation (Apollo–Sojus, ISS).",
+ "then_now": {
+  "then": "Mission Control / Tranquility Base",
+  "now": "Houston, USA / Moon"
+ },
+ "quiz": {
+  "q": "Who was first to step on the Moon?",
+  "options": [
+   "Neil Armstrong",
+   "Buzz Aldrin",
+   "Yuri Gagarin"
+  ],
+  "answer": 0
+ },
+ "sources": [
+  {
+   "title": "Britannica: Apollo 11",
+   "url": "https://www.britannica.com/topic/Apollo-11"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}

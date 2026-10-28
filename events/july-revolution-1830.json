@@ -1,0 +1,147 @@
+{
+ "id": "july-revolution-1830",
+ "year": 1830,
+ "date": "July 1830",
+ "place": "Paris, France",
+ "lat": 48.86,
+ "lng": 2.35,
+ "title": "July Revolution",
+ "title_zh": "七月革命",
+ "title_ja": "七月革命",
+ "title_fr": "Révolution de Juillet",
+ "title_de": "Julirevolution",
+ "perspective_role": "You are a Paris printer’s apprentice barricading a street of paving stones.",
+ "perspective_role_zh": "你是巴黎印刷學徒，用鋪路石堆起街壘。",
+ "perspective_role_ja": "パリの印刷見習いで、敷石でバリケードを築いている。",
+ "perspective_role_fr": "Tu es apprenti imprimeur à Paris, dressant une barricade de pavés.",
+ "perspective_role_de": "Du bist Druckerlehrling in Paris und baust eine Barrikade aus Pflastersteinen.",
+ "summary": "In July 1830 Parisians overthrow Charles X; Louis-Philippe becomes the ‘Citizen King’ — a short, sharp uprising that echoes across Europe.",
+ "summary_zh": "1830 年七月，巴黎人推翻查理十世；路易－菲利普成「公民國王」——一場短促激烈、迴盪歐洲的起義。",
+ "summary_ja": "1830年7月、パリ市民がシャルル10世を打倒。ルイ・フィリップが「市民王」に——短く鋭く欧州に響く蜂起。",
+ "summary_fr": "En juillet 1830 les Parisiens renversent Charles X ; Louis-Philippe devient le « roi citoyen » — soulèvement bref qui résonne en Europe.",
+ "summary_de": "Im Juli 1830 stürzen Pariser Karl X.; Louis-Philippe wird ‚Bürgerkönig‘ — kurzer Aufstand mit europäischem Echo.",
+ "anim": "crowd",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "anim": "crowd",
+   "caption": "July 1830 · Paris",
+   "ambience": "crowd",
+   "duration": 12,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "anim": "crowd",
+   "ambience": "crowd",
+   "lines": [
+    {
+     "speaker": "Journeyman",
+     "en": "Paving stones bite your palms. The tricolor is already on someone’s hat.",
+     "zh": "鋪路石咬手掌。三色旗已在某人帽子上。",
+     "ja": "敷石が掌に食い込む。三色旗はもう誰かの帽子に。",
+     "fr": "Les pavés mordent tes paumes. Le tricolore est déjà sur un chapeau.",
+     "de": "Pflastersteine beißen in die Handflächen. Die Trikolore sitzt schon auf einem Hut."
+    },
+    {
+     "speaker": "Journeyman",
+     "en": "Three days. That’s what they will call it. Tonight it just smells of ink and gunpowder.",
+     "zh": "三天。他們會這麼叫。今晚只有墨與火藥味。",
+     "ja": "三日間。そう呼ばれるだろう。今夜はインクと火薬の匂いだけだ。",
+     "fr": "Trois jours. C’est comme ça qu’on dira. Ce soir ça sent l’encre et la poudre.",
+     "de": "Drei Tage. So werden sie es nennen. Heute Nacht riecht es nach Tinte und Pulver."
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "the barricade",
+    "target_zh": "街壘",
+    "target_ja": "バリケード",
+    "target_fr": "la barricade",
+    "target_de": "die Barrikade",
+    "x": 50,
+    "y": 55
+   }
+  },
+  {
+   "phase": "climax",
+   "anim": "crowd",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "Neighbor",
+     "en": "The white flag comes down from the Tuileries. Your throat is raw from shouting liberty.",
+     "zh": "杜樂麗宮白旗降下。你的喉嚨因喊自由而沙啞。",
+     "ja": "テュイルリーから白旗が降りる。自由を叫んで喉が嗄れている。",
+     "fr": "Le drapeau blanc descend des Tuileries. Ta gorge est rauque de crier liberté.",
+     "de": "Die weiße Flagge kommt von den Tuilerien. Deine Kehle ist heiser vom Schreien nach Freiheit."
+    }
+   ],
+   "interaction": {
+    "type": "follow",
+    "target": "the crowd",
+    "target_zh": "人群",
+    "target_ja": "群衆",
+    "target_fr": "la foule",
+    "target_de": "die Menge",
+    "x": 48,
+    "y": 55
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "27–29 July 1830 (Trois Glorieuses).",
+  "Charles X abdicates; Louis-Philippe takes the throne.",
+  "Inspired uprisings elsewhere in Europe."
+ ],
+ "facts_zh": [
+  "1830 年 7 月 27–29 日（光榮三日）。",
+  "查理十世退位；路易－菲利普即位。",
+  "激發歐洲他處起義。"
+ ],
+ "facts_ja": [
+  "1830年7月27–29日（栄光の三日間）。",
+  "シャルル10世退位、ルイ・フィリップ即位。",
+  "欧州各地の蜂起を刺激。"
+ ],
+ "facts_fr": [
+  "27–29 juillet 1830 (Trois Glorieuses).",
+  "Charles X abdique ; Louis-Philippe monte.",
+  "Inspire d’autres soulèvements en Europe."
+ ],
+ "facts_de": [
+  "27.–29. Juli 1830 (Trois Glorieuses).",
+  "Karl X. dankt ab; Louis-Philippe wird König.",
+  "Inspiriert Aufstände anderswo in Europa."
+ ],
+ "next": "The July Monarchy lasts until 1848; the barricade becomes a lasting image of urban revolt.",
+ "next_zh": "七月王朝維持到 1848；街壘成為城市反抗的長久意象。",
+ "next_ja": "七月王政は1848まで。バリケードは都市反乱の永続イメージになる。",
+ "next_fr": "La monarchie de Juillet dure jusqu’en 1848 ; la barricade reste une image durable de la révolte urbaine.",
+ "next_de": "Die Julimonarchie dauert bis 1848; die Barrikade wird bleibendes Bild städtischen Aufstands.",
+ "then_now": {
+  "then": "Bourbon Paris",
+  "now": "Paris, France"
+ },
+ "quiz": {
+  "q": "Which king was overthrown in the July Revolution of 1830?",
+  "options": [
+   "Charles X",
+   "Louis XVI",
+   "Napoleon III"
+  ],
+  "answer": 0
+ },
+ "sources": [
+  {
+   "title": "Britannica: July Revolution",
+   "url": "https://www.britannica.com/event/July-Revolution"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}

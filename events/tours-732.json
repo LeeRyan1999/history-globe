@@ -1,0 +1,147 @@
+{
+ "id": "tours-732",
+ "year": 732,
+ "date": "October 732",
+ "place": "Near Poitiers, Francia",
+ "lat": 46.58,
+ "lng": 0.34,
+ "title": "Battle of Tours / Poitiers",
+ "title_zh": "圖爾／普瓦捷之戰",
+ "title_ja": "トゥール・ポワティエの戦い",
+ "title_fr": "Bataille de Poitiers",
+ "title_de": "Schlacht von Tours/Poitiers",
+ "perspective_role": "You are a Frankish shield-bearer in Charles Martel’s infantry line.",
+ "perspective_role_zh": "你是查理·馬特步兵線上的法蘭克持盾兵。",
+ "perspective_role_ja": "カール・マルテル歩兵線のフランク盾持ちだ。",
+ "perspective_role_fr": "Tu es porte-bouclier franc dans la ligne d’infanterie de Charles Martel.",
+ "perspective_role_de": "Du bist fränkischer Schildträger in Karl Martells Infanterielinie.",
+ "summary": "Charles Martel’s Franks halt a Umayyad raid near Poitiers/Tours in 732 — a battle later cast as a turning point in Western medieval memory.",
+ "summary_zh": "732 年查理·馬特的法蘭克軍在普瓦捷／圖爾附近擋住倭馬亞襲擊——後來被西方中世紀記憶寫成轉折點。",
+ "summary_ja": "732年、カール・マルテルのフランク軍がポワティエ／トゥール付近でウマイヤの襲撃を止める——後に西欧中世の記憶で転換点とされる。",
+ "summary_fr": "En 732, les Francs de Charles Martel arrêtent un raid omeyyade près de Poitiers/Tours — bataille plus tard vue comme un tournant dans la mémoire médiévale occidentale.",
+ "summary_de": "732 halten Karl Martells Franken einen umayyadischen Raubzug bei Poitiers/Tours auf — später als Wendepunkt westlicher Mittelaltererinnerung stilisiert.",
+ "anim": "war",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "anim": "war",
+   "caption": "732 · near Poitiers",
+   "ambience": "war",
+   "duration": 12,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "anim": "war",
+   "ambience": "war",
+   "lines": [
+    {
+     "speaker": "Sergeant",
+     "en": "Square tight. Their horses hate our hedge of spears.",
+     "zh": "方陣收緊。他們的馬討厭我們這道矛籬。",
+     "ja": "方陣を固めろ。奴らの馬は槍の垣根を嫌う。",
+     "fr": "Carré serré. Leurs chevaux haïssent notre haie de lances.",
+     "de": "Viereck dicht. Ihre Pferde hassen unseren Speerzaun."
+    },
+    {
+     "speaker": "Sergeant",
+     "en": "Hold until the sun burns the dust gold — then push.",
+     "zh": "撐到陽光把塵土燒成金色——再推。",
+     "ja": "陽が砂を金色に焼くまで耐え——それから押せ。",
+     "fr": "Tiens jusqu’à ce que le soleil dore la poussière — puis pousse.",
+     "de": "Halt, bis die Sonne den Staub gold färbt — dann drück."
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "the cavalry dust",
+    "target_zh": "騎兵塵煙",
+    "target_ja": "騎兵の砂塵",
+    "target_fr": "la poussière de cavalerie",
+    "target_de": "den Reiterstaub",
+    "x": 70,
+    "y": 40
+   }
+  },
+  {
+   "phase": "climax",
+   "anim": "war",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "Veteran",
+     "en": "They fall back with the baggage. Remember the weight of your shield arm tonight.",
+     "zh": "他們連輜重一起退了。今晚記住你持盾那臂的重量。",
+     "ja": "輜重とともに退く。今夜、盾腕の重さを覚えろ。",
+     "fr": "Ils reculent avec le bagage. Souviens-toi ce soir du poids de ton bras de bouclier.",
+     "de": "Sie weichen mit dem Tross. Merk dir heute Nacht das Gewicht deines Schildarms."
+    }
+   ],
+   "interaction": {
+    "type": "follow",
+    "target": "the guide",
+    "target_zh": "嚮導",
+    "target_ja": "案内人",
+    "target_fr": "le guide",
+    "target_de": "den Führer",
+    "x": 48,
+    "y": 55
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "October 732, between Poitiers and Tours.",
+  "Charles Martel leads the Frankish forces.",
+  "Later chroniclers amplify its symbolic weight."
+ ],
+ "facts_zh": [
+  "732 年 10 月，普瓦捷與圖爾之間。",
+  "查理·馬特率領法蘭克軍。",
+  "後世編年史放大其象徵意義。"
+ ],
+ "facts_ja": [
+  "732年10月、ポワティエとトゥールの間。",
+  "カール・マルテルがフランク軍を率いる。",
+  "後世の年代記がその象徴的重みを強調。"
+ ],
+ "facts_fr": [
+  "Octobre 732, entre Poitiers et Tours.",
+  "Charles Martel commande les Francs.",
+  "Les chroniqueurs amplifient plus tard son poids symbolique."
+ ],
+ "facts_de": [
+  "Oktober 732 zwischen Poitiers und Tours.",
+  "Karl Martell führt die Franken.",
+  "Spätere Chronisten verstärken die Symbolkraft."
+ ],
+ "next": "Carolingian power rises from this military reputation; Europe’s political map keeps shifting.",
+ "next_zh": "卡羅林勢力從此一戰的軍譽升起；歐洲政治版圖持續改寫。",
+ "next_ja": "カロリング勢力がこの武名から上がり、欧州の政治地図は変わり続ける。",
+ "next_fr": "Le pouvoir carolingien monte sur cette réputation militaire ; la carte politique de l’Europe continue de bouger.",
+ "next_de": "Karolingische Macht steigt aus diesem Kriegsruhm; Europas politische Karte wandelt weiter.",
+ "then_now": {
+  "then": "Frankish Neustria",
+  "now": "Vienne département, France"
+ },
+ "quiz": {
+  "q": "Who led the Franks at Tours/Poitiers?",
+  "options": [
+   "Charles Martel",
+   "Charlemagne",
+   "Clovis"
+  ],
+  "answer": 0
+ },
+ "sources": [
+  {
+   "title": "Britannica: Battle of Tours",
+   "url": "https://www.britannica.com/event/Battle-of-Tours-732"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}

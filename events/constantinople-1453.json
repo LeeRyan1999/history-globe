@@ -7,103 +7,85 @@
  "lng": 28.93,
  "title": "Fall of Constantinople",
  "title_zh": "君士坦丁堡陷落",
- "perspective_role": "You are a young Genoese volunteer on the Theodosian Walls.",
- "perspective_role_zh": "你是守在狄奧多西城牆上的年輕熱那亞志願兵。",
- "summary": "After a 53-day siege, Ottoman Sultan Mehmed II captured Constantinople, ending the Byzantine Empire. Massive bronze cannons battered the ancient land walls; Emperor Constantine XI died in the final assault.",
- "summary_zh": "經過 53 天圍城，鄂圖曼蘇丹穆罕默德二世攻下君士坦丁堡，拜占庭帝國滅亡。巨型火砲轟擊古老城牆，末代皇帝君士坦丁十一世戰死。",
+ "title_ja": "コンスタンティノープル陥落",
+ "title_fr": "Chute de Constantinople",
+ "title_de": "Fall Konstantinopels",
+ "perspective_role": "You are a young Genoese volunteer on the Theodosian Walls at dawn.",
+ "perspective_role_zh": "破曉時分，你是狄奧多西城牆上的年輕熱那亞志願兵。",
+ "perspective_role_ja": "夜明けのテオドシウスの城壁に立つ若いジェノヴァ義勇兵だ。",
+ "perspective_role_fr": "Tu es un jeune volontaire génois sur les murailles théodosiennes à l’aube.",
+ "perspective_role_de": "Du bist junger genuesischer Freiwilliger auf den Theodosianischen Mauern im Morgengrauen.",
+ "summary": "After a 53-day siege, Ottoman Sultan Mehmed II takes Constantinople, ending the Byzantine Empire. Bronze cannons shatter ancient walls; Emperor Constantine XI dies in the final assault.",
+ "summary_zh": "經過 53 天圍城，鄂圖曼蘇丹穆罕默德二世攻下君士坦丁堡，拜占庭帝國滅亡。青銅巨砲轟碎古城牆，末代皇帝君士坦丁十一世在最後突擊中戰死。",
+ "summary_ja": "53日の包囲の末、オスマンのメフメト2世がコンスタンティノープルを落とし、ビザンツ帝国は終わる。青銅砲が古壁を砕き、皇帝コンスタンティノス11世は最後の突撃で死ぬ。",
+ "summary_fr": "Après 53 jours de siège, le sultan ottoman Mehmed II prend Constantinople, fin de l’Empire byzantin. Des canons de bronze brisent les murs antiques ; Constantin XI meurt dans l’assaut final.",
+ "summary_de": "Nach 53 Tagen Belagerung nimmt Sultan Mehmed II. Konstantinopel — Ende Byzanz. Bronzekanonen zerbrechen alte Mauern; Konstantin XI. fällt im Endsturm.",
+ "anim": "siege",
  "scenes": [
   {
    "phase": "arrival",
-   "bg": "img/constantinople-1453.jpg",
+   "anim": "siege",
    "caption": "29 May 1453 · Constantinople",
-   "ambience": "wind",
-   "duration": 15,
+   "ambience": "siege",
+   "duration": 12,
    "lines": []
   },
   {
    "phase": "guide",
-   "bg": "img/constantinople-1453.jpg",
-   "ambience": "wind",
+   "anim": "siege",
+   "ambience": "siege",
    "lines": [
     {
      "speaker": "Byzantine soldier",
-     "en": "You made it up the wall. Good.",
-     "zh": "你爬上城牆了，很好。"
+     "en": "You made it up. Good. Taste the grit — fifty-three dawns of this.",
+     "zh": "你爬上來了。好。嚐嚐這砂礫——五十三個這樣的黎明。",
+     "ja": "登ってきたな。いい。砂利の味だ——五十三の夜明けだ。",
+     "fr": "Tu es monté. Bien. Goûte le grit — cinquante-trois aubes comme ça.",
+     "de": "Du bist hoch. Gut. Schmeck den Grit — dreiundfünfzig solche Morgen."
     },
     {
      "speaker": "Byzantine soldier",
-     "en": "Fifty-three days they have besieged us.",
-     "zh": "他們已經圍城五十三天了。"
-    },
-    {
-     "speaker": "Byzantine soldier",
-     "en": "Look out there. See the great cannon?",
-     "zh": "看外面，看到那門巨砲了嗎？"
+     "en": "See that bronze throat out there? Orban built it. It speaks in stones that break a thousand years.",
+     "zh": "看到外面那青銅喉嚨了嗎？烏爾班造的。它用能打碎千年的石彈說話。",
+     "ja": "あそこの青銅の喉が見えるか？ウルバンが造った。千年を砕く石で語る。",
+     "fr": "Tu vois cette gorge de bronze ? Orban l’a faite. Elle parle en pierres qui brisent mille ans.",
+     "de": "Siehst du jene Bronzekehle? Orban baute sie. Sie spricht in Steinen, die tausend Jahre brechen."
     }
    ],
    "interaction": {
     "type": "look",
     "target": "the Ottoman cannon",
     "target_zh": "鄂圖曼巨砲",
+    "target_ja": "オスマンの巨砲",
+    "target_fr": "le grand canon ottoman",
+    "target_de": "die osmanische Riesenkanone",
     "x": 72,
     "y": 45
    }
   },
   {
-   "phase": "guide",
-   "bg": "img/constantinople-1453.jpg",
-   "lines": [
-    {
-     "speaker": "Byzantine soldier",
-     "en": "A Hungarian named Orban built it.",
-     "zh": "一個叫烏爾班的匈牙利人造的。"
-    },
-    {
-     "speaker": "Byzantine soldier",
-     "en": "Its stones break walls a thousand years old.",
-     "zh": "它的石彈能打碎千年城牆。"
-    },
-    {
-     "speaker": "Byzantine soldier",
-     "en": "Last night we prayed in Hagia Sophia.",
-     "zh": "昨晚我們在聖索菲亞大教堂祈禱。"
-    }
-   ],
-   "interaction": {
-    "type": "tap",
-    "target": "Hagia Sophia",
-    "target_zh": "聖索菲亞大教堂",
-    "x": 30,
-    "y": 20
-   }
-  },
-  {
    "phase": "climax",
-   "bg": "img/constantinople-1453.jpg",
+   "anim": "siege",
    "zoom": true,
    "lines": [
     {
      "speaker": "Byzantine soldier",
-     "en": "Listen! The drums. They are coming!",
-     "zh": "聽！戰鼓聲，他們來了！"
-    },
-    {
-     "speaker": "Byzantine soldier",
-     "en": "Giustiniani is wounded... the line breaks!",
-     "zh": "朱斯蒂尼亞尼受傷了……防線崩了！"
-    },
-    {
-     "speaker": "Byzantine soldier",
-     "en": "The Emperor rides into the fight. Follow me!",
-     "zh": "皇帝親自衝進戰場。跟我來！"
+     "en": "Drums. They’re coming. Giustiniani bleeds — the line tears. The emperor rides into the breach. With me!",
+     "zh": "戰鼓。他們來了。朱斯蒂尼亞尼在流血——防線撕開。皇帝衝進缺口。跟我來！",
+     "ja": "太鼓だ。来る。ジュスティニアーニが血を流す——線が裂ける。皇帝が裂け目へ騎る。俺と来い！",
+     "fr": "Tambours. Ils viennent. Giustiniani saigne — la ligne se déchire. L’empereur charge la brèche. Avec moi !",
+     "de": "Trommeln. Sie kommen. Giustiniani blutet — die Linie reißt. Der Kaiser reitet in die Bresche. Mit mir!"
     }
    ],
    "interaction": {
     "type": "follow",
-    "target": "the soldier",
-    "target_zh": "士兵",
-    "x": 45,
-    "y": 60
+    "target": "the guide",
+    "target_zh": "嚮導",
+    "target_ja": "案内人",
+    "target_fr": "le guide",
+    "target_de": "den Führer",
+    "x": 48,
+    "y": 55
    }
   },
   {
@@ -112,17 +94,35 @@
   }
  ],
  "facts": [
-  "The siege lasted from 6 April to 29 May 1453.",
-  "Constantine XI Palaiologos, the last Byzantine emperor, died defending the city.",
-  "Mehmed II made the city his capital; Hagia Sophia became a mosque."
+  "Siege 6 Apr–29 May 1453.",
+  "Constantine XI dies defending the city.",
+  "Mehmed II makes the city his capital; Hagia Sophia becomes a mosque."
  ],
  "facts_zh": [
-  "圍城從 1453 年 4 月 6 日持續到 5 月 29 日。",
-  "末代皇帝君士坦丁十一世在守城時戰死。",
+  "圍城 1453 年 4 月 6 日至 5 月 29 日。",
+  "君士坦丁十一世守城戰死。",
   "穆罕默德二世遷都於此，聖索菲亞改為清真寺。"
  ],
- "next": "Constantinople became Istanbul, capital of the Ottoman Empire for nearly 470 years. Greek scholars fleeing west helped fuel the Italian Renaissance, and blocked land trade routes pushed Europeans to seek sea routes to Asia.",
- "next_zh": "君士坦丁堡成為鄂圖曼帝國首都近 470 年。西逃的希臘學者助長了義大利文藝復興，陸路貿易受阻也促使歐洲人尋找通往亞洲的海路。",
+ "facts_ja": [
+  "包囲は1453年4月6日–5月29日。",
+  "コンスタンティノス11世は防衛中に戦死。",
+  "メフメト2世が遷都、アヤソフィアはモスクに。"
+ ],
+ "facts_fr": [
+  "Siège du 6 avr. au 29 mai 1453.",
+  "Constantin XI meurt en défendant la ville.",
+  "Mehmed II en fait sa capitale ; Sainte-Sophie devient mosquée."
+ ],
+ "facts_de": [
+  "Belagerung 6. Apr.–29. Mai 1453.",
+  "Konstantin XI. fällt bei der Verteidigung.",
+  "Mehmed II. macht die Stadt zur Hauptstadt; Hagia Sophia wird Moschee."
+ ],
+ "next": "Greek scholars fleeing west fuel the Renaissance; closed land routes push Europeans toward oceanic paths to Asia.",
+ "next_zh": "西逃的希臘學者助長文藝復興；陸路受阻也促使歐洲人尋找通往亞洲的海路。",
+ "next_ja": "西へ逃れたギリシャ学者がルネサンスを刺激し、陸路封鎖が欧州をアジアへの海路へ追い立てる。",
+ "next_fr": "Les savants grecs en fuite nourrissent la Renaissance ; les routes terrestres fermées poussent l’Europe vers l’Asie par la mer.",
+ "next_de": "Flüchtende griechische Gelehrte nähren die Renaissance; gesperrte Landwege treiben Europäer auf Seewege nach Asien.",
  "then_now": {
   "then": "Constantinople, Byzantine capital",
   "now": "Istanbul, Türkiye"
@@ -140,10 +140,6 @@
   {
    "title": "Britannica: Fall of Constantinople",
    "url": "https://www.britannica.com/event/Fall-of-Constantinople-1453"
-  },
-  {
-   "title": "Steven Runciman, The Fall of Constantinople 1453 (1965)",
-   "url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
   }
  ],
  "author": "Lee & Grok Bot",

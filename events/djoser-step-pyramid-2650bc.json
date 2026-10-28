@@ -1,0 +1,147 @@
+{
+ "id": "djoser-step-pyramid-2650bc",
+ "year": -2650,
+ "date": "c. 2650 BCE",
+ "place": "Saqqara, Egypt",
+ "lat": 29.8713,
+ "lng": 31.2165,
+ "title": "Djoser’s Step Pyramid",
+ "title_zh": "左塞爾階梯金字塔",
+ "title_ja": "ジョセルの階段ピラミッド",
+ "title_fr": "Pyramide à degrés de Djéser",
+ "title_de": "Djosers Stufenpyramide",
+ "perspective_role": "You are an apprentice mason watching Imhotep’s stacked mastabas rise.",
+ "perspective_role_zh": "你是學徒石匠，看著伊姆霍特普一層層堆起馬斯塔巴。",
+ "perspective_role_ja": "イムホテプがマスタバを積み上げるのを見守る見習い石工だ。",
+ "perspective_role_fr": "Tu es un apprenti maçon qui voit Imhotep empiler les mastabas.",
+ "perspective_role_de": "Du bist Lehrling und siehst, wie Imhotep Mastabas stapelt.",
+ "summary": "Egypt’s first monumental stone pyramid — six stacked mastabas designed by Imhotep for Pharaoh Djoser — invents a new skyline for kingship.",
+ "summary_zh": "埃及第一座巨大石造金字塔——伊姆霍特普為法老左塞爾設計的六層馬斯塔巴——為王權寫下新天際線。",
+ "summary_ja": "エジプト初の巨大石造ピラミッド。イムホテプがジョセル王のため六段のマスタバを重ね、王権の新しい空を作った。",
+ "summary_fr": "Première pyramide de pierre monumentale d’Égypte — six mastabas empilés par Imhotep pour Djéser — une nouvelle silhouette du pouvoir.",
+ "summary_de": "Ägyptens erste monumentale Steinpyramide — sechs gestapelte Mastabas von Imhotep für Djoser — eine neue Silhouette der Königsherrschaft.",
+ "anim": "temple",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "anim": "temple",
+   "caption": "c. 2650 BCE · Saqqara",
+   "ambience": "temple",
+   "duration": 12,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "anim": "temple",
+   "ambience": "temple",
+   "lines": [
+    {
+     "speaker": "Imhotep’s aide",
+     "en": "Stone on stone — not mud brick. Smell the cut limestone.",
+     "zh": "石疊石——不是泥磚。聞聞剛切開的石灰岩。",
+     "ja": "石の上に石——日干しレンガではない。切りたての石灰岩の匂いだ。",
+     "fr": "Pierre sur pierre — pas de brique crue. Sens le calcaire fraîchement taillé.",
+     "de": "Stein auf Stein — kein Lehmziegel. Riech den frisch geschnittenen Kalkstein."
+    },
+    {
+     "speaker": "Imhotep’s aide",
+     "en": "Six steps toward the sky. The king will climb them forever.",
+     "zh": "六階通往天空。國王會永遠往上走。",
+     "ja": "空へ六段。王は永遠に登る。",
+     "fr": "Six marches vers le ciel. Le roi les montera pour toujours.",
+     "de": "Sechs Stufen zum Himmel. Der König steigt sie ewig."
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "the stepped silhouette",
+    "target_zh": "階梯輪廓",
+    "target_ja": "階段の輪郭",
+    "target_fr": "la silhouette à degrés",
+    "target_de": "die gestufte Silhouette",
+    "x": 50,
+    "y": 35
+   }
+  },
+  {
+   "phase": "climax",
+   "anim": "temple",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "Priest",
+     "en": "Offerings for Djoser. You stand where eternity learned to use stone.",
+     "zh": "獻給左塞爾的供品。你站在永恆學會用石頭的地方。",
+     "ja": "ジョセルへの供物。永遠が石を覚えた場所に立っている。",
+     "fr": "Offrandes pour Djéser. Tu te tiens là où l’éternité a appris la pierre.",
+     "de": "Opfer für Djoser. Du stehst, wo die Ewigkeit den Stein lernte."
+    }
+   ],
+   "interaction": {
+    "type": "tap",
+    "target": "the offering court",
+    "target_zh": "祭品庭院",
+    "target_ja": "供物の中庭",
+    "target_fr": "la cour des offrandes",
+    "target_de": "den Opferhof",
+    "x": 40,
+    "y": 60
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "Designed by Imhotep for Pharaoh Djoser (3rd Dynasty).",
+  "First large-scale cut-stone monumental building in Egypt.",
+  "Six mastaba-like steps form the pyramid."
+ ],
+ "facts_zh": [
+  "伊姆霍特普為第三王朝法老左塞爾設計。",
+  "埃及第一座大規模切石紀念建築。",
+  "六層馬斯塔巴式階梯組成金字塔。"
+ ],
+ "facts_ja": [
+  "第3王朝ジョセル王のためイムホテプが設計。",
+  "エジプト初の大規模切石記念建築。",
+  "六段のマスタバ状階段で構成。"
+ ],
+ "facts_fr": [
+  "Conçue par Imhotep pour le pharaon Djéser (IIIe dynastie).",
+  "Premier grand édifice monumental en pierre taillée d’Égypte.",
+  "Six degrés de type mastaba."
+ ],
+ "facts_de": [
+  "Entworfen von Imhotep für Pharao Djoser (3. Dynastie).",
+  "Erstes großes Monument aus behauenem Stein in Ägypten.",
+  "Sechs mastabaartige Stufen."
+ ],
+ "next": "The step form inspired later true pyramids at Meidum, Dahshur, and Giza.",
+ "next_zh": "階梯形啟發了後來梅杜姆、達舒爾與吉薩的真正金字塔。",
+ "next_ja": "階段形は後のメイドゥム、ダハシュール、ギザの真正ピラミッドを生んだ。",
+ "next_fr": "La forme à degrés inspira les vraies pyramides de Meïdoum, Dahchour et Gizeh.",
+ "next_de": "Die Stufenform inspirierte spätere echte Pyramiden in Meidum, Dahschur und Gizeh.",
+ "then_now": {
+  "then": "Saqqara necropolis",
+  "now": "Saqqara archaeological site, Egypt"
+ },
+ "quiz": {
+  "q": "Who designed Djoser’s Step Pyramid?",
+  "options": [
+   "Imhotep",
+   "Hemiunu",
+   "Senmut"
+  ],
+  "answer": 0
+ },
+ "sources": [
+  {
+   "title": "Britannica: Step Pyramid of Djoser",
+   "url": "https://www.britannica.com/topic/Step-Pyramid-of-Djoser"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}

@@ -1,0 +1,147 @@
+{
+ "id": "wwi-1914",
+ "year": 1914,
+ "date": "28 July 1914",
+ "place": "Sarajevo / Europe",
+ "lat": 43.86,
+ "lng": 18.41,
+ "title": "World War I Begins",
+ "title_zh": "第一次世界大戰爆發",
+ "title_ja": "第一次世界大戦勃発",
+ "title_fr": "Début de la Première Guerre mondiale",
+ "title_de": "Beginn des Ersten Weltkriegs",
+ "perspective_role": "You are a railway clerk in Vienna as mobilization posters bloom overnight.",
+ "perspective_role_zh": "動員海報一夜開滿時，你是維也納的鐵路職員。",
+ "perspective_role_ja": "動員ポスターが一夜で咲くウィーンの鉄道職員だ。",
+ "perspective_role_fr": "Tu es employé des chemins de fer à Vienne quand les affiches de mobilisation fleurissent overnight.",
+ "perspective_role_de": "Du bist Bahnbeamter in Wien, als Mobilisierungsplakate über Nacht blühen.",
+ "summary": "After the assassination of Archduke Franz Ferdinand, alliances cascade into a continental war in 1914 that becomes the First World War.",
+ "summary_zh": "斐迪南大公遇刺後，同盟體系在 1914 年連鎖成歐陸大戰，演變為第一次世界大戰。",
+ "summary_ja": "フランツ・フェルディナント大公暗殺の後、同盟が1914年に連鎖し大陸戦争となり第一次世界大戦へ。",
+ "summary_fr": "Après l’assassinat de François-Ferdinand, les alliances basculent en 1914 en guerre continentale — la Première Guerre mondiale.",
+ "summary_de": "Nach der Ermordung Franz Ferdinands kippen Allianzen 1914 in einen Kontinentalkrieg — den Ersten Weltkrieg.",
+ "anim": "industrial",
+ "scenes": [
+  {
+   "phase": "arrival",
+   "anim": "industrial",
+   "caption": "1914 · Vienna",
+   "ambience": "industrial",
+   "duration": 12,
+   "lines": []
+  },
+  {
+   "phase": "guide",
+   "anim": "industrial",
+   "ambience": "industrial",
+   "lines": [
+    {
+     "speaker": "Station master",
+     "en": "Timetables rewrite themselves in red ink. Count the troop trains — then stop counting.",
+     "zh": "時刻表用紅墨重寫。數軍列——然後別再數。",
+     "ja": "時刻表が赤インクで書き換わる。軍用列車を数え——それから数えるな。",
+     "fr": "Les horaires se réécrivent à l’encre rouge. Compte les trains de troupes — puis arrête.",
+     "de": "Fahrpläne schreiben sich in roter Tinte um. Zähl die Truppenzüge — dann hör auf."
+    },
+    {
+     "speaker": "Station master",
+     "en": "Steam and farewell tobacco. Europe is boarding with suitcases too small for what comes.",
+     "zh": "蒸汽與告別的煙草。歐洲提著太小的行李箱上車。",
+     "ja": "蒸気と別れの煙草。欧州は来るものに小さすぎる鞄で乗車する。",
+     "fr": "Vapeur et tabac d’adieu. L’Europe monte avec des valises trop petites pour ce qui vient.",
+     "de": "Dampf und Abschiedstabak. Europa steigt ein mit Koffern zu klein für das Kommende."
+    }
+   ],
+   "interaction": {
+    "type": "look",
+    "target": "the troop train platform",
+    "target_zh": "軍列月台",
+    "target_ja": "軍用列車のホーム",
+    "target_fr": "le quai des trains de troupes",
+    "target_de": "den Truppenzugbahnsteig",
+    "x": 55,
+    "y": 55
+   }
+  },
+  {
+   "phase": "climax",
+   "anim": "industrial",
+   "zoom": true,
+   "lines": [
+    {
+     "speaker": "Clerk",
+     "en": "Your stamp hits paper like a starting gun. The century’s long shadow begins with a timetable.",
+     "zh": "你的戳蓋上紙像發令槍。這個世紀的長影從時刻表開始。",
+     "ja": "スタンプが紙を撃つように打つ。世紀の長い影は時刻表から始まる。",
+     "fr": "Ton tampon frappe le papier comme un coup de départ. L’ombre longue du siècle commence par un horaire.",
+     "de": "Dein Stempel trifft Papier wie ein Startschuss. Der lange Schatten des Jahrhunderts beginnt mit einem Fahrplan."
+    }
+   ],
+   "interaction": {
+    "type": "follow",
+    "target": "the guide",
+    "target_zh": "嚮導",
+    "target_ja": "案内人",
+    "target_fr": "le guide",
+    "target_de": "den Führer",
+    "x": 48,
+    "y": 55
+   }
+  },
+  {
+   "phase": "reflection",
+   "lines": []
+  }
+ ],
+ "facts": [
+  "War declared late July–Aug 1914 after Sarajevo (28 Jun).",
+  "Central Powers vs Allies; trench warfare on the Western Front.",
+  "Ends 1918; ~15–20 million dead."
+ ],
+ "facts_zh": [
+  "薩拉熱窩事件（6 月 28 日）後，1914 年 7 月底至 8 月宣戰。",
+  "同盟國對協約國；西線壕溝戰。",
+  "1918 年結束；約 1500–2000 萬人死亡。"
+ ],
+ "facts_ja": [
+  "サラエボ（6月28日）の後、1914年7月末–8月に宣戦。",
+  "中央同盟対連合国。西部戦線は塹壕戦。",
+  "1918年終結。死者約1500–2000万。"
+ ],
+ "facts_fr": [
+  "Déclarations fin juil.–août 1914 après Sarajevo (28 juin).",
+  "Puissances centrales vs Alliés ; tranchées à l’Ouest.",
+  "Fin 1918 ; ~15–20 millions de morts."
+ ],
+ "facts_de": [
+  "Kriegserklärungen Ende Juli–Aug. 1914 nach Sarajevo (28. Juni).",
+  "Mittelmächte vs. Alliierte; Grabenkrieg im Westen.",
+  "Ende 1918; ~15–20 Mio. Tote."
+ ],
+ "next": "Empires collapse; the map of Europe and the Middle East is redrawn at Versailles and beyond.",
+ "next_zh": "帝國崩解；歐洲與中東地圖在凡爾賽及其他和約中重畫。",
+ "next_ja": "帝国が崩れ、欧州と中東の地図がベルサイユほかで描き直される。",
+ "next_fr": "Les empires s’effondrent ; l’Europe et le Moyen-Orient sont redessinés à Versailles et au-delà.",
+ "next_de": "Reiche zerbrechen; Europa und der Nahe Osten werden in Versailles und darüber hinaus neu gezeichnet.",
+ "then_now": {
+  "then": "Austria-Hungary / Europe",
+  "now": "Sarajevo / European fronts"
+ },
+ "quiz": {
+  "q": "Which assassination helped trigger World War I?",
+  "options": [
+   "Franz Ferdinand",
+   "Archduke Rudolf",
+   "Nicholas II"
+  ],
+  "answer": 0
+ },
+ "sources": [
+  {
+   "title": "Britannica: World War I",
+   "url": "https://www.britannica.com/event/World-War-I"
+  }
+ ],
+ "author": "Lee & Grok Bot",
+ "review_status": "draft"
+}
