@@ -17,6 +17,16 @@ let year=1450,landmarks=[],events=[],cache={},curSnap=null,borderIndex=[],ethnic
 const PEOPLE_RE=/hunter|gatherer|peoples?|culture|tribes?|complex|focus|farmers|aboriginal|paleo-?|shellfish|hunters|foraging|cereal|taiga|savanna|bison|marine mammal|patagonian|amazon |andean |arctic |desert |caribbean |north american|subarctic|australian|tasmanian|plateau |plain |pampas|west african|finno-ugric|khoisan|ainu|saami|chuds|bantu|arawaks|athabaskan|boethuk|dorset|guanches|hopewell|marksville|mill creek|swift creek|point peninsula|laurel |glades |goodall|fourche|couture|copena|porter|miller\b/i;
 const tip=(msg)=>{const e=$('tip');e.textContent=msg;e.hidden=!msg;clearTimeout(tip._t);if(msg)tip._t=setTimeout(()=>e.hidden=true,3500)};
 const color=s=>{let h=0;for(const c of s||'')h=(h*31+c.charCodeAt(0))%360;return h};
+
+function hslA(h,s,l,a){
+  s/=100;l/=100;
+  const c=(1-Math.abs(2*l-1))*s, x=c*(1-Math.abs((h/60)%2-1)), m=l-c/2;
+  let r=0,g=0,b=0;
+  if(h<60)[r,g,b]=[c,x,0]; else if(h<120)[r,g,b]=[x,c,0]; else if(h<180)[r,g,b]=[0,c,x];
+  else if(h<240)[r,g,b]=[0,x,c]; else if(h<300)[r,g,b]=[x,0,c]; else [r,g,b]=[c,0,x];
+  return `rgba(${Math.round((r+m)*255)},${Math.round((g+m)*255)},${Math.round((b+m)*255)},${a})`;
+}
+
 const featLabel=d=>{const p=d&&d.properties;if(!p)return'';return p.NAME||p.SUBJECTO||p.PARTOF||''};
 const isPeople=n=>PEOPLE_RE.test(n||'');
 
@@ -42,41 +52,51 @@ function featToPaths(feat){
   }
   return paths;
 }
-function setGlow(feat){
-  glowFeat=feat||null;
-  const base=featToPaths(glowFeat);
-  const paths=[];
-  for(const p of base){
-    paths.push({coords:p.coords,glow:1});
-    paths.push({coords:p.coords,glow:0});
-  }
-  G.pathsData(paths);
+let borderPaths=[]; /* mobile outline strokes (polygon stroke off on iOS) */
+function glowPaths(){
+  const base=featToPaths(glowFeat), paths=[];
+  for(const p of base){paths.push({coords:p.coords,glow:1});paths.push({coords:p.coords,glow:0})}
+  return paths;
 }
-function clearGlow(){glowFeat=null;G.pathsData([])}
+function applyPaths(){G.pathsData(borderPaths.concat(glowPaths()))}
+function setGlow(feat){glowFeat=feat||null;applyPaths()}
+function clearGlow(){glowFeat=null;applyPaths()}
+function buildBorderPaths(feats){
+  if(!MOB){borderPaths=[];return}
+  const paths=[];
+  const cap=Math.min(feats.length, MOB?120:300);
+  /* largest first for visibility budget */
+  const scored=feats.map(f=>{const lr=largestRing(f);return lr?{f,area:lr.area}:null}).filter(Boolean).sort((a,b)=>b.area-a.area).slice(0,cap);
+  for(const {f} of scored){
+    for(const p of featToPaths(f)) paths.push({coords:p.coords,border:1});
+  }
+  borderPaths=paths;
+}
 
 const MOB=/iPad|iPhone|iPod/.test(navigator.userAgent)||(navigator.maxTouchPoints>1&&/Mac/.test(navigator.userAgent));
 const G=Globe()($('globe'))
- .globeImageUrl('img/earth-night.jpg')
+ .globeImageUrl('img/earth-night.jpg?v=20261028c')
  .backgroundImageUrl('https://unpkg.com/three-globe/example/img/night-sky.png')
  .polygonsTransitionDuration(0).atmosphereColor('#c9a96e').atmosphereAltitude(.2)
- .polygonAltitude(d=>{const n=featLabel(d);return n?0.008:0.003})
- .polygonCapCurvatureResolution(MOB?7:5)
+ .polygonAltitude(d=>{const n=featLabel(d);return n?(MOB?0.018:0.01):0.004})
+ .polygonCapCurvatureResolution(MOB?8:5)
  .polygonCapColor(d=>{
-   const n=featLabel(d);if(!n)return'rgba(40,55,70,.18)';
+   const n=featLabel(d);if(!n)return'rgba(40,55,70,.22)';
    const h=color(n);const people=isPeople(n);
    if(ethnicOn){
-     if(people)return`hsla(${h},58%,52%,.62)`;
-     return`hsla(${h},28%,38%,.28)`;
+     if(people)return hslA(h,58,52,.68);
+     return hslA(h,28,38,.32);
    }
-   if(people)return`hsla(${h},35%,42%,.28)`;
-   return`hsla(${h},50%,48%,.55)`;
+   if(people)return hslA(h,35,42,.34);
+   return hslA(h,52,50,.62);
  })
- .polygonSideColor(()=>'rgba(201,169,110,.22)')
- .polygonStrokeColor(d=>{
+ .polygonSideColor(()=>'rgba(201,169,110,.28)')
+ /* iOS WebKit: polygon strokes often fail the whole layer — use path outlines instead */
+ .polygonStrokeColor(MOB?(()=>null):(d=>{
    const n=featLabel(d);if(!n)return'rgba(180,200,210,.18)';
    if(ethnicOn&&isPeople(n))return'#b8e0ff';
    return'#f0e0b0';
- })
+ }))
  .polygonLabel(d=>{const n=featLabel(d);return n?`<b>${n}</b>`:''})
  .onPolygonHover(()=>{})
  .onPolygonClick(d=>{
@@ -88,13 +108,13 @@ const G=Globe()($('globe'))
  .pathPoints('coords')
  .pathPointLat(p=>p[0]).pathPointLng(p=>p[1])
  .pathPointAlt(.012)
- .pathColor(d=>d.glow?'rgba(255,196,60,.35)':'rgba(255,220,100,.95)')
- .pathStroke(d=>d.glow?4.5:2.0)
- .pathDashLength(d=>d.glow?1:0.55)
- .pathDashGap(d=>d.glow?0:0.2)
- .pathDashAnimateTime(d=>d.glow?0:2200)
+ .pathColor(d=>d.border?'rgba(240,224,176,.85)':(d.glow?'rgba(255,196,60,.35)':'rgba(255,220,100,.95)'))
+ .pathStroke(d=>d.border?(MOB?1.1:0.9):(d.glow?4.5:2.0))
+ .pathDashLength(d=>d.border?1:(d.glow?1:0.55))
+ .pathDashGap(d=>d.border?0:(d.glow?0:0.2))
+ .pathDashAnimateTime(d=>d.border?0:(d.glow?0:2200))
  .pathResolution(2)
- .htmlElementsData([]).htmlElement(d=>d.el)
+ .htmlElementsData([]).htmlElement(d=>{const el=d.el;if(el&&!el._hg){el._hg=1;el.style.pointerEvents=el.classList.contains('cn')?'none':'auto'}return el})
  .ringsData([]).ringColor(()=>u=>`rgba(255,179,71,${1-u})`).ringMaxRadius(4).ringPropagationSpeed(2).ringRepeatPeriod(1200);
 G.controls().autoRotate=true;G.controls().autoRotateSpeed=.25;G.pointOfView({lat:30,lng:40,altitude:2.3});
 if(!MOB)G.bumpImageUrl('https://unpkg.com/three-globe/example/img/earth-topology.png');
@@ -140,7 +160,7 @@ function buildBorderIndex(features){
 }
 function updateSnapNote(){
   if(curSnap==null)return;
-  $('snap').textContent=`${t('snap')}: ${fmt(curSnap)} (historical-basemaps)`+(ethnicOn?t('ethSnap'):'');
+  $('snap').textContent=`${t('snap')}: ${fmt(curSnap)} · ${borderIndex.length} · historical-basemaps`+(ethnicOn?t('ethSnap'):'');
 }
 
 /* ---- 3D landmarks (LOD): year-gated, lazy, shared mats ---- */
@@ -226,25 +246,48 @@ function usableFeatures(features){
   return out;
 }
 let borderLoadId=0;
+async function fetchBorderFeatures(s){
+  const file=snapFile(s);
+  const urls=[
+    'borders/'+file, /* same-origin simplified — reliable on iOS Safari */
+    BASE+file,
+    'https://fastly.jsdelivr.net/gh/aourednik/historical-basemaps@master/geojson/'+file
+  ];
+  let last;
+  for(const url of urls){
+    try{
+      const res=await fetch(url,{cache:'force-cache'});
+      if(!res.ok)throw new Error('HTTP '+res.status+' '+url);
+      const data=await res.json();
+      const feats=Array.isArray(data)?data:(data.features||[]);
+      if(!feats.length)throw new Error('empty '+url);
+      return feats;
+    }catch(e){last=e;console.warn('borders', url, e&&e.message)}
+  }
+  throw last||new Error('borders');
+}
 async function loadBorders(){
   const s=nearest(year);if(s===curSnap&&borderIndex.length)return;
   const loadId=++borderLoadId;
   $('loading').hidden=false;
   try{
-    if(!cache[s]){
-      const res=await fetch(BASE+snapFile(s));
-      if(!res.ok)throw new Error('HTTP '+res.status);
-      cache[s]=(await res.json()).features;
-    }
-    if(loadId!==borderLoadId||nearest(year)!==s)return; /* stale */
-    clearGlow();
+    if(!cache[s]) cache[s]=await fetchBorderFeatures(s);
+    if(loadId!==borderLoadId||nearest(year)!==s)return;
     const feats=usableFeatures(cache[s]);
     borderIndex=buildBorderIndex(feats);
+    buildBorderPaths(feats);
+    glowFeat=null;
+    applyPaths();
+    try{G.polygonsData(feats)}catch(err){console.warn('polygonsData',err);G.polygonsData([])}
     curSnap=s;updateSnapNote();
-    G.polygonsData(feats);
     paintHtml(G.pointOfView());
     if(!$('ctylist').hidden)drawCountries();
-  }catch(e){if(loadId===borderLoadId)tip(t('fail')+' ('+s+')')}
+  }catch(e){
+    if(loadId===borderLoadId){
+      tip(t('fail')+' ('+s+')');
+      $('snap').textContent=t('fail')+': '+fmt(s);
+    }
+  }
   if(loadId===borderLoadId)$('loading').hidden=true;
 }
 function active(e){const end=e.year_end||e.year;return year>=e.year-50&&year<=end+50}
@@ -340,7 +383,9 @@ function setEthnic(on){
   /* Force polygon restyle by resetting data */
   if(curSnap!=null&&cache[curSnap]){
     const feats=usableFeatures(cache[curSnap]);
-    G.polygonsData(feats.slice());
+    buildBorderPaths(feats);
+    applyPaths();
+    try{G.polygonsData(feats.slice())}catch(err){console.warn(err)}
   }
   if(!$('ctylist').hidden)drawCountries();
   render();
@@ -392,6 +437,7 @@ function reflect(){speechSynthesis?.cancel();stopAmb();const r=$('reflect');r.hi
  <button class="btn" id="back">${t('back')}</button></div>`;
  r.querySelectorAll('.q button').forEach(b=>b.onclick=()=>b.classList.add(+b.dataset.i===q.answer?'right':'wrong'));$('back').onclick=closePOV}
 // ---- boot ----
-(async()=>{landmarks=await (await fetch('landmarks.json')).json();const idx=await (await fetch('events/index.json')).json();
- events=await Promise.all(idx.map(f=>fetch('events/'+f).then(r=>r.json())));applyLang()})();
+if('serviceWorker'in navigator){navigator.serviceWorker.getRegistrations().then(rs=>rs.forEach(r=>r.unregister())).catch(()=>{})}
+(async()=>{landmarks=await (await fetch('landmarks.json?v=20261028c')).json();const idx=await (await fetch('events/index.json?v=20261028c')).json();
+ events=await Promise.all(idx.map(f=>fetch('events/'+f+'?v=20261028c').then(r=>r.json())));applyLang()})();
 window.__HG={setYear,startPOV:id=>startPOV(events.find(e=>e.id===id)),openPanel:id=>openPanel(events.find(e=>e.id===id)),glow:n=>{const f=(borderIndex.find(x=>x.name===n)||{}).feat||(cache[curSnap]||[]).find(x=>featLabel(x)===n);if(f){setGlow(f);tip(n)}},clear:clearGlow,pov:(o,ms)=>G.pointOfView(o,ms),refresh3D,landmarks:()=>landmarks,year:()=>year,flyToLM:id=>{const l=landmarks.find(x=>x.id===id);if(l)flyToLM(l)},countries:()=>borderIndex,ethnic:setEthnic,selectCountry:n=>{const m=borderIndex.find(x=>x.name===n);selectCountry(m)}};

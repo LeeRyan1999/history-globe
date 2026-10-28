@@ -3,6 +3,8 @@
 Live: https://leeryan1999.github.io/history-globe/ · Repo: https://github.com/LeeRyan1999/history-globe
 
 ## Done
+- 2026-10-28 (run 3) — iPhone borders fix: Lee saw only night texture at 300 BC. Causes: (1) globe.gl loaded before three.min.js → dual Three instances (globe internal vs window.THREE) so layers break on iOS WebKit; (2) polygonStroke + hsla() fills unreliable on WebKit; (3) jsdelivr GeoJSON flaky (403 reproduced) with no same-origin copy. Fix: load three@0.159 first then globe.gl; same-origin simplified `borders/*.geojson` (CDN fallback); iOS path outlines instead of polygon stroke; rgba caps; earth-night 2048; `?v=20261028c` cache-bust; unregister SW. Screenshot: screenshots/iphone-300bc.png.
+
 - 2026-10-28 (run 2) — Mobile clarity + countries: sharper local `img/earth-night.jpg` texture; iOS DPR cap raised 1.5→2; brighter polity fills/strokes; year-gated country name labels on globe; header topbar flex so 🏛/👥/📜/lang/Ko-fi no longer overlap the title on ~390px phones; 🏛 country picker lists polities in the current historical-basemaps snapshot (fly + gold glow); 👥 peoples/cultures toggle uses the same basemap features classified as cultural/ethnic (approximate — labeled in UI, not precise borders). Landmarks unchanged. Screenshot: screenshots/mobile-countries.png.
 
 - 2026-10-26 — v1 prototype: 3D globe (globe.gl), year slider + era buttons, historical-basemaps borders (nearest snapshot), 20 landmarks with built/destroyed years, 3 seed events (Constantinople 1453, Columbus 1492, Zheng He 1405) with 4-phase POV (arrival/guide/climax/reflection), English TTS + bilingual subtitles, reflection cards + quiz, CONTRIBUTING.md.

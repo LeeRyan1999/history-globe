@@ -16,10 +16,10 @@
 #panel{position:fixed;right:14px;bottom:14px;width:min(380px,calc(100% - 28px));max-height:60vh;overflow:auto;background:#0b0f1aee;border:1px solid #c9a96e55;border-radius:14px;padding:16px;z-index:7;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
 #panel h2{font-family:Georgia,serif;margin:0 0 2px;color:#f3e6c4}#panel .zh{opacity:.75}#panel p{line-height:1.5;font-size:14px}
 .btn{background:#c9a96e;color:#111;border:0;border-radius:10px;padding:10px 16px;font-size:15px;font-weight:600}.ghost{background:none;color:#c9a96e;border:1px solid #c9a96e66}
-.lm{font-size:16px;filter:drop-shadow(0 0 4px #000);cursor:pointer;pointer-events:auto;transform:translate(-50%,-50%)}
-.cn{pointer-events:none;transform:translate(-50%,-50%);white-space:nowrap;font:600 11px/1.2 Georgia,serif;color:#ffe9b8;text-shadow:0 0 4px #000,0 1px 2px #000,0 0 10px #000a;letter-spacing:.02em;opacity:.92;max-width:140px;overflow:hidden;text-overflow:ellipsis}
+.lm{font-size:16px;filter:drop-shadow(0 0 4px #000);cursor:pointer;pointer-events:auto}
+.cn{pointer-events:none;white-space:nowrap;font:600 11px/1.2 Georgia,serif;color:#ffe9b8;text-shadow:0 0 4px #000,0 1px 2px #000,0 0 10px #000a;letter-spacing:.02em;opacity:.92;max-width:140px;overflow:hidden;text-overflow:ellipsis}
 .cn.people{color:#b8e0ff;font-weight:500;font-size:10px;opacity:.88}
-.ev{width:22px;height:22px;border-radius:50%;background:radial-gradient(#fff6d0,#ffb347 45%,#ff7a0000 70%);box-shadow:0 0 18px 6px #ffb34799;animation:pulse 1.6s infinite;pointer-events:auto;cursor:pointer;transform:translate(-50%,-50%)}
+.ev{width:22px;height:22px;border-radius:50%;background:radial-gradient(#fff6d0,#ffb347 45%,#ff7a0000 70%);box-shadow:0 0 18px 6px #ffb34799;animation:pulse 1.6s infinite;pointer-events:auto;cursor:pointer}
 .ev b{position:absolute;left:26px;top:2px;white-space:nowrap;font:600 12px Georgia,serif;color:#ffe2a8;text-shadow:0 0 6px #000}
 @keyframes pulse{50%{box-shadow:0 0 30px 12px #ffb347cc}}
 #loading{position:fixed;bottom:20px;left:20px;font-size:12px;opacity:.7;z-index:6}
