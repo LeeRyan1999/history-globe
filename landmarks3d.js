@@ -305,12 +305,14 @@
   const live = new Map(); // id -> { root, rising, t0 }
 
   /* Globe radius ≈ 100; keep landmarks visible but not continent-sized. */
+  /* Base scales bumped ~2.4× so close zoom reads as buildings, not pins. */
   const SCALE = {
-    pyramid: 0.42, stones: 0.32, temple: 0.36, colosseum: 0.48, dome: 0.40,
-    keep: 0.36, castle: 0.38, clocktower: 0.52, cathedral: 0.44, palace: 0.40,
-    terrace: 0.36, tower: 0.58, statue: 0.40, lighthouse: 0.48, wall: 0.34,
-    gate: 0.36, shells: 0.42,
+    pyramid: 1.05, stones: 0.85, temple: 0.95, colosseum: 1.25, dome: 1.05,
+    keep: 0.95, castle: 1.05, clocktower: 1.35, cathedral: 1.15, palace: 1.05,
+    terrace: 0.95, tower: 1.45, statue: 1.0, lighthouse: 1.2, wall: 0.9,
+    gate: 0.95, shells: 1.1,
   };
+  let zoomScale = 1;
 
   function makeInstance(landmark) {
     const type = landmark.model || 'keep';
@@ -334,8 +336,9 @@
       if (!st.rising) continue;
       const u = Math.min(1, (now - st.t0) / 1100);
       const y = easeOutCubic(u);
-      st.root.scale.set(1, Math.max(0.02, y), 1);
-      if (u >= 1) st.rising = false;
+      const zs = zoomScale;
+      st.root.scale.set(zs, Math.max(0.02, y * zs), zs);
+      if (u >= 1) { st.rising = false; st.root.scale.set(zs, zs, zs); }
       else any = true;
     }
     riseRaf = any ? requestAnimationFrame(tickRise) : 0;
@@ -382,11 +385,19 @@
   HG3D.replayRise = function (id) {
     const st = live.get(id);
     if (!st) return;
-    st.root.scale.set(1, 0.02, 1);
+    st.root.scale.set(zoomScale, 0.02, zoomScale);
     st.rising = true;
     st.t0 = performance.now();
     ensureRiseLoop();
   };
+  HG3D.setZoomScale = function (s) {
+    zoomScale = Math.max(0.5, Math.min(4, +s || 1));
+    for (const [, st] of live) {
+      if (st.rising) continue;
+      st.root.scale.set(zoomScale, zoomScale, zoomScale);
+    }
+  };
+  HG3D.zoomScale = () => zoomScale;
 
   global.HG3D = HG3D;
 })(typeof window !== 'undefined' ? window : globalThis);

@@ -48,8 +48,6 @@
 #lang{background:rgba(10,14,24,.85);color:#e9d7a8;border:1px solid rgba(201,169,110,.5);border-radius:8px;padding:4px 4px;font-size:12px;max-width:92px}
 #kofi{display:block;line-height:0;border-radius:50%;filter:drop-shadow(0 1px 3px rgba(0,0,0,.6));transition:transform .2s;flex-shrink:0}#kofi:hover{transform:rotate(-12deg) scale(1.08)}
 
-#evbtn,#ctybtn,#ethbtn{background:rgba(10,14,24,.85);border:1px solid rgba(201,169,110,.5);border-radius:8px;font-size:15px;padding:3px 6px;line-height:1.3;color:#e9d7a8}
-#ethbtn.on{background:#c9a96e;color:#111;border-color:#c9a96e}
 #evlist,#ctylist{position:fixed;top:calc(48px + env(safe-area-inset-top));right:10px;width:min(300px,calc(100% - 20px));max-height:60vh;overflow:auto;background:#0b0f1aee;border:1px solid #c9a96e55;border-radius:12px;padding:10px;z-index:21;text-align:left}
 #evlist h3,#ctylist h3{margin:2px 4px 8px;font:600 14px Georgia,serif;color:#c9a96e;letter-spacing:.08em}
 #ctylist .note{margin:0 4px 8px;font-size:11px;opacity:.7;line-height:1.35}
@@ -62,6 +60,12 @@
  .brand span{display:none}
  #yearLabel{font-size:28px;min-width:140px}
  #lang{max-width:78px;font-size:11px;padding:3px 2px}
- #evbtn,#ctybtn,#ethbtn{padding:3px 5px;font-size:14px}
+ #evbtn,#ctybtn,#ethbtn,#gvbtn{padding:3px 5px;font-size:14px}
  .tr{gap:4px}
 }
+
+#evbtn,#ctybtn,#ethbtn,#gvbtn{background:rgba(10,14,24,.85);border:1px solid rgba(201,169,110,.5);border-radius:8px;font-size:15px;padding:3px 6px;line-height:1.3;color:#e9d7a8}
+#ethbtn.on,#gvbtn.on{background:#c9a96e;color:#111;border-color:#c9a96e}
+#attrib{position:fixed;left:10px;bottom:calc(env(safe-area-inset-bottom) + 8px);z-index:6;font-size:10px;opacity:.55;max-width:70vw;line-height:1.3;pointer-events:none}
+#gvhint{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom) + 52px);transform:translateX(-50%);z-index:6;background:#0c111dee;border:1px solid #c9a96e55;padding:6px 12px;border-radius:10px;font-size:12px;display:none}
+#gvhint.on{display:block}
