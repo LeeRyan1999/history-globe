@@ -76,7 +76,7 @@ function buildBorderPaths(feats){
 const MOB=/iPad|iPhone|iPod/.test(navigator.userAgent)||(navigator.maxTouchPoints>1&&/Mac/.test(navigator.userAgent));
 let zoomBand='far'; /* far | mid | near — fill alpha, tiles, border LOD */
 const G=Globe()($('globe'))
- .globeImageUrl('img/earth-night.jpg?v=20261028d')
+ .globeImageUrl('img/earth-night.jpg?v=20261028e')
  .backgroundImageUrl('https://unpkg.com/three-globe/example/img/night-sky.png')
  .polygonsTransitionDuration(0).atmosphereColor('#c9a96e').atmosphereAltitude(.2)
  .polygonAltitude(d=>{const n=featLabel(d);if(!n)return 0.003; const base=MOB?0.016:0.009; return zoomBand==='near'?base*0.55:(zoomBand==='mid'?base*0.75:base)})
@@ -637,7 +637,7 @@ function setEthnic(on){
 }
 $('ethbtn').onclick=()=>setEthnic(!ethnicOn);
 if($('gvbtn'))$('gvbtn').onclick=()=>toggleGround();
-function openPanel(e){G.controls().autoRotate=false;G.pointOfView({lat:e.lat,lng:e.lng,altitude:1.4},1000);const p=$('panel');p.hidden=false;
+function openPanel(e){if(!e)return;G.controls().autoRotate=false;G.pointOfView({lat:e.lat,lng:e.lng,altitude:1.4},1000);const p=$('panel');p.hidden=false;
  p.innerHTML=`<h2>${e.title}</h2><div class="zh">${z(e.title_zh)} ${e.date}</div><p>${e.summary}</p><p class="zh">${z(e.summary_zh)}</p><p><i>${e.perspective_role}</i><br><span class="zh">${z(e.perspective_role_zh)}</span></p>
  <button class="btn" id="go">${t('enter')}</button> <button class="btn ghost" id="cl">${t('close')}</button>`;
  $('go').onclick=()=>{p.hidden=true;startPOV(e)};$('cl').onclick=()=>{p.hidden=true;G.controls().autoRotate=true}}
@@ -653,26 +653,26 @@ if('speechSynthesis'in window){pickVoice();speechSynthesis.onvoiceschanged=pickV
 function say(txt){if(!('speechSynthesis'in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(txt);u.lang='en-GB';if(voice)u.voice=voice;u.rate=.92;u.pitch=.9;speechSynthesis.speak(u)}
 // ---- POV: arrival → guide → climax → reflection ----
 let E,si,li,waiting;
-function startPOV(e){E=e;si=0;li=-1;$('pov').hidden=false;G.pauseAnimation();$('reflect').hidden=true;$('role').textContent=e.perspective_role+(ZH()?' · '+e.perspective_role_zh:'');scene()}
-function scene(){const s=E.scenes[si];if(!s||s.phase==='reflection')return reflect();
+function startPOV(e){if(!e||!e.scenes){console.warn("startPOV: missing event");return}E=e;si=0;li=-1;$('pov').hidden=false;G.pauseAnimation();$('reflect').hidden=true;$('role').textContent=e.perspective_role+(ZH()?' · '+e.perspective_role_zh:'');povScene()}
+function povScene(){const s=E.scenes[si];if(!s||s.phase==='reflection')return povReflect();
  const bg=$('bg');if(s.bg)bg.style.backgroundImage=`url(${s.bg})`;bg.classList.toggle('zoom',!!s.zoom);ambience(s.ambience||null);li=-1;waiting=false;$('hot').hidden=true;
  if(s.phase==='arrival'){bg.style.opacity=0;$('sub').classList.add('off');$('caption').textContent=s.caption||E.date;$('caption').style.opacity=1;
   setTimeout(()=>{bg.style.opacity=1},800);setTimeout(()=>{$('caption').style.opacity=0},3500);$('next').textContent=t('cont');return}
- bg.style.opacity=1;$('caption').style.opacity=0;line()}
-function line(){const s=E.scenes[si];li++;
- if(li>=s.lines.length){if(s.interaction&&!waiting){waiting=true;return hotspot(s.interaction)}si++;return scene()}
+ bg.style.opacity=1;$('caption').style.opacity=0;povLine()}
+function povLine(){const s=E.scenes[si];li++;
+ if(li>=s.lines.length){if(s.interaction&&!waiting){waiting=true;return povHotspot(s.interaction)}si++;return povScene()}
  const l=s.lines[li];$('sub').classList.remove('off');$('speaker').textContent=l.speaker;$('en').textContent=l.en;$('zh').textContent=z(l.zh);say(l.en)}
-function hotspot(it){const h=$('hot');h.hidden=false;h.style.left=it.x+'%';h.style.top=it.y+'%';
+function povHotspot(it){const h=$('hot');h.hidden=false;h.style.left=it.x+'%';h.style.top=it.y+'%';
  h.querySelector('span').textContent=`${t(it.type)} ${it.target}${ZH()?' · '+it.target_zh:''}`;
  $('sub').classList.add('off');$('next').textContent=t('doAct');
  h.onclick=()=>{h.hidden=true;$('next').textContent=t('cont');const bg=$('bg');
   if(it.type==='look'||it.type==='follow')bg.style.transformOrigin=`${it.x}% ${it.y}%`;if(it.type==='follow')bg.classList.add('zoom');
-  si++;scene()}}
-$('next').onclick=()=>{if(!$('hot').hidden)return;const s=E.scenes[si];if(s&&s.phase==='arrival'){si++;return scene()}line()};
+  si++;povScene()}}
+$('next').onclick=()=>{if(!$('hot').hidden)return;const s=E.scenes[si];if(s&&s.phase==='arrival'){si++;return povScene()}povLine()};
 $('replay').onclick=()=>{const l=E.scenes[si]?.lines[li];if(l)say(l.en)};
 $('exit').onclick=closePOV;
 function closePOV(){speechSynthesis?.cancel();stopAmb();$('pov').hidden=true;G.resumeAnimation();$('bg').classList.remove('zoom');$('bg').style.transformOrigin='center';G.controls().autoRotate=true}
-function reflect(){speechSynthesis?.cancel();stopAmb();const r=$('reflect');r.hidden=false;const q=E.quiz;
+function povReflect(){speechSynthesis?.cancel();stopAmb();const r=$('reflect');r.hidden=false;const q=E.quiz;
  r.innerHTML=`<div class="card"><h2>${E.title}${ZH()?' · '+E.title_zh:''}</h2><p><i>${E.date} — ${E.place}</i></p>
  <h3>${t('thenNow')}</h3><div class="tn"><div><b>${t('then')}</b><br>${E.then_now.then}</div><div><b>${t('now')}</b><br>${E.then_now.now}</div></div>
  <h3>${t('facts')}</h3><ol>${E.facts.map((f,i)=>`<li>${f}<br><small>${z(E.facts_zh[i])}</small></li>`).join('')}</ol>
@@ -684,6 +684,6 @@ function reflect(){speechSynthesis?.cancel();stopAmb();const r=$('reflect');r.hi
  r.querySelectorAll('.q button').forEach(b=>b.onclick=()=>b.classList.add(+b.dataset.i===q.answer?'right':'wrong'));$('back').onclick=closePOV}
 // ---- boot ----
 if('serviceWorker'in navigator){navigator.serviceWorker.getRegistrations().then(rs=>rs.forEach(r=>r.unregister())).catch(()=>{})}
-(async()=>{landmarks=await (await fetch('landmarks.json?v=20261028d')).json();const idx=await (await fetch('events/index.json?v=20261028d')).json();
- events=await Promise.all(idx.map(f=>fetch('events/'+f+'?v=20261028d').then(r=>r.json())));applyLang()})();
+(async()=>{landmarks=await (await fetch('landmarks.json?v=20261028e')).json();const idx=await (await fetch('events/index.json?v=20261028e')).json();
+ events=await Promise.all(idx.map(f=>fetch('events/'+f+'?v=20261028e').then(r=>r.json())));applyLang()})();
 window.__HG={setYear,startPOV:id=>startPOV(events.find(e=>e.id===id)),openPanel:id=>openPanel(events.find(e=>e.id===id)),glow:n=>{const f=(borderIndex.find(x=>x.name===n)||{}).feat||(cache[curSnap]||cacheFull[curSnap]||[]).find(x=>featLabel(x)===n);if(f){setGlow(f);tip(n)}},clear:clearGlow,pov:(o,ms)=>G.pointOfView(o,ms),refresh3D,landmarks:()=>landmarks,year:()=>year,flyToLM:id=>{const l=landmarks.find(x=>x.id===id);if(l)flyToLM(l)},countries:()=>borderIndex,ethnic:setEthnic,selectCountry:n=>{const m=borderIndex.find(x=>x.name===n);selectCountry(m)},ground:toggleGround,exitGround,enterGround,borderMode:()=>borderMode,zoomBand:()=>zoomBand};
